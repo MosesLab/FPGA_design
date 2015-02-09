@@ -1,0 +1,19 @@
+Release 14.4 Drc P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sun Feb 01 16:00:04 2015
+
+drc -z MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   ddr2_data_manager_icon_signal<13> is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net local_bus_icon_signal<13>
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/phy_init_addr<4
+   >> is incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

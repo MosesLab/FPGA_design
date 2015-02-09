@@ -1,0 +1,360 @@
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ffpci104_fcg006rd.ucf -p xc5vlx50t-ff665-1 MOSES_FPGA_Design.ngc MOSES_FPGA_Design.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ngd MOSES_FPGA_Design.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml MOSES_FPGA_Design.twx MOSES_FPGA_Design.ncd -o MOSES_FPGA_Design.twr MOSES_FPGA_Design.pcf -ucf ffpci104_fcg006rd.ucf 
+bitgen -intstyle ise -f MOSES_FPGA_Design.ut MOSES_FPGA_Design.ncd 

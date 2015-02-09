@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator O.61xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\MOSES\MOSES_Design//MOSES_Release_Rev2 -s 4096 -u 0000 D:/MOSES/MOSES_Design/MOSES_FPGA_Design/moses_fpga_design.bit -spi 
+
+PROM D:\MOSES\MOSES_Design\MOSES_Release_Rev2.prm map: Sun Jan 11 14:20:06 2015
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          4096K
+PROM start    0000:0000
+PROM end      003f:ffff
+PROM checksum 2583e26c
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    001a:cd7f     Jan 11 14:14:34 2015 D:/MOSES/MOSES_Design/MOSES_FPGA_Design/moses_fpga_design.bit

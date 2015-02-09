@@ -1,0 +1,18 @@
+# Output products list for <LOCAL_BUS_ILA>
+LOCAL_BUS_ILA.asy
+LOCAL_BUS_ILA.cdc
+LOCAL_BUS_ILA.constraints\LOCAL_BUS_ILA.ucf
+LOCAL_BUS_ILA.constraints\LOCAL_BUS_ILA.xdc
+LOCAL_BUS_ILA.gise
+LOCAL_BUS_ILA.ncf
+LOCAL_BUS_ILA.ngc
+LOCAL_BUS_ILA.sym
+LOCAL_BUS_ILA.ucf
+LOCAL_BUS_ILA.vhd
+LOCAL_BUS_ILA.vho
+LOCAL_BUS_ILA.xco
+LOCAL_BUS_ILA.xdc
+LOCAL_BUS_ILA.xise
+LOCAL_BUS_ILA_flist.txt
+LOCAL_BUS_ILA_readme.txt
+LOCAL_BUS_ILA_xmdf.tcl

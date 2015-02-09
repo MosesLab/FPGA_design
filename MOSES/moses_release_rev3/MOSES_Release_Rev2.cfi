@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator O.61xd
+# Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION O.61xd
+DATE            01/11/2015 - 14:20
+SOURCE          D:\MOSES\MOSES_Design\MOSES_Release_Rev2.mcs
+DEVICE          4096K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x2583E26C
+START_ADDRESS   0x00000000 END_ADDRESS 0x001ACD7F DIRECTION_UP   "D:/MOSES/MOSES_Design/MOSES_FPGA_Design/moses_fpga_design.bit" 5vlx50tff665

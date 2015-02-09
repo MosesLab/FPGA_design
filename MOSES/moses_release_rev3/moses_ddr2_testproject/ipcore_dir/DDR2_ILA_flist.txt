@@ -1,0 +1,19 @@
+# Output products list for <DDR2_ILA>
+DDR2_ILA.asy
+DDR2_ILA.cdc
+DDR2_ILA.constraints\DDR2_ILA.ucf
+DDR2_ILA.constraints\DDR2_ILA.xdc
+DDR2_ILA.gise
+DDR2_ILA.ncf
+DDR2_ILA.ngc
+DDR2_ILA.sym
+DDR2_ILA.ucf
+DDR2_ILA.vhd
+DDR2_ILA.vho
+DDR2_ILA.xco
+DDR2_ILA.xdc
+DDR2_ILA.xise
+DDR2_ILA_flist.txt
+DDR2_ILA_readme.txt
+DDR2_ILA_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

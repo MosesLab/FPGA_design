@@ -1,0 +1,1 @@
+xtclsh ref_design.tcl run_process > run_process.log

@@ -1,0 +1,26 @@
+Release 14.4 reportgen P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ECE-HSDDL3::  Sat Oct 11 14:17:31 2014
+
+C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\reportgen.exe -intstyle ise
+-clock_regions -o MOSES_DDR2_TestProject MOSES_DDR2_TestProject.ncd 
+
+Loading device for application Rf_Device from file '5vlx50t.nph' in environment
+C:\Xilinx\14.4\ISE_DS\ISE\.
+   "MOSES_DDR2_TestProject" is an NCD, version 3.2, device xc5vlx50t, package
+ff665, speed -1
+ReportGen:LoadDesign: 'MOSES_DDR2_TestProject.ncd'
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+Device speed data version:  "PRODUCTION 1.73 2012-12-04".
+
+Generating Clock Region Report: MOSES_DDR2_TestProject.clk_rgn
+
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 0
+
+reportgen done!

@@ -1,0 +1,255 @@
+Release 14.4 - reportgen P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sat Oct 11 14:17:39 2014
+
+SUMMARY
+-------
+There are 12 clock regions:
+
+Clock Reports by Clock Regions
+------------------------------
+
+Clock Region X0Y0:
+------------------
+Number of global clocks in this region: 2
+List of global clocks in this region:
+   clk0_tb driven by BUFGCTRL_X0Y31 
+   clkdiv0 driven by BUFGCTRL_X0Y29 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of       SLICEL:    31 used out of   400     7%
+Number of       SLICEM:     9 used out of   160     5%
+
+Clock Region X1Y0:
+------------------
+Number of global clocks in this region: 2
+List of global clocks in this region:
+   clk0_tb driven by BUFGCTRL_X0Y31 
+   clkdiv0 driven by BUFGCTRL_X0Y29 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of       SLICEL:    81 used out of   480    16%
+Number of       SLICEM:    25 used out of   160    15%
+
+Clock Region X0Y1:
+------------------
+Number of global clocks in this region: 4
+List of global clocks in this region:
+   clk50 driven by BUFGCTRL_X0Y28 
+   clk0_tb driven by BUFGCTRL_X0Y31 
+   clkdiv0 driven by BUFGCTRL_X0Y29 
+   clk90 driven by BUFGCTRL_X0Y30 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 3
+List of local clocks in this region:
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<3> driven by BUFIO_X0Y7 
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<2> driven by BUFIO_X0Y6 
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<0> driven by BUFIO_X0Y4 
+
+Summary of components used in this region:
+
+Number of        BUFIO:     3 used out of     6    50%
+Number of   IDELAYCTRL:     1 used out of     2    50%
+Number of       ILOGIC:    27 used out of    60    45%
+Number of         IOBM:    17 used out of    30    56%
+Number of         IOBS:    16 used out of    30    53%
+Number of      IODELAY:    30 used out of    60    50%
+Number of       OLOGIC:    33 used out of    60    55%
+Number of   RAMBFIFO36:     2 used out of     4    50%
+Number of       SLICEL:   158 used out of   400    39%
+Number of       SLICEM:    59 used out of   160    36%
+
+Clock Region X1Y1:
+------------------
+Number of global clocks in this region: 4
+List of global clocks in this region:
+   clk50 driven by BUFGCTRL_X0Y28 
+   clk0_tb driven by BUFGCTRL_X0Y31 
+   clkdiv0 driven by BUFGCTRL_X0Y29 
+   clk90 driven by BUFGCTRL_X0Y30 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 1
+List of local clocks in this region:
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<1> driven by BUFIO_X2Y7 
+
+Summary of components used in this region:
+
+Number of        BUFIO:     1 used out of     4    25%
+Number of   IDELAYCTRL:     1 used out of     1   100%
+Number of       ILOGIC:     9 used out of    40    22%
+Number of         IOBM:    18 used out of    20    90%
+Number of         IOBS:    16 used out of    20    80%
+Number of      IODELAY:    10 used out of    40    25%
+Number of       OLOGIC:    34 used out of    40    85%
+Number of   RAMBFIFO36:     2 used out of     4    50%
+Number of       SLICEL:    97 used out of   480    20%
+Number of       SLICEM:    45 used out of   160    28%
+
+Clock Region X0Y2:
+------------------
+Number of global clocks in this region: 4
+List of global clocks in this region:
+   clk50 driven by BUFGCTRL_X0Y28 
+   clk0_tb driven by BUFGCTRL_X0Y31 
+   clkdiv0 driven by BUFGCTRL_X0Y29 
+   clk90 driven by BUFGCTRL_X0Y30 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of        BSCAN:     1 used out of     4    25%
+Number of     BUFGCTRL:     1 used out of    16     6%
+Number of   RAMBFIFO36:     1 used out of     4    25%
+Number of       SLICEL:    70 used out of   400    17%
+Number of       SLICEM:    12 used out of   160     7%
+
+Clock Region X1Y2:
+------------------
+Number of global clocks in this region: 5
+List of global clocks in this region:
+   clk50 driven by BUFGCTRL_X0Y28 
+   clk0_tb driven by BUFGCTRL_X0Y31 
+   clkdiv0 driven by BUFGCTRL_X0Y29 
+   clk90 driven by BUFGCTRL_X0Y30 
+   icon_signal<0> driven by BUFGCTRL_X0Y0 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 1
+List of local clocks in this region:
+   ICON0/U0/iUPDATE_OUT driven by BSCAN_X0Y0 
+
+Summary of components used in this region:
+
+Number of   RAMBFIFO36:     1 used out of     4    25%
+Number of       SLICEL:    84 used out of   480    17%
+Number of       SLICEM:    39 used out of   160    24%
+
+Clock Region X0Y3:
+------------------
+Number of global clocks in this region: 3
+List of global clocks in this region:
+   clk50 driven by BUFGCTRL_X0Y28 
+   clk0_tb driven by BUFGCTRL_X0Y31 
+   icon_signal<0> driven by BUFGCTRL_X0Y0 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of     BUFGCTRL:     4 used out of    16    25%
+Number of   RAMBFIFO36:     1 used out of     4    25%
+Number of       SLICEL:    85 used out of   400    21%
+Number of       SLICEM:    65 used out of   160    40%
+
+Clock Region X1Y3:
+------------------
+Number of global clocks in this region: 3
+List of global clocks in this region:
+   clk50 driven by BUFGCTRL_X0Y28 
+   clkdiv0 driven by BUFGCTRL_X0Y29 
+   icon_signal<0> driven by BUFGCTRL_X0Y0 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 1
+List of local clocks in this region:
+   icon_signal<13> driven by SLICE_X46Y72 
+
+Summary of components used in this region:
+
+Number of   RAMBFIFO36:     1 used out of     6    16%
+Number of       SLICEL:    48 used out of   480    10%
+Number of       SLICEM:    39 used out of   160    24%
+
+Clock Region X0Y4:
+------------------
+Number of global clocks in this region: 2
+List of global clocks in this region:
+   clk50 driven by BUFGCTRL_X0Y28 
+   icon_signal<0> driven by BUFGCTRL_X0Y0 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of         IOBM:     1 used out of    30     3%
+Number of         IOBS:     1 used out of    30     3%
+Number of   RAMBFIFO36:     1 used out of     4    25%
+Number of       SLICEL:    55 used out of   400    13%
+Number of       SLICEM:    50 used out of   160    31%
+
+Clock Region X1Y4:
+------------------
+Number of global clocks in this region: 2
+List of global clocks in this region:
+   clk50 driven by BUFGCTRL_X0Y28 
+   icon_signal<0> driven by BUFGCTRL_X0Y0 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of   RAMBFIFO36:     2 used out of     6    33%
+Number of       SLICEL:    55 used out of   480    11%
+Number of       SLICEM:    41 used out of   160    25%
+
+Clock Region X0Y5:
+------------------
+Number of global clocks in this region: 2
+List of global clocks in this region:
+   clk50 driven by BUFGCTRL_X0Y28 
+   icon_signal<0> driven by BUFGCTRL_X0Y0 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of      PLL_ADV:     1 used out of     2    50%
+Number of   RAMBFIFO36:     1 used out of     4    25%
+Number of       SLICEL:     3 used out of   400     1%
+Number of       SLICEM:    12 used out of   160     7%
+
+Clock Region X1Y5:
+------------------
+Number of global clocks in this region: 2
+List of global clocks in this region:
+   clk50 driven by BUFGCTRL_X0Y28 
+   icon_signal<0> driven by BUFGCTRL_X0Y0 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of   RAMBFIFO36:     1 used out of     8    12%
+Number of       SLICEL:     8 used out of   480     1%
+Number of       SLICEM:    16 used out of   160    10%
+

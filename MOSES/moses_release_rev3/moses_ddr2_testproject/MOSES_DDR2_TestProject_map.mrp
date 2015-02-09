@@ -1,0 +1,1888 @@
+Release 14.4 Map P.49d (nt64)
+Xilinx Mapping Report File for Design 'MOSES_DDR2_TestProject'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off
+-global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd
+MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+Target Device  : xc5vlx50t
+Target Package : ff665
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Sat Oct 11 14:15:32 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   17
+Slice Logic Utilization:
+  Number of Slice Registers:                 2,742 out of  28,800    9%
+    Number used as Flip Flops:               2,741
+    Number used as Latches:                      1
+  Number of Slice LUTs:                      1,776 out of  28,800    6%
+    Number used as logic:                    1,328 out of  28,800    4%
+      Number using O6 output only:           1,080
+      Number using O5 output only:              97
+      Number using O5 and O6:                  151
+    Number used as Memory:                     432 out of   7,680    5%
+      Number used as Shift Register:           432
+        Number using O6 output only:           431
+        Number using O5 and O6:                  1
+    Number used as exclusive route-thru:        16
+  Number of route-thrus:                       113
+    Number using O6 output only:               113
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,187 out of   7,200   16%
+  Number of LUT Flip Flop pairs used:        3,341
+    Number with an unused Flip Flop:           599 out of   3,341   17%
+    Number with an unused LUT:               1,565 out of   3,341   46%
+    Number of fully used LUT-FF pairs:       1,177 out of   3,341   35%
+    Number of unique control sets:             142
+    Number of slice register sites lost
+      to control set restrictions:             233 out of  28,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        69 out of     360   19%
+    Number of LOCed IOBs:                       69 out of      69  100%
+    IOB Flip Flops:                            143
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                      13 out of      60   21%
+    Number using BlockRAM only:                  8
+    Number using FIFO only:                      5
+    Total primitives used:
+      Number of 36k BlockRAM used:               7
+      Number of 18k BlockRAM used:               1
+      Number of 36k FIFO used:                   5
+    Total Memory used (KB):                    450 out of   2,160   20%
+  Number of BUFG/BUFGCTRLs:                      5 out of      32   15%
+    Number used as BUFGs:                        5
+  Number of IDELAYCTRLs:                         2 out of      16   12%
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFIOs:                              4 out of      56    7%
+  Number of PLL_ADVs:                            1 out of       6   16%
+
+  Number of RPM macros:            4
+Average Fanout of Non-Clock Nets:                2.63
+
+Peak Memory Usage:  583 MB
+Total REAL time to MAP completion:  1 mins 19 secs 
+Total CPU time to MAP completion:   1 mins 19 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBU connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U
+   _RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBL connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U
+   _RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBU connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U
+   _RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBL connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U
+   _RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBU connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U
+   _RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBL connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U
+   _RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBU connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U
+   _RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBL connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[3].u_ramb36/U
+   _RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBU connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U
+   _RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBL connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[4].u_ramb36/U
+   _RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBU connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_ramb36/U
+   _RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBL connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[5].u_ramb36/U
+   _RAMB36_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBU connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_ramb36/U
+   _RAMB36_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_ramb36/U
+   _RAMB36
+   of frag REGCLKBL connected to power/ground net
+   ILA0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_C
+   S_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[6].u_ramb36/U
+   _RAMB36_REGCLKBL_tiesig
+WARNING:Pack:1653 - At least one timing constraint is impossible to meet because
+   component delays alone exceed the constraint. A timing constraint summary
+   below shows the failing constraints (preceded with an Asterisk (*)). Please
+   use the Timing Analyzer (GUI) or TRCE (command line) with the Mapped NCD and
+   PCF files to identify which constraints and paths are failing because of the
+   component delays alone. If the failing path(s) is mapped to Xilinx components
+   as expected, consider relaxing the constraint. If it is not mapped to
+   components as expected, re-evaluate your HDL and how synthesis is optimizing
+   the path. To allow the tools to bypass this error, set the environment
+   variable XIL_TIMING_ALLOW_IMPOSSIBLE to 1.
+
+
+   For more information about the Timing Analyzer, consult the Xilinx Timing
+   Analyzer Reference manual; for more information on TRCE, consult the Xilinx
+   Command Line Tools User Guide "TRACE" chapter.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_signal<13> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/phy_init_addr<4>>
+   is incomplete. The signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network N40 has no load.
+INFO:LIT:395 - The above info message is repeated 316 more times for the
+   following (max. 5 shown):
+   N41,
+   N42,
+   N43,
+   N44,
+   N45
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:950 - SAVE has been detected on block "gen_cke[0].u_ff_cke"
+INFO:MapLib:950 - SAVE has been detected on block
+   "gen_cs_n[0].gen_cs_two_t_1.u_ff_cs_n"
+INFO:MapLib:950 - SAVE has been detected on block
+   "gen_odt_ddr2_ddr3.gen_odt[0].u_ff_odt"
+INFO:MapLib:856 - PLL_ADV PLL_ADV_INST CLKIN2 pin was disconnected because a
+   constant 1 is driving the CLKINSEL pin.
+INFO:MapLib:841 - Changing COMPENSATION attribute from SYSTEM_SYNCHRONOUS to
+   INTERNAL for PLL_ADV PLL_ADV_INST.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  68 block(s) removed
+ 412 block(s) optimized away
+ 363 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "icon_signal<10>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_LCE" (ROM)
+removed.
+  The signal "ICON0/U0/U_ICON/iCOMMAND_SEL<6>" is loadless and has been removed.
+   Loadless block "ICON0/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+The signal "icon_signal<11>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_LCE" (ROM)
+removed.
+  The signal "ICON0/U0/U_ICON/iCOMMAND_SEL<7>" is loadless and has been removed.
+   Loadless block "ICON0/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+The signal "icon_signal<15>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE" (ROM)
+removed.
+  The signal "ICON0/U0/U_ICON/iCOMMAND_SEL<11>" is loadless and has been removed.
+   Loadless block "ICON0/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+The signal "icon_signal<16>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_LCE" (ROM)
+removed.
+  The signal "ICON0/U0/U_ICON/iCOMMAND_SEL<12>" is loadless and has been removed.
+   Loadless block "ICON0/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+The signal "icon_signal<17>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_LCE" (ROM)
+removed.
+  The signal "ICON0/U0/U_ICON/iCOMMAND_SEL<13>" is loadless and has been removed.
+   Loadless block "ICON0/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+The signal "icon_signal<18>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_LCE" (ROM)
+removed.
+  The signal "ICON0/U0/U_ICON/iCOMMAND_SEL<14>" is loadless and has been removed.
+   Loadless block "ICON0/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+The signal "icon_signal<19>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_LCE" (ROM)
+removed.
+  The signal "ICON0/U0/U_ICON/iCOMMAND_SEL<15>" is loadless and has been removed.
+   Loadless block "ICON0/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[15].U_LUT" (ROM)
+removed.
+The signal "icon_signal<21>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[1].U_HCE" (ROM)
+removed.
+The signal "icon_signal<22>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_HCE" (ROM)
+removed.
+The signal "icon_signal<23>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_HCE" (ROM)
+removed.
+  The signal "ICON0/U0/U_ICON/iCOMMAND_SEL<3>" is loadless and has been removed.
+   Loadless block "ICON0/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+The signal "icon_signal<24>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_HCE" (ROM)
+removed.
+The signal "icon_signal<25>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_HCE" (ROM)
+removed.
+The signal "icon_signal<26>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_HCE" (ROM)
+removed.
+The signal "icon_signal<27>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_HCE" (ROM)
+removed.
+The signal "icon_signal<28>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_HCE" (ROM)
+removed.
+The signal "icon_signal<29>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM)
+removed.
+The signal "icon_signal<30>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_HCE" (ROM)
+removed.
+The signal "icon_signal<31>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_HCE" (ROM)
+removed.
+The signal "icon_signal<32>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_HCE" (ROM)
+removed.
+The signal "icon_signal<33>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_HCE" (ROM)
+removed.
+The signal "icon_signal<34>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_HCE" (ROM)
+removed.
+The signal "icon_signal<35>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_HCE" (ROM)
+removed.
+The signal "icon_signal<7>" is loadless and has been removed.
+ Loadless block "ICON0/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_LCE" (ROM)
+removed.
+The signal
+"ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GAN
+DX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_S
+RL_SET/SRL_Q_O" is loadless and has been removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[1].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[2].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Loadless block "ICON0/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+Loadless block "ILA0/U0/I_NO_D.U_ILA/U_STAT/U_DSR" (ROM) removed.
+Loadless block "ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B" (ROM)
+removed.
+The signal "u_DDR2_CORE/app_af_afull" is sourceless and has been removed.
+The signal "u_DDR2_CORE/app_wdf_afull" is sourceless and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_done<0>" is sourceless and has
+been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_done<1>" is sourceless and has
+been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_done<2>" is sourceless and has
+been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_done<3>" is sourceless and has
+been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<0>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<100>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<101>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<102>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<103>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<104>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<105>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<106>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<107>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<108>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<109>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<10>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<110>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<111>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<112>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<113>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<114>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<115>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<116>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<117>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<118>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<119>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<11>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<120>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<121>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<122>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<123>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<124>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<125>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<126>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<127>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<128>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<129>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<12>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<130>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<131>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<132>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<133>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<134>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<135>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<136>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<137>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<138>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<139>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<13>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<140>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<141>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<142>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<143>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<144>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<145>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<146>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<147>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<148>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<149>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<14>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<150>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<151>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<152>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<153>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<154>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<155>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<156>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<157>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<158>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<159>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<15>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<160>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<161>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<162>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<163>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<164>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<165>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<166>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<167>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<168>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<169>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<16>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<170>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<171>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<172>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<173>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<174>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<175>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<176>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<177>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<178>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<179>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<17>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<180>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<181>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<182>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<183>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<184>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<185>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<186>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<187>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<188>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<189>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<18>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<190>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<191>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<19>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<1>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<20>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<21>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<22>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<23>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<24>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<25>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<26>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<27>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<28>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<29>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<2>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<30>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<31>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<32>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<33>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<34>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<35>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<36>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<37>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<38>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<39>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<3>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<40>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<41>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<42>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<43>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<44>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<45>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<46>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<47>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<48>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<49>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<4>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<50>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<51>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<52>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<53>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<54>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<55>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<56>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<57>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<58>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<59>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<5>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<60>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<61>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<62>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<63>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<64>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<65>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<66>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<67>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<68>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<69>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<6>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<70>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<71>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<72>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<73>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<74>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<75>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<76>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<77>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<78>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<79>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<7>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<80>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<81>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<82>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<83>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<84>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<85>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<86>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<87>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<88>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<89>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<8>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<90>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<91>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<92>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<93>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<94>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<95>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<96>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<97>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<98>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<99>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<9>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<0>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<10>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<11>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<12>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<13>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<14>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<15>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<16>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<17>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<18>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<19>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<1>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<20>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<21>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<22>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<23>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<2>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<3>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<4>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<5>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<6>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<7>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<8>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<9>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_err<0>" is sourceless and has
+been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[5].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<5>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[6].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<6>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[7].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<7>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[8].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<8>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[9].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<9>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[10].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<10>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[11].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<11>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[12].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<12>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[13].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<13>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[14].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<14>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[15].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<15>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[16].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<16>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[17].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<17>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[18].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<18>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden_d
+ly[19].u_ff_rden_dly" (SFF) removed.
+  The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly_r
+<19>" is sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden[1
+].u_calib_rden_r" (SFF) removed.
+  The signal "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/phy_calib_rden<1>" is
+sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden[2
+].u_calib_rden_r" (SFF) removed.
+  The signal "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/phy_calib_rden<2>" is
+sourceless and has been removed.
+ Sourceless block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden[3
+].u_calib_rden_r" (SFF) removed.
+  The signal "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/phy_calib_rden<3>" is
+sourceless and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_err<2>" is sourceless and has
+been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_err<3>" is sourceless and has
+been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<0>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<10>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<11>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<12>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<13>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<14>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<15>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<16>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<17>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<18>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<19>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<1>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<2>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<3>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<4>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<5>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<6>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<7>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<8>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_dly<9>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<0>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<10>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<11>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<12>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<13>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<14>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<15>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<16>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<17>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<18>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<19>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<1>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<20>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<21>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<22>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<23>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<2>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<3>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<4>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<5>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<6>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<7>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<8>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<9>" is sourceless
+and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rd_data_sel<0>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rd_data_sel<1>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rd_data_sel<2>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rd_data_sel<3>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<0>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<10>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<11>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<12>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<13>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<14>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<15>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<16>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<17>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<18>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<19>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<1>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<2>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<3>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<4>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<5>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<6>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<7>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<8>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/dbg_calib_rden_dly<9>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/rd_ecc_error<0>" is sourceless and has been
+removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/af_addr<25>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/af_addr<26>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/af_addr<27>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/af_addr<28>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/af_addr<29>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/af_addr<30>" is sourceless and
+has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_usr_top/u_usr_rd/N1" is
+sourceless and has been removed.
+The signal "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/phy_init_addr<0>" is
+sourceless and has been removed.
+The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_srl_o
+ut<1>" is sourceless and has been removed.
+The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_srl_o
+ut<2>" is sourceless and has been removed.
+The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_srl_o
+ut<3>" is sourceless and has been removed.
+The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[3].
+u_iob_dm/N0" is sourceless and has been removed.
+The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[3].
+u_iob_dm/N1" is sourceless and has been removed.
+The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[2].
+u_iob_dm/N0" is sourceless and has been removed.
+The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[2].
+u_iob_dm/N1" is sourceless and has been removed.
+The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[1].
+u_iob_dm/N0" is sourceless and has been removed.
+The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[1].
+u_iob_dm/N1" is sourceless and has been removed.
+The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[0].
+u_iob_dm/N0" is sourceless and has been removed.
+The signal
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[0].
+u_iob_dm/N1" is sourceless and has been removed.
+Unused block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden[1
+].u_rden_srl" (SRLC32E) removed.
+Unused block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden[2
+].u_rden_srl" (SRLC32E) removed.
+Unused block
+"u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden[3
+].u_rden_srl" (SRLC32E) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		ICON0/XST_GND
+VCC 		ICON0/XST_VCC
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_CS
+_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_G
+AND_SRL_SLICE/XST_GND
+VCC
+		ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_CS
+_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_G
+AND_SRL_SLICE/XST_VCC
+VCC
+		ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_CS
+_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/XST_VCC
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_C
+S_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_
+GAND_SRL_SLICE/XST_GND
+VCC
+		ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_C
+S_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_
+GAND_SRL_SLICE/XST_VCC
+VCC
+		ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_C
+S_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/XST_VCC
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_C
+S_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_
+GAND_SRL_SLICE/XST_GND
+VCC
+		ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_C
+S_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_
+GAND_SRL_SLICE/XST_VCC
+VCC
+		ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_C
+S_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/XST_VCC
+LUT4 		ILA0/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[6].I_STAT.U_STAT
+   optimized to 0
+FDPE
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY1[1].I_IN_RANGE.I_USE_INPUT_
+REG_NE0.U_GAND_DLY1
+   optimized to 1
+FDPE
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY2[1].I_IN_RANGE.U_GAND_DLY2
+   optimized to 1
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[10].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[11].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[12].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[13].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[14].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[15].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[16].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[17].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[18].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[19].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[20].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[21].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[22].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[23].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[24].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[25].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[26].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[27].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[28].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[29].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[2].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[30].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE/XST_GND
+VCC
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE/XST_VCC
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[4].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[5].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[6].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[7].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[8].U_GAND_SRL_SLICE/XST_GND
+GND
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[9].U_GAND_SRL_SLICE/XST_GND
+VCC
+		ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/XST_VCC
+FDP 		ILA0/U0/I_TQ0.G_TW[1].U_TQ
+   optimized to 1
+GND 		ILA0/XST_GND
+VCC 		ILA0/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		CM0/XST_GND
+GND 		CM0/PLL0/XST_GND
+VCC 		CM0/PLL0/XST_VCC
+GND 		DDR2_BC0/XST_GND
+VCC 		DDR2_BC0/XST_VCC
+GND 		DDR2_FSM0/XST_GND
+GND 		u_DDR2_CORE/u_ddr2_infrastructure/XST_GND
+GND 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_ctrl/XST_GND
+VCC 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_ctrl/XST_VCC
+GND 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/XST_GND
+VCC 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/XST_VCC
+GND 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/XST_GND
+VCC 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/XST_VCC
+GND 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/XST_GND
+VCC 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/XST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[0]
+.u_iob_dm/XST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[0]
+.u_iob_dm/XST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[1]
+.u_iob_dm/XST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[1]
+.u_iob_dm/XST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[2]
+.u_iob_dm/XST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[2]
+.u_iob_dm/XST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[3]
+.u_iob_dm/XST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dm_inst.gen_dm[3]
+.u_iob_dm/XST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[0].u_iob_dq/XS
+T_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[0].u_iob_dq/XS
+T_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[10].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[10].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[11].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[11].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[12].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[12].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[13].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[13].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[14].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[14].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[15].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[15].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[16].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[16].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[17].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[17].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[18].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[18].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[19].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[19].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[1].u_iob_dq/XS
+T_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[1].u_iob_dq/XS
+T_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[20].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[20].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[21].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[21].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[22].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[22].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[23].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[23].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[24].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[24].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[25].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[25].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[26].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[26].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[27].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[27].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[28].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[28].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[29].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[29].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[2].u_iob_dq/XS
+T_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[2].u_iob_dq/XS
+T_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[30].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[30].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[31].u_iob_dq/X
+ST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[31].u_iob_dq/X
+ST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[3].u_iob_dq/XS
+T_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[3].u_iob_dq/XS
+T_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[4].u_iob_dq/XS
+T_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[4].u_iob_dq/XS
+T_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[5].u_iob_dq/XS
+T_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[5].u_iob_dq/XS
+T_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[6].u_iob_dq/XS
+T_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[6].u_iob_dq/XS
+T_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[7].u_iob_dq/XS
+T_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[7].u_iob_dq/XS
+T_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[8].u_iob_dq/XS
+T_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[8].u_iob_dq/XS
+T_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[9].u_iob_dq/XS
+T_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[9].u_iob_dq/XS
+T_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/
+XST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/
+XST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[1].u_iob_dqs/
+XST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[1].u_iob_dqs/
+XST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[2].u_iob_dqs/
+XST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[2].u_iob_dqs/
+XST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[3].u_iob_dqs/
+XST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[3].u_iob_dqs/
+XST_VCC
+GND
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/XST_GND
+VCC
+		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/XST_VCC
+GND 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/XST_GND
+VCC 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/XST_VCC
+GND 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_usr_top/u_usr_addr_fifo/XST_GND
+VCC 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_usr_top/u_usr_addr_fifo/XST_VCC
+GND 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_usr_top/u_usr_rd/XST_GND
+VCC 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_usr_top/u_usr_rd/XST_VCC
+VCC 		u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_usr_top/u_usr_wr/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 11 - Timing Report
+--------------------------
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+Number of Timing Constraints that were not applied: 1
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_CM0_PLL0_CLKOUT1_BUF = PERIOD TIMEGRP  | SETUP       |    -0.082ns|     5.328ns|      57|        4605
+  "CM0_PLL0_CLKOUT1_BUF" TS_clk100 / 2 PHAS | HOLD        |     0.106ns|            |       0|           0
+  E 1.25 ns HIGH 50%                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_CM0_PLL0_CLKOUT0_BUF = PERIOD TIMEGRP  | SETUP       |     1.960ns|     1.583ns|       0|           0
+  "CM0_PLL0_CLKOUT0_BUF" TS_clk100 / 2 HIGH | HOLD        |    -0.046ns|            |      73|        2496
+   50%                                      | MINHIGHPULSE|     2.450ns|     2.550ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+* TS_CM0_PLL0_CLKOUT2_BUF = PERIOD TIMEGRP  | SETUP       |     4.213ns|     1.674ns|       0|           0
+  "CM0_PLL0_CLKOUT2_BUF" TS_clk100 HIGH 50% | HOLD        |    -0.046ns|            |      20|         853
+                                            | MINPERIOD   |     6.001ns|     3.999ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+* TS_CM0_PLL0_CLKOUT3_BUF = PERIOD TIMEGRP  | SETUP       |     9.178ns|     4.390ns|       0|           0
+  "CM0_PLL0_CLKOUT3_BUF" TS_clk100 / 0.5 HI | HOLD        |    -0.041ns|            |       2|          55
+  GH 50%                                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk100 = PERIOD TIMEGRP "TNM_clk100" 1 | MINLOWPULSE |     6.000ns|     4.000ns|       0|           0
+  0 ns HIGH 50%                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_clk100
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clk100                      |     10.000ns|      4.000ns|     10.656ns|            0|          152|            0|        16318|
+| TS_CM0_PLL0_CLKOUT0_BUF       |      5.000ns|      2.550ns|          N/A|           73|            0|         2921|            0|
+| TS_CM0_PLL0_CLKOUT1_BUF       |      5.000ns|      5.328ns|          N/A|           57|            0|          487|            0|
+| TS_CM0_PLL0_CLKOUT2_BUF       |     10.000ns|      3.999ns|          N/A|           20|            0|         8076|            0|
+| TS_CM0_PLL0_CLKOUT3_BUF       |     20.000ns|      4.390ns|          N/A|            2|            0|         4834|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+4 constraints not met.
+
+
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clk_in_n                           | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| clk_in_p                           | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| ddr2_a<0>                          | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<1>                          | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<2>                          | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<3>                          | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<4>                          | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<5>                          | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<6>                          | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<7>                          | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<8>                          | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<9>                          | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<10>                         | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<11>                         | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_a<12>                         | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_ba<0>                         | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_ba<1>                         | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_cas_n                         | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_ck<0>                         | IOB              | OUTPUT    | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+| ddr2_ck_n<0>                       | IOB              | OUTPUT    | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+| ddr2_cke<0>                        | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_cs_n<0>                       | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_dm<0>                         | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | ODDR         |          |          |
+| ddr2_dm<1>                         | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | ODDR         |          |          |
+| ddr2_dm<2>                         | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | ODDR         |          |          |
+| ddr2_dm<3>                         | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | ODDR         |          |          |
+| ddr2_dq<0>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<1>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<2>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<3>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<4>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<5>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<6>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<7>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<8>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<9>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<10>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<11>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<12>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<13>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<14>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<15>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<16>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<17>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<18>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<19>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<20>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<21>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<22>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<23>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<24>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<25>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<26>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<27>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<28>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<29>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<30>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dq<31>                        | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| ddr2_dqs<0>                        | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| ddr2_dqs<1>                        | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| ddr2_dqs<2>                        | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| ddr2_dqs<3>                        | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| ddr2_dqs_n<0>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| ddr2_dqs_n<1>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| ddr2_dqs_n<2>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| ddr2_dqs_n<3>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| ddr2_odt<0>                        | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_ras_n                         | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
+| ddr2_we_n                          | IOB              | OUTPUT    | SSTL18_I_DCI         |       |          |      | OFF          |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_CS_G
+AND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/U_SCNT_CMP/I_CS_GAND.
+U_CS_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET_MSET
+ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_CS_
+GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/U_WCNT_HCMP/I_CS_GAN
+D.U_CS_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET_MSET
+ILA0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_CS_
+GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET/U_WCNT_LCMP/I_CS_GAN
+D.U_CS_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET_MSET
+ILA0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GAND
+X.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SR
+L_SET/U_CS_GAND_SRL_V5/I_USE_RPM_EQ0.U_GAND_SRL_SET_MSET
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

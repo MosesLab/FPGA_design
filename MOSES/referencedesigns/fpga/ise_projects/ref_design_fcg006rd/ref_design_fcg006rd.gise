@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ref_design_fcg006rd.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="../../source/v5coregen/dpRam32_8.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="../../source/v5coregen/dpRam32_8.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="../../source/v5coregen/dp_32_64.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="../../source/v5coregen/dp_32_64.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="../../source/v5coregen/dp_a256x8_b256x8.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="../../source/v5coregen/dp_a256x8_b256x8.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="../../source/v5coregen/dp_a32x8_b8x32.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="../../source/v5coregen/dp_a32x8_b8x32.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="../../source/v5coregen/dpa64x8_b16x32.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="../../source/v5coregen/dpa64x8_b16x32.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="../../source/v5coregen/fifo_42x16.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="../../source/v5coregen/fifo_42x16.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="ref_design.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ref_design.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ref_design.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ref_design.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="ref_design.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ref_design.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="ref_design.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="ref_design.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="ref_design.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ref_design.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ref_design.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ref_design.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ref_design.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ref_design_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ref_design_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="ref_design_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="ref_design_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ref_design_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ref_design_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ref_design_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="ref_design_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="ref_design_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ref_design_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ref_design_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1413574842" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1413574842">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413574842" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1847766253928128740" xil_pn:start_ts="1413574842">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413574843" xil_pn:in_ck="1605937073819721213" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2611728619261931572" xil_pn:start_ts="1413574842">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../source/v5coregen/dpRam32_8.ngc"/>
+      <outfile xil_pn:name="../../source/v5coregen/dpRam32_8.vhd"/>
+      <outfile xil_pn:name="../../source/v5coregen/dp_32_64.ngc"/>
+      <outfile xil_pn:name="../../source/v5coregen/dp_32_64.vhd"/>
+      <outfile xil_pn:name="../../source/v5coregen/dp_a256x8_b256x8.ngc"/>
+      <outfile xil_pn:name="../../source/v5coregen/dp_a256x8_b256x8.vhd"/>
+      <outfile xil_pn:name="../../source/v5coregen/dp_a32x8_b8x32.ngc"/>
+      <outfile xil_pn:name="../../source/v5coregen/dp_a32x8_b8x32.vhd"/>
+      <outfile xil_pn:name="../../source/v5coregen/dpa64x8_b16x32.ngc"/>
+      <outfile xil_pn:name="../../source/v5coregen/dpa64x8_b16x32.vhd"/>
+      <outfile xil_pn:name="../../source/v5coregen/fifo_42x16.ngc"/>
+      <outfile xil_pn:name="../../source/v5coregen/fifo_42x16.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1413574843" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1413574843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413574843" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5657788737975242926" xil_pn:start_ts="1413574843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413574843" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-647877406207383257" xil_pn:start_ts="1413574843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413574843" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6639073227401811670" xil_pn:start_ts="1413574843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413574939" xil_pn:in_ck="-8292841970186388156" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="-3914615934662171054" xil_pn:start_ts="1413574843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="ref_design.lso"/>
+      <outfile xil_pn:name="ref_design.ngc"/>
+      <outfile xil_pn:name="ref_design.ngr"/>
+      <outfile xil_pn:name="ref_design.prj"/>
+      <outfile xil_pn:name="ref_design.stx"/>
+      <outfile xil_pn:name="ref_design.syr"/>
+      <outfile xil_pn:name="ref_design.xst"/>
+      <outfile xil_pn:name="ref_design_vhdl.prj"/>
+      <outfile xil_pn:name="ref_design_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1413575496" xil_pn:in_ck="810830145728939617" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8513182868009777443" xil_pn:start_ts="1413575496">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413575513" xil_pn:in_ck="2486911392959256942" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1808240459412363166" xil_pn:start_ts="1413575496">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="ref_design.bld"/>
+      <outfile xil_pn:name="ref_design.ngd"/>
+      <outfile xil_pn:name="ref_design_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1413575666" xil_pn:in_ck="-1557035293158683842" xil_pn:name="TRANEXT_map_virtex5" xil_pn:prop_ck="6822813561785173134" xil_pn:start_ts="1413575513">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="ref_design.pcf"/>
+      <outfile xil_pn:name="ref_design_map.map"/>
+      <outfile xil_pn:name="ref_design_map.mrp"/>
+      <outfile xil_pn:name="ref_design_map.ncd"/>
+      <outfile xil_pn:name="ref_design_map.ngm"/>
+      <outfile xil_pn:name="ref_design_map.xrpt"/>
+      <outfile xil_pn:name="ref_design_summary.xml"/>
+      <outfile xil_pn:name="ref_design_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1413575669" xil_pn:in_ck="-1770117626590394025" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="5499549462089932530" xil_pn:start_ts="1413575666">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="ref_design.pad"/>
+      <outfile xil_pn:name="ref_design.par"/>
+    </transform>
+  </transforms>
+
+</generated_project>

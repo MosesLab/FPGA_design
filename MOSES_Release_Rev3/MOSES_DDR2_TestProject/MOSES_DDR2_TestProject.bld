@@ -1,0 +1,596 @@
+Release 14.4 ngdbuild P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc
+MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc
+MOSES_DDR2_TestProject.ngd
+
+Reading NGO file
+"D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.ngc" ...
+Loading design module "ipcore_dir/DDR2_ILA.ngc"...
+Loading design module "ipcore_dir/ICON.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "MOSES_DDR2_TestProject.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'TNM_clk100', used in period specification
+   'TS_clk100', was traced into PLL_ADV instance PLL_ADV_INST. The following new
+   TNM groups and period specifications were generated at the PLL_ADV output(s):
+    
+   CLKOUT0: <TIMESPEC TS_CM0_PLL0_CLKOUT0_BUF = PERIOD "CM0_PLL0_CLKOUT0_BUF"
+   TS_clk100 / 2 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'TNM_clk100', used in period specification
+   'TS_clk100', was traced into PLL_ADV instance PLL_ADV_INST. The following new
+   TNM groups and period specifications were generated at the PLL_ADV output(s):
+    
+   CLKOUT1: <TIMESPEC TS_CM0_PLL0_CLKOUT1_BUF = PERIOD "CM0_PLL0_CLKOUT1_BUF"
+   TS_clk100 / 2 PHASE 1.25 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'TNM_clk100', used in period specification
+   'TS_clk100', was traced into PLL_ADV instance PLL_ADV_INST. The following new
+   TNM groups and period specifications were generated at the PLL_ADV output(s):
+    
+   CLKOUT2: <TIMESPEC TS_CM0_PLL0_CLKOUT2_BUF = PERIOD "CM0_PLL0_CLKOUT2_BUF"
+   TS_clk100 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'TNM_clk100', used in period specification
+   'TS_clk100', was traced into PLL_ADV instance PLL_ADV_INST. The following new
+   TNM groups and period specifications were generated at the PLL_ADV output(s):
+    
+   CLKOUT3: <TIMESPEC TS_CM0_PLL0_CLKOUT3_BUF = PERIOD "CM0_PLL0_CLKOUT3_BUF"
+   TS_clk100 / 0.5 HIGH 50%>
+
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_CS_BR
+   AM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B18KGT0.u_ramb16/U_RAMB16" of type
+   "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:452 - logical net 'N40' has no driver
+WARNING:NgdBuild:452 - logical net 'N41' has no driver
+WARNING:NgdBuild:452 - logical net 'N42' has no driver
+WARNING:NgdBuild:452 - logical net 'N43' has no driver
+WARNING:NgdBuild:452 - logical net 'N44' has no driver
+WARNING:NgdBuild:452 - logical net 'N45' has no driver
+WARNING:NgdBuild:452 - logical net 'N46' has no driver
+WARNING:NgdBuild:452 - logical net 'N47' has no driver
+WARNING:NgdBuild:452 - logical net 'N48' has no driver
+WARNING:NgdBuild:452 - logical net 'N49' has no driver
+WARNING:NgdBuild:452 - logical net 'N50' has no driver
+WARNING:NgdBuild:452 - logical net 'N51' has no driver
+WARNING:NgdBuild:452 - logical net 'N52' has no driver
+WARNING:NgdBuild:452 - logical net 'N53' has no driver
+WARNING:NgdBuild:452 - logical net 'N54' has no driver
+WARNING:NgdBuild:452 - logical net 'N55' has no driver
+WARNING:NgdBuild:452 - logical net 'N56' has no driver
+WARNING:NgdBuild:452 - logical net 'N57' has no driver
+WARNING:NgdBuild:452 - logical net 'N58' has no driver
+WARNING:NgdBuild:452 - logical net 'N59' has no driver
+WARNING:NgdBuild:452 - logical net 'N60' has no driver
+WARNING:NgdBuild:452 - logical net 'N61' has no driver
+WARNING:NgdBuild:452 - logical net 'N62' has no driver
+WARNING:NgdBuild:452 - logical net 'N63' has no driver
+WARNING:NgdBuild:452 - logical net 'N64' has no driver
+WARNING:NgdBuild:452 - logical net 'N65' has no driver
+WARNING:NgdBuild:452 - logical net 'N66' has no driver
+WARNING:NgdBuild:452 - logical net 'N67' has no driver
+WARNING:NgdBuild:452 - logical net 'N68' has no driver
+WARNING:NgdBuild:452 - logical net 'N69' has no driver
+WARNING:NgdBuild:452 - logical net 'N70' has no driver
+WARNING:NgdBuild:452 - logical net 'N71' has no driver
+WARNING:NgdBuild:452 - logical net 'N72' has no driver
+WARNING:NgdBuild:452 - logical net 'N73' has no driver
+WARNING:NgdBuild:452 - logical net 'N74' has no driver
+WARNING:NgdBuild:452 - logical net 'N75' has no driver
+WARNING:NgdBuild:452 - logical net 'N76' has no driver
+WARNING:NgdBuild:452 - logical net 'N77' has no driver
+WARNING:NgdBuild:452 - logical net 'N78' has no driver
+WARNING:NgdBuild:452 - logical net 'N79' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<100>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<101>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<102>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<103>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<104>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<105>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<106>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<107>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<108>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<109>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<110>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<111>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<112>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<113>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<114>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<115>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<116>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<117>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<118>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<119>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<120>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<121>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<122>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<123>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<124>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<125>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<126>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<127>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<128>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<129>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<130>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<131>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<132>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<133>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<134>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<135>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<136>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<137>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<138>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<139>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<140>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<141>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<142>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<143>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<144>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<145>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<146>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<147>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<148>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<149>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<150>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<151>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<152>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<153>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<154>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<155>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<156>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<157>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<158>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<159>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<160>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<161>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<162>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<163>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<164>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<165>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<166>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<167>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<168>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<169>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<16>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<170>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<171>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<172>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<173>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<174>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<175>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<176>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<177>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<178>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<179>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<17>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<180>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<181>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<182>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<183>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<184>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<185>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<186>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<187>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<188>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<189>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<18>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<190>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<191>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<19>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<22>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<23>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<24>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<25>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<26>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<27>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<28>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<29>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<30>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<31>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<32>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<33>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<34>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<35>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<36>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<37>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<38>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<39>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<40>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<41>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<42>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<43>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<44>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<45>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<46>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<47>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<48>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<49>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<50>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<51>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<52>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<53>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<54>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<55>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<56>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<57>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<58>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<59>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<60>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<61>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<62>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<63>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<64>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<65>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<66>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<67>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<68>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<69>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<70>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<71>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<72>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<73>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<74>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<75>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<76>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<77>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<78>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<79>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<80>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<81>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<82>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<83>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<84>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<85>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<86>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<87>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<88>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<89>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<90>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<91>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<92>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<93>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<94>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<95>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<96>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<97>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<98>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<99>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dq_tap_cnt<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<16>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<17>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<18>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<19>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<22>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<23>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_err<2>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_err<3>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<16>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<17>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<18>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<19>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<22>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<23>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_DDR2_CORE/u_ddr2_top_0/dbg_calib_gate_tap_cnt<9>' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 283
+
+Total memory usage is 211048 kilobytes
+
+Writing NGD file "MOSES_DDR2_TestProject.ngd" ...
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   8 sec
+
+Writing NGDBUILD log file "MOSES_DDR2_TestProject.bld"...

@@ -1,0 +1,34 @@
+# Remove comment to display script commands as it runs
+#set -x
+
+# Path to the driver nodes
+path=/dev/plx
+
+# PLX Chip to load module for
+plx_chip=9056
+
+# Check for debug version
+#    debug=_dbg
+
+# Registered name of driver
+name=Plx${plx_chip}
+
+# Name of module to unload
+module=${name}${debug}.ko
+
+echo -n "Clear existing device nodes..... "
+rm -f $path/${name}*
+echo "Ok (${path}/${name})"
+
+# Delete the directory only if empty
+if [ -d ${path} ]; then
+    echo -n "Delete device node path......... "
+    rmdir --ignore-fail-on-non-empty ${path}
+    echo "Ok (${path})"
+fi
+
+echo -n "Remove module................... "
+/sbin/rmmod $module
+echo "Ok ($module)"
+
+echo Module unload complete.

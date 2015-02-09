@@ -1,0 +1,4 @@
+#
+# Dummy D_CLK constraint since there is no CLK net
+#
+NET "async_in<0>" TNM_NET = D_CLK ;

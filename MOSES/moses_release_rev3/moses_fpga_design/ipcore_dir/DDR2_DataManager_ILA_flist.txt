@@ -1,0 +1,19 @@
+# Output products list for <DDR2_DataManager_ILA>
+DDR2_DataManager_ILA.asy
+DDR2_DataManager_ILA.cdc
+DDR2_DataManager_ILA.constraints\DDR2_DataManager_ILA.ucf
+DDR2_DataManager_ILA.constraints\DDR2_DataManager_ILA.xdc
+DDR2_DataManager_ILA.gise
+DDR2_DataManager_ILA.ncf
+DDR2_DataManager_ILA.ngc
+DDR2_DataManager_ILA.sym
+DDR2_DataManager_ILA.ucf
+DDR2_DataManager_ILA.vhd
+DDR2_DataManager_ILA.vho
+DDR2_DataManager_ILA.xco
+DDR2_DataManager_ILA.xdc
+DDR2_DataManager_ILA.xise
+DDR2_DataManager_ILA_flist.txt
+DDR2_DataManager_ILA_readme.txt
+DDR2_DataManager_ILA_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

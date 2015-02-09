@@ -1,0 +1,450 @@
+Release 14.4 par P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ECE-HSDDL3::  Sun Feb 01 15:58:48 2015
+
+par -w -intstyle ise -ol high -mt off MOSES_FPGA_Design_map.ncd
+MOSES_FPGA_Design.ncd MOSES_FPGA_Design.pcf 
+
+
+Constraints file: MOSES_FPGA_Design.pcf.
+Loading device for application Rf_Device from file '5vlx50t.nph' in environment C:\Xilinx\14.4\ISE_DS\ISE\.
+   "MOSES_FPGA_Design" is an NCD, version 3.2, device xc5vlx50t, package ff665, speed -1
+WARNING:ConstraintSystem - The Offset constraint <TIMEGRP "LB_IPAD" OFFSET = IN 8.8 ns BEFORE COMP "lb_lclko_fb";>
+   [MOSES_FPGA_Design.pcf(20294)], is specified without a duration.  This will result in a lack of hold time checks in
+   timing reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <TIMEGRP "LB_IOPAD" OFFSET = IN 8.8 ns BEFORE COMP "lb_lclko_fb";>
+   [MOSES_FPGA_Design.pcf(20295)], is specified without a duration.  This will result in a lack of hold time checks in
+   timing reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
+
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.73 2012-12-04".
+
+
+
+Device Utilization Summary:
+
+   Number of BSCANs                          1 out of 4      25%
+   Number of BUFGs                           7 out of 32     21%
+   Number of BUFIOs                          4 out of 56      7%
+   Number of DCM_ADVs                        2 out of 12     16%
+   Number of FIFO36_72_EXPs                  4 out of 60      6%
+   Number of FIFO36_EXPs                     1 out of 60      1%
+   Number of IDELAYCTRLs                     2 out of 16     12%
+   Number of ILOGICs                        36 out of 560     6%
+      Number of LOCed ILOGICs                4 out of 36     11%
+
+   Number of External IOBs                 207 out of 360    57%
+      Number of LOCed IOBs                 206 out of 207    99%
+
+   Number of IODELAYs                       40 out of 560     7%
+      Number of LOCed IODELAYs               4 out of 40     10%
+
+   Number of OLOGICs                       106 out of 560    18%
+   Number of PLL_ADVs                        1 out of 6      16%
+   Number of RAMB18X2s                       2 out of 60      3%
+   Number of RAMB36_EXPs                    28 out of 60     46%
+   Number of Slices                       2742 out of 7200   38%
+   Number of Slice Registers              6279 out of 28800  21%
+      Number used as Flip Flops           6277
+      Number used as Latches                 2
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                   4061 out of 28800  14%
+   Number of Slice LUT-Flip Flop pairs    7915 out of 28800  27%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please
+   consult the Xilinx Command Line Tools User Guide for information on generating a TSI report.
+Starting initial Timing Analysis.  REAL time: 14 secs 
+Finished initial Timing Analysis.  REAL time: 15 secs 
+
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<35> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<34> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<33> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<32> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<31> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<30> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<29> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<28> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<27> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<26> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<25> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<24> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<23> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<19> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<18> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<17> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<16> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<15> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<11> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<10> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ddr2_data_manager_icon_signal<7> has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 34936 unrouted;      REAL time: 16 secs 
+INFO:Route:538 - One or more MIG cores have been detected in your design and have been successfully
+   placed and routed. These MIG core(s) have critical skew and delay requirements 
+   that are independent of the user (UCF) timing constraints. These MIG-related timing 
+   constraints have been successfully met in this design. However, the user must verify
+   separately that all timing constraints specified in the UCF file have been met.
+
+
+Phase  2  : 21407 unrouted;      REAL time: 20 secs 
+
+Phase  3  : 6088 unrouted;      REAL time: 30 secs 
+
+Phase  4  : 6091 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 34 secs 
+
+Updating file: MOSES_FPGA_Design.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 42 secs 
+Total REAL time to Router completion: 42 secs 
+Total CPU time to Router completion: 43 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|               clk50 | BUFGCTRL_X0Y0| No   | 1448 |  0.421     |  1.925      |
++---------------------+--------------+------+------+------------+-------------+
+|           ddr2_clk0 |BUFGCTRL_X0Y31| No   |   10 |  0.110     |  1.640      |
++---------------------+--------------+------+------+------------+-------------+
+|             clk0_tb | BUFGCTRL_X0Y2| No   |  311 |  0.353     |  1.918      |
++---------------------+--------------+------+------+------------+-------------+
+|ddr2_data_manager_ic |              |      |      |            |             |
+|        on_signal<0> |BUFGCTRL_X0Y29| No   |  274 |  0.417     |  1.925      |
++---------------------+--------------+------+------+------------+-------------+
+|   u_DDR2_CORE/clk90 | BUFGCTRL_X0Y1| No   |   91 |  0.346     |  1.922      |
++---------------------+--------------+------+------+------------+-------------+
+| u_DDR2_CORE/clkdiv0 | BUFGCTRL_X0Y3| No   |  325 |  0.255     |  1.819      |
++---------------------+--------------+------+------+------------+-------------+
+|u_DDR2_CORE/u_ddr2_t |              |      |      |            |             |
+|op_0/u_mem_if_top/u_ |              |      |      |            |             |
+|phy_top/u_phy_io/del |              |      |      |            |             |
+|         ayed_dqs<3> |        IO Clk| No   |   17 |  0.095     |  0.419      |
++---------------------+--------------+------+------+------------+-------------+
+|u_DDR2_CORE/u_ddr2_t |              |      |      |            |             |
+|op_0/u_mem_if_top/u_ |              |      |      |            |             |
+|phy_top/u_phy_io/del |              |      |      |            |             |
+|         ayed_dqs<2> |        IO Clk| No   |   17 |  0.128     |  0.425      |
++---------------------+--------------+------+------+------------+-------------+
+|u_DDR2_CORE/u_ddr2_t |              |      |      |            |             |
+|op_0/u_mem_if_top/u_ |              |      |      |            |             |
+|phy_top/u_phy_io/del |              |      |      |            |             |
+|         ayed_dqs<1> |        IO Clk| No   |   17 |  0.101     |  0.425      |
++---------------------+--------------+------+------+------------+-------------+
+|u_DDR2_CORE/u_ddr2_t |              |      |      |            |             |
+|op_0/u_mem_if_top/u_ |              |      |      |            |             |
+|phy_top/u_phy_io/del |              |      |      |            |             |
+|         ayed_dqs<0> |        IO Clk| No   |   17 |  0.128     |  0.425      |
++---------------------+--------------+------+------+------------+-------------+
+|          clk100M_SE |         Local|      |    2 |  0.000     |  1.329      |
++---------------------+--------------+------+------+------------+-------------+
+|ddr2_data_manager_ic |              |      |      |            |             |
+|       on_signal<13> |         Local|      |    5 |  0.000     |  1.161      |
++---------------------+--------------+------+------+------------+-------------+
+|local_bus_icon_signa |              |      |      |            |             |
+|               l<13> |         Local|      |    5 |  0.000     |  1.063      |
++---------------------+--------------+------+------+------------+-------------+
+|CAMERA_ICON0/U0/iUPD |              |      |      |            |             |
+|             ATE_OUT |         Local|      |    1 |  0.000     |  1.046      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 9
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  NET         "u_DDR2_CORE/u_ddr2_top_0/u_m | MAXDELAY    |     0.012ns|     0.838ns|       0|           0
+  em_if_top/u_phy_top/u_phy_io/gen_dqs[2].u |             |            |            |        |            
+  _iob_dqs/en_dqs_sync"         MAXDELAY =  |             |            |            |        |            
+  0.85 ns                                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "u_DDR2_CORE/u_ddr2_top_0/u_m | MAXDELAY    |     0.045ns|     0.805ns|       0|           0
+  em_if_top/u_phy_top/u_phy_io/gen_dqs[0].u |             |            |            |        |            
+  _iob_dqs/en_dqs_sync"         MAXDELAY =  |             |            |            |        |            
+  0.85 ns                                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "u_DDR2_CORE/u_ddr2_top_0/u_m | MAXDELAY    |     0.047ns|     0.803ns|       0|           0
+  em_if_top/u_phy_top/u_phy_io/gen_dqs[3].u |             |            |            |        |            
+  _iob_dqs/en_dqs_sync"         MAXDELAY =  |             |            |            |        |            
+  0.85 ns                                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "u_DDR2_CORE/u_ddr2_top_0/u_m | MAXDELAY    |     0.047ns|     0.803ns|       0|           0
+  em_if_top/u_phy_top/u_phy_io/gen_dqs[1].u |             |            |            |        |            
+  _iob_dqs/en_dqs_sync"         MAXDELAY =  |             |            |            |        |            
+  0.85 ns                                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TIMEGRP "LB_IOPAD" OFFSET = IN 8.8 ns BEF | SETUP       |     0.056ns|     8.744ns|       0|           0
+  ORE COMP "lb_lclko_fb"                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_to | MAXDELAY    |     0.069ns|     0.531ns|       0|           0
+  p/u_phy_top/u_phy_io/en_dqs<2>"         M |             |            |            |        |            
+  AXDELAY = 0.6 ns                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_to | MAXDELAY    |     0.078ns|     0.522ns|       0|           0
+  p/u_phy_top/u_phy_io/en_dqs<3>"         M |             |            |            |        |            
+  AXDELAY = 0.6 ns                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_to | MAXDELAY    |     0.079ns|     0.521ns|       0|           0
+  p/u_phy_top/u_phy_io/en_dqs<0>"         M |             |            |            |        |            
+  AXDELAY = 0.6 ns                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_u_DDR2_CORE_u_ddr2_infrastructure_clk0 | SETUP       |     0.199ns|     4.801ns|       0|           0
+  _bufg_in_1 = PERIOD TIMEGRP         "u_DD | HOLD        |     0.045ns|            |       0|           0
+  R2_CORE_u_ddr2_infrastructure_clk0_bufg_i |             |            |            |        |            
+  n_1"         TS_CLK_CONTROL_ddr2_clk200_s |             |            |            |        |            
+  ignal HIGH 50%                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "u_DDR2_CORE/u_ddr2_top_0/u_mem_if_to | MAXDELAY    |     0.305ns|     0.295ns|       0|           0
+  p/u_phy_top/u_phy_io/en_dqs<1>"         M |             |            |            |        |            
+  AXDELAY = 0.6 ns                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_DQ_CE = MAXDELAY FROM TIMEGRP "TNM_DQ_ | SETUP       |     0.360ns|     2.040ns|       0|           0
+  CE_IDDR" TO TIMEGRP "TNM_DQS_FLOPS"       | HOLD        |     1.008ns|            |       0|           0
+     2.4 ns                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_u_DDR2_CORE_u_ddr2_infrastructure_clk9 | SETUP       |     0.410ns|     4.353ns|       0|           0
+  0_bufg_in_1 = PERIOD TIMEGRP         "u_D | HOLD        |     0.465ns|            |       0|           0
+  DR2_CORE_u_ddr2_infrastructure_clk90_bufg |             |            |            |        |            
+  _in_1"         TS_CLK_CONTROL_ddr2_clk200 |             |            |            |        |            
+  _signal PHASE 1.25 ns HIGH 50%            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk100M_SE = PERIOD TIMEGRP "TNM_clk10 | SETUP       |     7.971ns|     2.029ns|       0|           0
+  0M_SE" 10 ns HIGH 50%                     | HOLD        |     0.572ns|            |       0|           0
+                                            | MINLOWPULSE |     4.666ns|     5.334ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_FROM_EN_DQS_FF_TO_DQ_CE_FF = MAXDELAY  | SETUP       |     1.158ns|     2.692ns|       0|           0
+  FROM TIMEGRP "EN_DQS_FF" TO TIMEGRP       | HOLD        |     2.529ns|            |       0|           0
+     "TNM_DQ_CE_IDDR" 3.85 ns DATAPATHONLY  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_u_DDR2_CORE_u_ddr2_infrastructure_clkd | SETUP       |     1.267ns|     7.466ns|       0|           0
+  iv0_bufg_in_1 = PERIOD TIMEGRP         "u | HOLD        |     0.008ns|            |       0|           0
+  _DDR2_CORE_u_ddr2_infrastructure_clkdiv0_ |             |            |            |        |            
+  bufg_in_1"         TS_CLK_CONTROL_ddr2_cl |             |            |            |        |            
+  k200_signal / 0.5 HIGH 50%                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TIMEGRP "LB_IOPAD" OFFSET = OUT 11.9 ns A | MAXDELAY    |     1.666ns|    10.234ns|       0|           0
+  FTER COMP "lb_lclko_fb"                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_SYS_CLK = PERIOD TIMEGRP "SYS_CLK" 5 n | MINLOWPULSE |     2.200ns|     2.800ns|       0|           0
+  s HIGH 50%                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_SYS_CLK_200 = PERIOD TIMEGRP "SYS_CLK_ | MINLOWPULSE |     2.200ns|     2.800ns|       0|           0
+  200" 5 ns HIGH 50%                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_CLK_CONTROL_ddr2_clk200_signal = PERIO | SETUP       |     3.570ns|     1.430ns|       0|           0
+  D TIMEGRP         "CLK_CONTROL_ddr2_clk20 | HOLD        |     0.465ns|            |       0|           0
+  0_signal" TS_clk100M_SE / 2 HIGH 50%      | MINLOWPULSE |     2.200ns|     2.800ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_u_DDR2_CORE_u_ddr2_infrastructure_clk0 | MINHIGHPULSE|     2.450ns|     2.550ns|       0|           0
+  _bufg_in = PERIOD TIMEGRP         "u_DDR2 |             |            |            |        |            
+  _CORE_u_ddr2_infrastructure_clk0_bufg_in" |             |            |            |        |            
+   TS_SYS_CLK HIGH 50%                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_u_DDR2_CORE_u_ddr2_infrastructure_clk0 | MINHIGHPULSE|     2.450ns|     2.550ns|       0|           0
+  _bufg_in_0 = PERIOD TIMEGRP         "u_DD |             |            |            |        |            
+  R2_CORE_u_ddr2_infrastructure_clk0_bufg_i |             |            |            |        |            
+  n_0" TS_SYS_CLK_200 HIGH         50%      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_u_DDR2_CORE_u_ddr2_infrastructure_clk9 | MINHIGHPULSE|     2.500ns|     2.500ns|       0|           0
+  0_bufg_in = PERIOD TIMEGRP         "u_DDR |             |            |            |        |            
+  2_CORE_u_ddr2_infrastructure_clk90_bufg_i |             |            |            |        |            
+  n" TS_SYS_CLK PHASE         1.25 ns HIGH  |             |            |            |        |            
+  50%                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_u_DDR2_CORE_u_ddr2_infrastructure_clk9 | MINHIGHPULSE|     2.500ns|     2.500ns|       0|           0
+  0_bufg_in_0 = PERIOD TIMEGRP         "u_D |             |            |            |        |            
+  DR2_CORE_u_ddr2_infrastructure_clk90_bufg |             |            |            |        |            
+  _in_0" TS_SYS_CLK_200         PHASE 1.25  |             |            |            |        |            
+  ns HIGH 50%                               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TIMEGRP "LB_OPAD" OFFSET = OUT 10.8 ns AF | MAXDELAY    |     3.270ns|     7.530ns|       0|           0
+  TER COMP "lb_lclko_fb"                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TIMEGRP "LB_IPAD" OFFSET = IN 8.8 ns BEFO | SETUP       |     4.772ns|     4.028ns|       0|           0
+  RE COMP "lb_lclko_fb"                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_u_DDR2_CORE_u_ddr2_infrastructure_clkd | MINPERIOD   |     6.001ns|     3.999ns|       0|           0
+  iv0_bufg_in_0 = PERIOD TIMEGRP         "u |             |            |            |        |            
+  _DDR2_CORE_u_ddr2_infrastructure_clkdiv0_ |             |            |            |        |            
+  bufg_in_0" TS_SYS_CLK_200 /         0.5 H |             |            |            |        |            
+  IGH 50%                                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_u_DDR2_CORE_u_ddr2_infrastructure_clkd | MINPERIOD   |     6.001ns|     3.999ns|       0|           0
+  iv0_bufg_in = PERIOD TIMEGRP         "u_D |             |            |            |        |            
+  DR2_CORE_u_ddr2_infrastructure_clkdiv0_bu |             |            |            |        |            
+  fg_in" TS_SYS_CLK / 0.5         HIGH 50%  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk50 = PERIOD TIMEGRP "TNM_clk50" 20  | SETUP       |    12.742ns|     7.258ns|       0|           0
+  ns HIGH 50%                               | HOLD        |     0.256ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_MC_PHY_INIT_DATA_SEL_0 = MAXDELAY FROM | SETUP       |    14.351ns|     5.649ns|       0|           0
+   TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO       | HOLD        |     0.232ns|            |       0|           0
+     TIMEGRP "FFS" TS_SYS_CLK * 4           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MC_RD_DATA_SEL = MAXDELAY FROM TIMEGRP | SETUP       |    14.560ns|     5.440ns|       0|           0
+   "TNM_RD_DATA_SEL" TO TIMEGRP "FFS"       | HOLD        |     1.340ns|            |       0|           0
+     TS_SYS_CLK * 4                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MC_PHY_INIT_DATA_SEL_90 = MAXDELAY FRO | SETUP       |    15.537ns|     4.463ns|       0|           0
+  M TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO      | HOLD        |     2.354ns|            |       0|           0
+      TIMEGRP "RAMS" TS_SYS_CLK * 4         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MC_GATE_DLY = MAXDELAY FROM TIMEGRP "T | SETUP       |    16.080ns|     3.920ns|       0|           0
+  NM_GATE_DLY" TO TIMEGRP "FFS"         TS_ | HOLD        |     0.272ns|            |       0|           0
+  SYS_CLK * 4                               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MC_RDEN_SEL_MUX = MAXDELAY FROM TIMEGR | SETUP       |    17.579ns|     2.421ns|       0|           0
+  P "TNM_RDEN_SEL_MUX" TO TIMEGRP "FFS"     | HOLD        |     0.783ns|            |       0|           0
+       TS_SYS_CLK * 4                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MC_CAL_RDEN_DLY = MAXDELAY FROM TIMEGR | SETUP       |    18.123ns|     1.877ns|       0|           0
+  P "TNM_CAL_RDEN_DLY" TO TIMEGRP "FFS"     | HOLD        |     0.149ns|            |       0|           0
+       TS_SYS_CLK * 4                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MC_RDEN_DLY = MAXDELAY FROM TIMEGRP "T | SETUP       |    18.141ns|     1.859ns|       0|           0
+  NM_RDEN_DLY" TO TIMEGRP "FFS"         TS_ | HOLD        |     0.194ns|            |       0|           0
+  SYS_CLK * 4                               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_lb_lclki = PERIOD TIMEGRP "TNM_lb_lclk | N/A         |         N/A|         N/A|     N/A|         N/A
+  o_fb" 20 ns HIGH 50%                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_clk100M_SE
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clk100M_SE                  |     10.000ns|      5.334ns|      9.602ns|            0|            0|           14|        11145|
+| TS_CLK_CONTROL_ddr2_clk200_sig|      5.000ns|      2.800ns|      4.801ns|            0|            0|           24|        11121|
+| nal                           |             |             |             |             |             |             |             |
+|  TS_u_DDR2_CORE_u_ddr2_infrast|      5.000ns|      4.801ns|          N/A|            0|            0|         2692|            0|
+|  ructure_clk0_bufg_in_1       |             |             |             |             |             |             |             |
+|  TS_u_DDR2_CORE_u_ddr2_infrast|      5.000ns|      4.353ns|          N/A|            0|            0|          359|            0|
+|  ructure_clk90_bufg_in_1      |             |             |             |             |             |             |             |
+|  TS_u_DDR2_CORE_u_ddr2_infrast|     10.000ns|      7.466ns|          N/A|            0|            0|         8070|            0|
+|  ructure_clkdiv0_bufg_in_1    |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_SYS_CLK
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_SYS_CLK                     |      5.000ns|      2.800ns|      2.550ns|            0|            0|            0|          456|
+| TS_MC_RD_DATA_SEL             |     20.000ns|      5.440ns|          N/A|            0|            0|          208|            0|
+| TS_MC_RDEN_SEL_MUX            |     20.000ns|      2.421ns|          N/A|            0|            0|           64|            0|
+| TS_MC_PHY_INIT_DATA_SEL_0     |     20.000ns|      5.649ns|          N/A|            0|            0|          145|            0|
+| TS_MC_PHY_INIT_DATA_SEL_90    |     20.000ns|      4.463ns|          N/A|            0|            0|            4|            0|
+| TS_MC_GATE_DLY                |     20.000ns|      3.920ns|          N/A|            0|            0|           25|            0|
+| TS_MC_RDEN_DLY                |     20.000ns|      1.859ns|          N/A|            0|            0|            5|            0|
+| TS_MC_CAL_RDEN_DLY            |     20.000ns|      1.877ns|          N/A|            0|            0|            5|            0|
+| TS_u_DDR2_CORE_u_ddr2_infrastr|      5.000ns|      2.550ns|          N/A|            0|            0|            0|            0|
+| ucture_clk0_bufg_in           |             |             |             |             |             |             |             |
+| TS_u_DDR2_CORE_u_ddr2_infrastr|      5.000ns|      2.500ns|          N/A|            0|            0|            0|            0|
+| ucture_clk90_bufg_in          |             |             |             |             |             |             |             |
+| TS_u_DDR2_CORE_u_ddr2_infrastr|     10.000ns|      3.999ns|          N/A|            0|            0|            0|            0|
+| ucture_clkdiv0_bufg_in        |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_SYS_CLK_200
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_SYS_CLK_200                 |      5.000ns|      2.800ns|      2.550ns|            0|            0|            0|            0|
+| TS_u_DDR2_CORE_u_ddr2_infrastr|      5.000ns|      2.550ns|          N/A|            0|            0|            0|            0|
+| ucture_clk0_bufg_in_0         |             |             |             |             |             |             |             |
+| TS_u_DDR2_CORE_u_ddr2_infrastr|      5.000ns|      2.500ns|          N/A|            0|            0|            0|            0|
+| ucture_clk90_bufg_in_0        |             |             |             |             |             |             |             |
+| TS_u_DDR2_CORE_u_ddr2_infrastr|     10.000ns|      3.999ns|          N/A|            0|            0|            0|            0|
+| ucture_clkdiv0_bufg_in_0      |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 21 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 45 secs 
+Total CPU time to PAR completion: 45 secs 
+
+Peak Memory Usage:  606 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 25
+Number of info messages: 2
+
+Writing design to file MOSES_FPGA_Design.ncd
+
+
+
+PAR done!

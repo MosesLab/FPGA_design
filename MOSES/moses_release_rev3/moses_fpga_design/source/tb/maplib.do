@@ -1,0 +1,7 @@
+vmap XilinxCoreLib "C:/Data/_XILINX_LIBS/v10_01_03/ISEEDKLIB/XilinxCoreLib/"
+vmap XilinxCoreLib_ver "C:/Data/_XILINX_LIBS/v10_01_03/ISEEDKLIB/XilinxCoreLib_ver/"
+vmap secureip "C:/Data/_XILINX_LIBS/v10_01_03/ISEEDKLIB/secureip/"
+vmap simprim "C:/Data/_XILINX_LIBS/v10_01_03/ISEEDKLIB/simprim/"
+vmap simprims_ver "C:/Data/_XILINX_LIBS/v10_01_03/ISEEDKLIB/simprims_ver/"
+vmap unisim "C:/Data/_XILINX_LIBS/v10_01_03/ISEEDKLIB/unisim/"
+vmap unisims_ver "C:/Data/_XILINX_LIBS/v10_01_03/ISEEDKLIB/unisims_ver/"

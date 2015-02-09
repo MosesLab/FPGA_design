@@ -1,0 +1,822 @@
+;********************************************************************************
+; Project:		ctiSPI (VHDL top level module)
+; Module:		ctiProg
+; Parent:		N/A
+; Description:	SPI flash programmer with parameter fetching/storing
+;
+; Notes:		Modifed from : KCPSM3 Program - UART programming of SPI Flash memory 
+;				on Spartan-3E Starter Kit.
+;				by Ken Chapman - Xilinx Ltd, Version v1.00 - 11th November 2005				
+;
+;********************************************************************************
+; Date			Who		Modifications
+;--------------------------------------------------------------------------------
+; 2007-03-07	MF		Created
+; 2007-03-23	MF		Removed memory test, and program mcs routines.
+; 2007-04-12	MF		Added flash size command
+; 2007-05-15	MF		Correct loopback glitch
+; 2008-01-20	MF		Rewrote for PCI bus
+;********************************************************************************
+
+;**************************************************************************************
+; Constants
+;**************************************************************************************	
+;[
+				;-------------------------
+				;Port definitions
+				;-------------------------
+						;
+						;Input Ports
+						CONSTANT SPI_status_port, 06            ;SPI data input
+							CONSTANT SPI_status_modf, 01
+							CONSTANT SPI_status_tx_empty, 02
+							CONSTANT SPI_status_dtr_ur, 04
+						CONSTANT SPI_input_port, 07            ;SPI data input
+
+						;	
+                        CONSTANT CMD_PORT, 00 
+						CONSTANT PARAM0, 01
+						CONSTANT PARAM1, 02
+						CONSTANT PARAM2, 03
+						CONSTANT PARAM3, 04 
+						CONSTANT RAMIN, 05
+						;
+						;Output Ports
+						CONSTANT STATUS, 01
+						CONSTANT RESULT0, 02
+						CONSTANT RESULT1, 04
+						CONSTANT RESULT2, 08
+						CONSTANT RAMOUT, 10						
+						CONSTANT RAMADDR, 20
+						CONSTANT SPI_control_port, 40          ;SPI clock and chip selects
+							CONSTANT SPI_modf_rst, 01
+							CONSTANT SPI_en, 02
+							CONSTANT SPI_rom_cs, 04
+                        CONSTANT SPI_output_port, 80           ;SPI data output
+						CONSTANT SPI_init, 06
+						;							
+                              
+				;---------------------------------
+				;Special Register usage
+				;---------------------------------                 
+                        NAMEREG sF, sData                  ;used to pass data to and from the UART
+						NAMEREG s6, sStatus
+                        ;
+                        ;
+				;---------------------------------
+				;Delay Constants
+				;---------------------------------  
+                        ;
+                        ;Constant to define a software delay of 1us. This must be adjusted to reflect the
+                        ;clock applied to KCPSM3. Every instruction executes in 2 clock cycles making the
+                        ;calculation highly predictable. The '6' in the following equation even allows for
+                        ;'CALL delay_1us' instruction in the initiating code.
+                        ;
+                        ; delay_1us_constant =  (clock_rate - 6)/4       Where 'clock_rate' is in MHz
+                        ;
+                        ;Example: For a 50MHz clock the constant value is (10-6)/4 = 11  (0B Hex).
+                        ;For clock rates below 10MHz the value of 1 must be used and the operation will
+                        ;become lower than intended.
+                        ;
+                        CONSTANT delay_1us_constant, 0F
+						
+				;---------------------------------
+				;ASCII Code Constants
+				;---------------------------------
+						;
+						;
+				;---------------------------------						
+				;Scratch Pad Memory Constants
+				;---------------------------------
+                        ;
+                        CONSTANT ISR_preserve_s0, 00           ;preserve register during ISR
+                        ;
+                        CONSTANT page_address_h, 01            ;Remember page address for SPI boundary checking.
+                        CONSTANT page_address_m, 02            ;high, middle and low bytes
+                        CONSTANT page_address_l, 03
+                        ;
+                        CONSTANT SPI_control_status, 04        ;SPI status signals
+                        ;
+                        ;
+                        ;Store up to one line of an MCS file as bytes, A typical data line consists of:
+						;0  1 2  3  4 5      20 
+						;bb|aaaa|tt|dddd....|cc
+                        ;bb    Number of data bytes
+                        ;aaaa  Lower 16-bits of the storage address
+                        ;tt    Record type
+                        ;dddd  Data bytes (typically 16 which is the maximum)
+                        ;cc    Checksum
+                        ;
+                        ;So a total of 21 could be stored before processing.
+                        ;
+                        CONSTANT line_start, 2B                ;21 bytes until end of memory
+                        ;
+						;
+						CONSTANT RW_TEST_PASS, 		11
+						CONSTANT RW_TEST_FAIL, 		12
+						CONSTANT SE_TEST_PASS, 		21
+						CONSTANT SE_TEST_FAIL, 		22
+						CONSTANT BC_PASS,	 		31
+						CONSTANT BC_FAIL,	 		32						
+						; 
+						; Commands
+						CONSTANT BULK_ERASE,		01
+						CONSTANT SECTOR_ERASE,		02
+						CONSTANT FLASH_SIZE,		03
+						;CONSTANT WRITE_PAGE_CLOSE,	04
+						CONSTANT GET_ID,			05
+						CONSTANT WRITE_PAGE,		06
+						CONSTANT FIFO_LOOPBACK,		07
+						CONSTANT GET_SIG,			08
+						;CONSTANT ------,			09
+						;CONSTANT PARAM_READ,		0A						
+						;CONSTANT PARAM_WRITE,		0B						
+						;CONSTANT PARAM_FETCH,		0C						
+						;CONSTANT PARAM_STORE,		0D							
+						;CONSTANT DATA_READY,		10
+						CONSTANT READ_PAGE,			11
+						CONSTANT BLANK_CHECK,		12
+						CONSTANT REPROGRAM,			13
+						;
+						; Results
+						CONSTANT CMD_COMPLETE_SET,	01
+						CONSTANT CMD_COMPLETE_CLR,	FE
+						CONSTANT RESET_FPGA_SET,	02
+						CONSTANT RESET_FPGA_CLR,	FD
+						;
+;]
+;**************************************************************************************
+;Main loop
+;**************************************************************************************						
+;[
+						;
+cold_start: 			LOAD s0, SPI_init					;CALL SPI_init                          ;initialise SPI bus ports
+						OUTPUT s0, SPI_control_port
+                        ;CALL delay_40us         			; is this delay really necessary?    
+                        ENABLE INTERRUPT                       ;Interrupt is used for XON/XOFF flow control
+						;CALL p_param_fetch
+						LOAD sStatus, 00
+						OUTPUT sStatus, STATUS
+						;
+wait_new_cmd:			INPUT s0, CMD_PORT
+						COMPARE s0, 00         			; test if command is 0
+						JUMP Z, wait_new_cmd
+						LOAD s1, 00
+						;
+						; Organized by priority
+						;
+						COMPARE s0, WRITE_PAGE
+                        JUMP Z, p_write_page
+						;			
+						COMPARE s0, READ_PAGE
+                        JUMP Z, read_spi_page	
+						;							
+                        COMPARE s0, SECTOR_ERASE
+                        JUMP Z, sector_erase_command
+						;
+						COMPARE s0, REPROGRAM
+                        JUMP Z, reprogram_self	
+						;	
+						COMPARE s0, FIFO_LOOPBACK
+                        JUMP Z, fifo_loopback		
+						;
+						COMPARE s0, GET_SIG
+                        JUMP Z, SIG_Command	
+						;	
+						COMPARE s0, FLASH_SIZE
+                        JUMP Z, p_flash_size	
+						;							
+						COMPARE s0, BLANK_CHECK
+                        JUMP Z, blank_check_spi	
+						;						
+                        COMPARE s0, BULK_ERASE
+                        JUMP Z, bulk_erase_spi
+						;
+                        COMPARE s0, GET_ID
+                        JUMP Z, ID_command
+						;
+                        JUMP wait_new_cmd			
+                        ;
+complete:				OR sStatus, CMD_COMPLETE_SET
+						OUTPUT sStatus, STATUS		
+						;
+wait_cmd_clr:			INPUT s0, CMD_PORT
+						COMPARE s0, 00         			; test if command is 0						
+						JUMP NZ, wait_cmd_clr
+						;
+						LOAD sStatus, 00
+						OUTPUT sStatus, STATUS
+						OUTPUT sStatus, RESULT0
+						OUTPUT sStatus, RESULT1
+						OUTPUT sStatus, RESULT2
+						OUTPUT sStatus, RAMADDR
+						JUMP wait_new_cmd
+						;
+;]
+;**************************************************************************************
+;Self Reprogram, requires mapping to reprogram bit -- should reset eventually
+;**************************************************************************************
+;[
+                        ;                        
+reprogram_self:			OR sStatus,RESET_FPGA_SET
+						OUTPUT s0, STATUS
+						JUMP complete
+						;
+;]
+
+;**************************************************************************************
+;Fifo Loopback, for test Pb
+;**************************************************************************************
+;[
+                        ;                        
+fifo_loopback:			INPUT sData, PARAM0
+						OUTPUT sData, RESULT0
+						;
+						JUMP complete
+						;
+;]
+;**************************************************************************************
+;ID Command
+;Note : The Read Identification (RDID) instruction is available only in products with Process Technology code X
+;(see Application Note AN1995).  Last character in top side marking
+;**************************************************************************************
+;[						
+                        ;
+ID_command:				CALL read_spi_flash_ID
+						OUTPUT s9, RESULT0
+						OUTPUT s8, RESULT1
+						OUTPUT s7, RESULT2
+						;
+						JUMP complete
+                        ;
+;]
+;**************************************************************************************
+;Signature Command
+;**************************************************************************************						
+;[
+SIG_Command:			CALL read_spi_res
+						OUTPUT s2, RESULT0
+						;
+						JUMP complete
+						;
+;]
+;**************************************************************************************
+;Get Flash Size (number of sectors)
+;This is basically a loookup table based on the signature
+;**************************************************************************************						
+;[
+p_flash_size:			CALL read_spi_res
+check_M25P10:			COMPARE s2, 10
+						JUMP NZ, check_M25P20
+						LOAD sData, 04  ; <<< not the same sector size as, each sector has 128 pages
+						JUMP send_size
+						;
+check_M25P20:			COMPARE s2, 11
+						JUMP NZ, check_M25P40
+						LOAD sData, 04
+						JUMP send_size
+						;
+check_M25P40:			COMPARE s2, 12
+						JUMP NZ, check_M25P80
+						LOAD sData, 08
+						JUMP send_size
+						;
+check_M25P80:			COMPARE s2, 13
+						JUMP NZ, check_M25P16
+						LOAD sData, 10	; 0x10 = 16
+						JUMP send_size
+						;
+check_M25P16:			COMPARE s2, 14
+						JUMP NZ, check_M25P32
+						LOAD sData, 20	; 0x20 = 32
+						JUMP send_size	
+						;
+check_M25P32:			COMPARE s2, 15
+						JUMP NZ, check_M25P64
+						LOAD sData, 40	; 0x40 = 64
+						JUMP send_size							
+						;
+check_M25P64:			COMPARE s2, 16
+						JUMP NZ, check_unknown
+						LOAD sData, 80	; 0x80 = 128
+						JUMP send_size							
+						;						
+check_unknown:			LOAD sData, 00						
+send_size:              OUTPUT sData, RESULT0
+						;
+						JUMP complete
+						;
+;]
+;**************************************************************************************
+;Sector Erase Command - Erase a single sector
+;**************************************************************************************
+;[
+                        ;
+sector_erase_command:	INPUT s9, PARAM0
+						CALL erase_spi_sector
+						;
+						JUMP complete
+                        ;
+;]
+;**************************************************************************************
+;Write Page
+;**************************************************************************************
+;[						
+						; s4 record counter
+						; s5 byte counter
+						; Get Address
+p_write_page: 			INPUT s9, PARAM0
+						INPUT s8, PARAM1
+						INPUT s7, PARAM2
+						INPUT s4, PARAM3 			; if size = 256, this will be 0
+						LOAD s5, 00
+						; Open Page
+						CALL open_prog_page_spi
+p_write_page_next_byte:	OUTPUT s5, RAMADDR
+						LOAD sData, sData  	; nop
+						INPUT s2, RAMIN
+						CALL SPI_FLASH_tx_rx
+						ADD s5, 01       
+						COMPARE s5, s4
+                        JUMP NZ, p_write_page_next_byte  
+p_write_page_close:     CALL close_prog_page_spi
+						;
+						JUMP complete	
+                        ;
+;]
+;**************************************************************************************
+;Read Page
+;**************************************************************************************
+;[
+                        ;
+                        ;The start address should be provided in register set [s9,s8,s7].
+                        ;The display will be next 256 bytes displayed as 16 lines of 16 bytes
+                        ;with each line commencing with the address of the first byte.
+                        ;
+                        ;
+read_spi_page:			;COMPARE sFifoData, 20                         ;test for address greater than 1FFFFF
+                        INPUT s9, PARAM0
+                        INPUT s8, PARAM1
+                        INPUT s7, PARAM2
+						;
+						CALL pre_op
+						LOAD s5, 00
+read_next_byte: 		CALL SPI_FLASH_tx_rx
+                        LOAD sData, s2
+                        OUTPUT s5, RAMADDR
+						OUTPUT sData, RAMOUT
+                        ADD s5, 01
+						COMPARE s5, 00				
+                        JUMP NZ, read_next_byte
+						CALL post_op
+						;
+						JUMP complete
+                        ;
+;]			
+;**************************************************************************************
+;Blank Check
+;**************************************************************************************
+;[
+blank_check_spi:		LOAD sData, BC_FAIL					; no other routines should clober this
+						; set initial address
+						LOAD s9, 00	
+                        LOAD s8, 00
+                        LOAD s7, 00
+						; issue read command, taken from read_spi_byte - split in two
+						; you can continue reading bytes once you have issued the initial address
+						CALL pre_op
+						; read byte
+bank_check_next_byte:	CALL SPI_FLASH_tx_rx
+						COMPARE s2, FF                         ;check blank 'FF'
+						JUMP NZ, blank_check_done
+					    ADD s7, 01                             ;next location
+						ADDCY s8, 00
+						ADDCY s9, 00	
+						COMPARE s9, 08
+						JUMP NZ, bank_check_next_byte			; when done addr = 80 00 00
+						LOAD sData, BC_PASS	
+blank_check_done:       CALL post_op
+						OUTPUT sData, RESULT0
+						;
+						JUMP complete
+                        ;	
+;]
+;**************************************************************************************
+;Read operations, common code
+;**************************************************************************************						
+;[
+pre_op:					LOAD s0, SPI_init						;CALL SPI_init      ;ensure known state of bus and s0 register
+                        XOR s0, SPI_rom_cs                     ;select (Low) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+						; send read byte command
+                        LOAD s2, 03
+                        CALL SPI_FLASH_tx_rx
+						; send 24 bit address
+                        LOAD s2, s9
+                        CALL SPI_FLASH_tx_rx
+                        LOAD s2, s8
+                        CALL SPI_FLASH_tx_rx
+                        LOAD s2, s7
+                        CALL SPI_FLASH_tx_rx
+						RETURN
+												
+post_op:				XOR s0, SPI_rom_cs                     ;deselect (High) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+						RETURN
+;]								
+;**************************************************************************************
+;SPI FLASH memory routines -- mostly unmodified from original
+;[
+;These routines will work with two output ports and one input port which should be
+;defined as follows using CONSTANT directives.
+;   (replace 'pp' with appropriate port address in each case)
+;In the list of CONSTANT directives, only the ones marked with a * are really required
+;in an SPI FLASH memory system. The other directives are to control (disable) or
+;communicate with the other SPI components on the same SPI bus of the Spartan-3E Starter Kit.
+;
+;
+;
+;CONSTANT SPI_control_port, pp       ;SPI clock and chip selects     *
+;CONSTANT SPI_sck, 01                ;                  SCK - bit0   *
+;CONSTANT SPI_rom_cs, 02             ;    serial rom select - bit1   *
+;CONSTANT SPI_spare_control, 04      ;                spare - bit2
+;CONSTANT SPI_amp_cs, 08             ;     amplifier select - bit3
+;CONSTANT SPI_adc_conv, 10           ;          A/D convert - bit4
+;CONSTANT SPI_dac_cs, 20             ;           D/A select - bit5
+;CONSTANT SPI_amp_shdn, 40           ;       amplifier SHDN - bit6
+;CONSTANT SPI_dac_clr, 80            ;            D/A clear - bit7
+;
+;CONSTANT SPI_output_port, pp        ;SPI data output                *
+;CONSTANT SPI_sdo, 80                ;   SDO - bit7                  *
+;
+;CONSTANT SPI_input_port, pp         ;SPI data input                 *
+;CONSTANT SPI_sdi, 80                ;             SDI - bit7        *
+;CONSTANT SPI_amp_sdi, 40            ;   amplifier SDI - bit6
+;
+;
+;A single scratch pad memory location is also employed to remember the status of
+;the SPI_control_port. This memory location must be defined as follows.
+;   (replace 'ss' with appropriate memory location)
+;
+;CONSTANT SPI_control_status, ss       ;SPI status signals
+;
+;Not all the SPI routines will use this memory location because although they
+;will change the bits on the control port, they will leave them in the same state
+;as they were in when they started.
+;]
+;**************************************************************************************
+;
+;**************************************************************************************
+;Initialise SPI bus
+;
+;This routine should be used to initialise the SPI bus.
+;The SCK clock is made low.
+;Device selections are made inactive as follows
+;		modf_Reset => spiCtrl(0),
+;		SPI_En => spiCtrl(1),
+;		Slave_Select_Reg(0) => spiCtrl(2),
+;[
+						;
+;              SPI_init: LOAD s0, 06                            ;normally AE
+;                        OUTPUT s0, SPI_control_port
+;                        STORE s0, SPI_control_status           ;preserve status
+;                        RETURN
+                        ;
+;]
+;
+;**************************************************************************************					
+;Send and receive one byte to or from the SPI FLASH memory.
+;
+;The data supplied in register 's2' is transmitted to the SPI bus and
+;at the same time any received byte is used to replace the value in 's2'.
+;The SCK clock is generated by software and results in a communication rate of
+;2.5Mbit/s with a 50MHz clock.
+;
+;Note that you must have previously selected the required device on the bus
+;before attempting communication and you must subsequently deselect the device
+;when appropriate.
+;
+;Entry to this routine assumes that SCK is already Low and the clock will be Low
+;at the end of execution (provided in scratch pad memory location SPI_control_status).
+;
+;As a 'master' the signal sequence is as follows..
+;   Receive data bit from SDI line (Flash transmits on previous falling edge)
+;   Transmit data bit on SDO line
+;   Drive SCK transition from low to high
+;   Drive SCK transition from high to low.
+;[
+       SPI_FLASH_tx_rx: OUTPUT s2, SPI_output_port             ;output data bit ready to be used on rising edge
+						LOAD s2, s2								; NOP
+    wait_spi_ctrl_done:  INPUT s3, SPI_status_port              ;read input bit
+                        TEST s3, SPI_status_tx_empty           ;detect state of received bit
+                        JUMP Z, wait_spi_ctrl_done            ;repeat until finished
+						INPUT s2, SPI_input_port
+                        RETURN
+                        ;
+;]
+;
+;**************************************************************************************
+;Read status register from SPI FLASH memory (ST type M25P16)
+;Transmits instruction 05hex and then receives one byte in response
+;which is returned in register s2.
+;
+; bit    meaning
+;  7    SRWD Status Register Write Protect
+;  6    '0'
+;  5    '0'
+;  4    BP2 Block protect bit
+;  3    BP1 Block protect bit
+;  2    BP0 Block protect bit
+;  1    WEL Write Enable Latch Bit
+;  0    WIP Write In Progress
+;[
+						;
+ read_spi_flash_status: LOAD s0, SPI_init ;CALL SPI_init                          ;ensure known state of bus and s0 register
+                        XOR s0, SPI_rom_cs                     ;select (Low) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        LOAD s2, 05                            ;Read Status register instruction
+                        CALL SPI_FLASH_tx_rx                   ;transmit instruction
+                        CALL SPI_FLASH_tx_rx                   ;Receive status register information
+                        XOR s0, SPI_rom_cs                     ;deselect (High) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        RETURN
+                        ;
+;]
+;
+;**************************************************************************************
+;Set write enable mode in SPI FLASH memory (ST type M25P16)
+;Transmits instruction 06hex.
+;[						
+                        ;
+    set_spi_flash_WREN: LOAD s0, SPI_init ;CALL SPI_init                          ;ensure known state of bus and s0 register
+                        XOR s0, SPI_rom_cs                     ;select (Low) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        LOAD s2, 06                            ;Set write enable mode instruction
+                        CALL SPI_FLASH_tx_rx                   ;transmit instruction
+                        XOR s0, SPI_rom_cs                     ;deselect (High) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        RETURN
+                        ;
+;]
+;
+;**************************************************************************************
+;Reset the write enable mode in SPI FLASH memory (ST type M25P16)
+;Transmits instruction 04hex.
+;[
+                        ;
+  reset_spi_flash_WREN: LOAD s0, SPI_init ;CALL SPI_init                          ;ensure known state of bus and s0 register
+                        XOR s0, SPI_rom_cs                     ;select (Low) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        LOAD s2, 04                            ;Reset write enable mode instruction
+                        CALL SPI_FLASH_tx_rx                   ;transmit instruction
+                        XOR s0, SPI_rom_cs                     ;deselect (High) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        RETURN
+                        ;
+;]
+;
+;**************************************************************************************
+;Read the identification ID from SPI FLASH memory (ST type M25P16)
+;Transmits instruction 9Fhex and then reads the 3 byte response into [s9,s8,s7]
+;response should be
+;   s9 = Manufacturer Identification = 20 hex
+;   s8 = Memory Type = 20 hex
+;   s7 = Memory Capacity = 15 hex
+;[
+     read_spi_flash_ID: LOAD s0, SPI_init ;CALL SPI_init                          ;ensure known state of bus and s0 register
+                        XOR s0, SPI_rom_cs                     ;select (Low) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        LOAD s2, 9F                            ;Read ID instruction
+                        CALL SPI_FLASH_tx_rx                   ;transmit instruction
+                        CALL SPI_FLASH_tx_rx                   ;receive Manufacturer ID
+                        LOAD s9, s2
+                        CALL SPI_FLASH_tx_rx                   ;receive Memory Type
+                        LOAD s8, s2
+                        CALL SPI_FLASH_tx_rx                   ;receive Memory Capacity
+                        LOAD s7, s2
+                        XOR s0, SPI_rom_cs                     ;deselect (High) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        RETURN
+                        ;
+;]
+;
+;**************************************************************************************
+;Read a single byte from the SPI FLASH memory (ST type M25P16)
+;Transmits instruction 03hex followed by a 24-bit address which must be supplied in the
+;register set [s9,s8,s7]. It then transmits a dummy byte to retrieve the memory data
+;which is returned in register s2.
+;[
+                        ;
+         read_spi_byte: CALL pre_op
+                        CALL SPI_FLASH_tx_rx                   ;read data byte
+                        CALL post_op
+                        RETURN
+                        ;
+;]
+;
+;**************************************************************************************
+;Erase a single sector from the SPI FLASH memory (ST type M25P16)
+;
+;Sets the WREN instruction and then transmits instruction D8 hex followed by a 24-bit
+;address which must be supplied in the register set [s9,s8,s7]. The address must be
+;at some location within the sector to be erased. A sector erase can take up to
+;3 seconds to complete. The routine therefore reads the FLASH status and tests
+;the write in progress (WIP) bit to test for completion
+;[
+						;
+      erase_spi_sector: CALL set_spi_flash_WREN                ;set write enable mode
+                        LOAD s0, SPI_init ;CALL SPI_init                          ;ensure known state of bus and s0 register
+                        XOR s0, SPI_rom_cs                     ;select (Low) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        LOAD s2, D8                            ;Sector erase mode
+                        CALL SPI_FLASH_tx_rx                   ;transmit instruction
+                        LOAD s2, s9                            ;Transmit 24-bit address [s9,s8,s7].
+                        CALL SPI_FLASH_tx_rx
+                        LOAD s2, s8
+                        CALL SPI_FLASH_tx_rx
+                        LOAD s2, s7
+                        CALL SPI_FLASH_tx_rx
+                        XOR s0, SPI_rom_cs                     ;deselect (High) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+     sector_erase_wait: CALL read_spi_flash_status             ;test WIP bit until finished
+                        TEST s2, 01
+                        JUMP NZ, sector_erase_wait
+                        RETURN
+                        ;
+;]
+;
+;**************************************************************************************
+;Bulk erase the whole SPI FLASH memory (ST type M25P16)
+;
+;Sets the WREN instruction and then transmits instruction C7 hex.
+;A bulk erase can take up to 40 seconds to complete. The routine therefore reads the
+;FLASH status and tests the write in progress (WIP) bit to test for completion
+;[
+                        ;
+        bulk_erase_spi: CALL set_spi_flash_WREN                ;set write enable mode
+                        LOAD s0, SPI_init ;CALL SPI_init                          ;ensure known state of bus and s0 register
+                        XOR s0, SPI_rom_cs                     ;select (Low) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        LOAD s2, C7                            ;Sector erase mode
+                        CALL SPI_FLASH_tx_rx                   ;transmit instruction
+                        XOR s0, SPI_rom_cs                     ;deselect (High) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+       bulk_erase_wait: CALL read_spi_flash_status             ;test WIP bit until finished
+                        TEST s2, 01
+                        JUMP NZ, bulk_erase_wait
+						;			
+						JUMP complete
+                        ;
+;]
+;
+;**************************************************************************************
+;Open a page for programming.
+;The 24-bit start address to be supplied in the register set [s9,s8,s7].
+;Note that s7=00 hex for normal page boundaries but you could start at any address.
+;Caution : Exceeding s7=FF hex will result in the roll over to 00 hex but without
+;incrementing to the next page.
+;
+;Transmits instruction 02hex followed by the 24-bit start address.
+;It is then ready to transmit data bytes using the s2 register and the SPI_FLASH_tx_rx
+;subroutine. After transmitting bytes, close the page with the close_prog_page_spi
+;routine.
+;[
+                        ;
+    open_prog_page_spi: CALL set_spi_flash_WREN                ;set write enable mode
+                        LOAD s0, SPI_init ;CALL SPI_init                          ;ensure known state of bus and s0 register
+                        XOR s0, SPI_rom_cs                     ;select (Low) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        LOAD s2, 02                            ;Page program mode
+                        CALL SPI_FLASH_tx_rx                   ;transmit instruction
+                        LOAD s2, s9                            ;Transmit 24-bit address [s9,s8,s7].
+                        CALL SPI_FLASH_tx_rx
+                        LOAD s2, s8
+                        CALL SPI_FLASH_tx_rx
+                        LOAD s2, s7
+                        CALL SPI_FLASH_tx_rx
+                        RETURN
+                        ;
+;]
+;
+;**************************************************************************************
+;This routine completes a page program operation started with
+;open_prog_page_spi and data bytes sent with SPI_FLASH_tx_rx.
+;
+;A page program can take up to 5ms to complete. The routine therefore reads the
+;FLASH status and tests the write in progress (WIP) bit to test for completion
+;[
+                        ;
+   close_prog_page_spi: FETCH s0, SPI_control_status           ;read control status bits
+                        XOR s0, SPI_rom_cs                     ;deselect (High) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+        page_prog_wait: CALL read_spi_flash_status             ;test WIP bit until finished
+                        TEST s2, 01
+                        JUMP NZ, page_prog_wait
+                        RETURN
+                        ;
+;]	
+;	
+;**************************************************************************************
+;Get the signature
+;[						
+						;
+	read_spi_res: 		LOAD s0, SPI_init ;CALL SPI_init                          ;ensure known state of bus and s0 register
+                        XOR s0, SPI_rom_cs                     ;select (Low) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        LOAD s2, AB                            ;RES instruction
+                        CALL SPI_FLASH_tx_rx                   ;transmit instruction
+						LOAD s2, 00                            ;dummy byte 1
+						CALL SPI_FLASH_tx_rx                   ;transmit 
+						LOAD s2, 00                            ;dummy byte 2
+						CALL SPI_FLASH_tx_rx                   ;transmit 
+						LOAD s2, 00                            ;dummy byte 3
+						CALL SPI_FLASH_tx_rx                   ;transmit 
+                        CALL SPI_FLASH_tx_rx                   ;receive signature
+                        LOAD s9, s2
+                        XOR s0, SPI_rom_cs                     ;deselect (High) FLASH
+                        OUTPUT s0, SPI_control_port
+                        STORE s0, SPI_control_status           ;preserve status
+                        RETURN
+						;
+;]					
+;**************************************************************************************
+;Software delay routines
+;**************************************************************************************
+;[
+                        ;
+                        ;Delay of 1us.
+                        ;
+                        ;Constant value defines reflects the clock applied to KCPSM3. Every instruction
+                        ;executes in 2 clock cycles making the calculation highly predictable. The '6' in
+                        ;the following equation even allows for 'CALL delay_1us' instruction in the initiating code.
+                        ;
+                        ; delay_1us_constant =  (clock_rate - 6)/4       Where 'clock_rate' is in MHz
+                        ;
+                        ;Registers used s0
+                        ;
+             delay_1us: LOAD s0, delay_1us_constant
+              wait_1us: SUB s0, 01
+                        JUMP NZ, wait_1us
+                        RETURN
+                        ;
+                        ;Delay of 40us.
+                        ;
+                        ;Registers used s0, s1
+                        ;
+            delay_40us: LOAD s1, 28                            ;40 x 1us = 40us
+             wait_40us: CALL delay_1us
+                        SUB s1, 01
+                        JUMP NZ, wait_40us
+                        RETURN
+                        ;
+                        ;
+                        ;Delay of 1ms.
+                        ;
+                        ;Registers used s0, s1, s2
+                        ;
+             delay_1ms: LOAD s2, 19                            ;25 x 40us = 1ms
+              wait_1ms: CALL delay_40us
+                        SUB s2, 01
+                        JUMP NZ, wait_1ms
+                        RETURN
+                        ;
+                        ;Delay of 20ms.
+                        ;
+                        ;Delay of 20ms used during initialisation.
+                        ;
+                        ;Registers used s0, s1, s2, s3
+                        ;
+            delay_20ms: LOAD s3, 14                            ;20 x 1ms = 20ms
+             wait_20ms: CALL delay_1ms
+                        SUB s3, 01
+                        JUMP NZ, wait_20ms
+                        RETURN
+                        ;
+                        ;Delay of approximately 1 second.
+                        ;
+                        ;Registers used s0, s1, s2, s3, s4
+                        ;
+              delay_1s: LOAD s4, 14                            ;50 x 20ms = 1000ms
+               wait_1s: CALL delay_20ms
+                        SUB s4, 01
+                        JUMP NZ, wait_1s
+                        RETURN
+                        ;
+;]

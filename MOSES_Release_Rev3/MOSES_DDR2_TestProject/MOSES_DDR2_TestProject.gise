@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="MOSES_DDR2_TestProject.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="DCM200M_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="MOSES_DDR2_TestProject.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CLK_RGN" xil_pn:name="MOSES_DDR2_TestProject.clk_rgn" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MOSES_DDR2_TestProject.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MOSES_DDR2_TestProject.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MOSES_DDR2_TestProject.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MOSES_DDR2_TestProject.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="MOSES_DDR2_TestProject.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MOSES_DDR2_TestProject.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="MOSES_DDR2_TestProject.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="MOSES_DDR2_TestProject.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="MOSES_DDR2_TestProject.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MOSES_DDR2_TestProject.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="MOSES_DDR2_TestProject.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MOSES_DDR2_TestProject.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MOSES_DDR2_TestProject.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="MOSES_DDR2_TestProject.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="MOSES_DDR2_TestProject.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="MOSES_DDR2_TestProject.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="MOSES_DDR2_TestProject.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="MOSES_DDR2_TestProject.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MOSES_DDR2_TestProject.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MOSES_DDR2_TestProject_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="MOSES_DDR2_TestProject_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MOSES_DDR2_TestProject_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MOSES_DDR2_TestProject_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MOSES_DDR2_TestProject_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="MOSES_DDR2_TestProject_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MOSES_DDR2_TestProject_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MOSES_DDR2_TestProject_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="MOSES_DDR2_TestProject_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="MOSES_DDR2_TestProject_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MOSES_DDR2_TestProject_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MOSES_DDR2_TestProject_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="MOSES_DDR2_TestProject_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="MOSES_DDR2_TestProject_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MOSES_DDR2_TestProject_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MOSES_DDR2_TestProject_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="ipcore_dir/pll.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="moses_ddr2_testproject.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="moses_ddr2_testproject.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="moses_ddr2_testproject.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="pll_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1413044301" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1413044301">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413036850" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1923966272195352057" xil_pn:start_ts="1413036850">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413044301" xil_pn:in_ck="3900324602250944851" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5278107236361692823" xil_pn:start_ts="1413044301">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/DDR2_CORE.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_chipscope.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_ctrl.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_idelay_ctrl.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_infrastructure.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_mem_if_top.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_phy_calib.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_phy_ctl_io.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_phy_dm_iob.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_phy_dq_iob.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_phy_dqs_iob.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_phy_init.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_phy_io.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_phy_top.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_phy_write.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_top.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_usr_addr_fifo.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_usr_rd.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_usr_top.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_CORE/user_design/rtl/ddr2_usr_wr.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_ILA.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/DDR2_ILA.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/ICON.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/ICON.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1412991095" xil_pn:in_ck="-7473668272818553152" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1412991095">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413045009" xil_pn:in_ck="-7186897569689682795" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8653714741019646539" xil_pn:start_ts="1413045009">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413036851" xil_pn:in_ck="-7473668272818553152" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-647877406207383257" xil_pn:start_ts="1413036851">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1413036851" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-7466829509543194573" xil_pn:start_ts="1413036851">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1413058520" xil_pn:in_ck="-9116686919150992353" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="4801145377708337596" xil_pn:start_ts="1413058469">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.lso"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.ngc"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.ngr"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.prj"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.stx"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.syr"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.xst"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_vhdl.prj"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1413036903" xil_pn:in_ck="7385043245017929855" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6954190474050929632" xil_pn:start_ts="1413036903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1413058531" xil_pn:in_ck="3965308607113217238" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-9115755394813472772" xil_pn:start_ts="1413058520">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.bld"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.ngd"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1413058613" xil_pn:in_ck="-9191702840649343581" xil_pn:name="TRANEXT_map_virtex5" xil_pn:prop_ck="-7305255662120720730" xil_pn:start_ts="1413058531">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.pcf"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_map.map"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_map.mrp"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_map.ncd"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_map.ngm"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_map.xrpt"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_summary.xml"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1413058673" xil_pn:in_ck="7094414400894020220" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="2330730918592722510" xil_pn:start_ts="1413058613">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.ncd"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.pad"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.par"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.ptwx"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.unroutes"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.xpi"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_pad.csv"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_pad.txt"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1413058703" xil_pn:in_ck="-7595638456682333877" xil_pn:name="TRANEXT_bitFile_virtex5" xil_pn:prop_ck="1555517831305455702" xil_pn:start_ts="1413058673">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="moses_ddr2_testproject.bgn"/>
+      <outfile xil_pn:name="moses_ddr2_testproject.bit"/>
+      <outfile xil_pn:name="moses_ddr2_testproject.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1413058661" xil_pn:in_ck="-7595638456682333877" xil_pn:name="TRAN_clkRegionRpt" xil_pn:start_ts="1413058650">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.clk_rgn"/>
+    </transform>
+    <transform xil_pn:end_ts="1413058673" xil_pn:in_ck="249154837977341983" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-7767095402050482740" xil_pn:start_ts="1413058661">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.twr"/>
+      <outfile xil_pn:name="MOSES_DDR2_TestProject.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

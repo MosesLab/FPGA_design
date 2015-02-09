@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pn" timeStamp="Sun Feb 01 15:58:47 2015">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="035A0DD99C8746ABAD1164FBDD8ACEC8" type="project"/>
+<property name="ProjectIteration" value="294" type="project"/>
+<property name="ProjectFile" value="D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.xise" type="project"/>
+<property name="ProjectCreationTimestamp" value="2014-06-26T16:37:31" type="project"/>
+</section>
+<section name="Project Statistics" visible="true">
+<property name="PROP_Enable_Message_Filtering" value="false" type="design"/>
+<property name="PROP_FitterReportFormat" value="HTML" type="process"/>
+<property name="PROP_LastAppliedGoal" value="Balanced" type="design"/>
+<property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
+<property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
+<property name="PROP_ProjectDescription" value="This project contains the FPGA design for the Multi-Order Solar Extreme Ultraviolet Spectrograph (MOSES) sub-orbital rocket payload.  The FPGA acts as an intermediary between the imaging instrument and the host computer system.  In this capacity, the FPGA design receives science data from the instrument via a 16-bit parallel interface and transmits it to system memory using a DMA transfer through a PCI bus.  The FPGA design interfaces externally to a PLX9056 PCI controller, which converts a local bus protocol to PCI protocol." type="process"/>
+<property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
+<property name="PROP_ReduceControlSets_virtex5" value="Auto" type="process"/>
+<property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
+<property name="PROP_SynthFsmEncode" value="One-Hot" type="process"/>
+<property name="PROP_SynthOpt" value="Area" type="process"/>
+<property name="PROP_SynthTopFile" value="changed" type="process"/>
+<property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
+<property name="PROP_UseSmartGuide" value="false" type="design"/>
+<property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
+<property name="PROP_intProjectCreationTimestamp" value="2014-06-26T16:37:31" type="design"/>
+<property name="PROP_intWbtProjectID" value="035A0DD99C8746ABAD1164FBDD8ACEC8" type="design"/>
+<property name="PROP_intWbtProjectIteration" value="294" type="process"/>
+<property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
+<property name="PROP_intWorkingDirUsed" value="No" type="design"/>
+<property name="PROP_xilxBitgCfg_Rate_virtex5" value="6" type="process"/>
+<property name="PROP_xilxBitgStart_IntDone_virtex5" value="true" type="process"/>
+<property name="PROP_xilxSynthKeepHierarchy" value="Yes" type="process"/>
+<property name="PROP_xstCoresSearchDir" value="changed" type="process"/>
+<property name="PROP_xstLUTCombining_virtex5" value="Auto" type="process"/>
+<property name="PROP_xstNetlistHierarchy" value="Rebuilt" type="process"/>
+<property name="PROP_AutoTop" value="true" type="design"/>
+<property name="PROP_DevFamily" value="Virtex5" type="design"/>
+<property name="PROP_DevDevice" value="xc5vlx50t" type="design"/>
+<property name="PROP_DevFamilyPMName" value="virtex5" type="design"/>
+<property name="PROP_DevPackage" value="ff665" type="design"/>
+<property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
+<property name="PROP_DevSpeed" value="-1" type="design"/>
+<property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
+<property name="FILE_COREGEN" value="8" type="source"/>
+<property name="FILE_UCF" value="1" type="source"/>
+<property name="FILE_VHDL" value="85" type="source"/>
+<property name="FILE_XAW" value="1" type="source"/>
+</section>
+</application>
+</document>

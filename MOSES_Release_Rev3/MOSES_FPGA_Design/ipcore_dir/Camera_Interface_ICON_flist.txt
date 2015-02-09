@@ -1,0 +1,17 @@
+# Output products list for <Camera_Interface_ICON>
+Camera_Interface_ICON.asy
+Camera_Interface_ICON.constraints\Camera_Interface_ICON.ucf
+Camera_Interface_ICON.constraints\Camera_Interface_ICON.xdc
+Camera_Interface_ICON.gise
+Camera_Interface_ICON.ngc
+Camera_Interface_ICON.sym
+Camera_Interface_ICON.ucf
+Camera_Interface_ICON.vhd
+Camera_Interface_ICON.vho
+Camera_Interface_ICON.xco
+Camera_Interface_ICON.xdc
+Camera_Interface_ICON.xise
+Camera_Interface_ICON_flist.txt
+Camera_Interface_ICON_readme.txt
+Camera_Interface_ICON_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

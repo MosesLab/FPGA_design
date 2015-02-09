@@ -1,0 +1,26 @@
+#
+# Usage: generate.exe ila -f=<arg_file_name>
+#
+-compname=ilaPlxBus
+-outputdirectory=.\
+-datadepth=8192
+-datawidth=77
+-numtrigports=4
+-trigportwidth0=8
+-trigportwidth1=1
+-trigportwidth2=1
+-trigportwidth3=1
+-nummatchunits=4
+-mtrigport0=0
+-mtype0=1
+-mtrigport1=1
+-mtype1=1
+-mtrigport2=2
+-mtype2=1
+-mtrigport3=3
+-mtype3=1
+-enablestoragequal
+-devicefamily=Virtex5
+-srl16type=2
+-disablerpm
+-createcdc

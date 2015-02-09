@@ -1,0 +1,125 @@
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 
+xst -intstyle ise -ifn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.xst" -ofn "D:/MOSES/MOSES_Design/MOSES_DDR2_TestProject/MOSES_DDR2_TestProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MOSES_DDR2_TestProject.ucf -p xc5vlx50t-ff665-1 MOSES_DDR2_TestProject.ngc MOSES_DDR2_TestProject.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt off -ol high -xe n -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ngd MOSES_DDR2_TestProject.pcf 
+par -w -intstyle ise -ol high -mt off MOSES_DDR2_TestProject_map.ncd MOSES_DDR2_TestProject.ncd MOSES_DDR2_TestProject.pcf 
+trce -intstyle ise -v 3 -timegroups -s 1 -n 3 -fastpaths -xml MOSES_DDR2_TestProject.twx MOSES_DDR2_TestProject.ncd -o MOSES_DDR2_TestProject.twr MOSES_DDR2_TestProject.pcf -ucf MOSES_DDR2_TestProject.ucf 
+bitgen -intstyle ise -f MOSES_DDR2_TestProject.ut MOSES_DDR2_TestProject.ncd 

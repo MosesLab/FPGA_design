@@ -1,0 +1,721 @@
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MOSES_DDR2_TestProject.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   MOSES_DDR2_TestProject.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_ctrl/state_r1<5 : 1> on block
+   MOSES_DDR2_TestProject is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift0
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift1
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift3
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/ddr_addr_r<10 : 1>
+   on block MOSES_DDR2_TestProject is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r1<26 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r2<23 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_ide
+   l_dec_cnt_mux0000<5 : 0> on block MOSES_DDR2_TestProject is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/calib_do
+   ne_tmp<3 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_f<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_r<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/wdf_data_r_mux000
+   1<60 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MOSES_DDR2_TestProject.edif ...
+ngc2edif: Total memory usage is 80556 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MOSES_DDR2_TestProject.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   MOSES_DDR2_TestProject.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_ctrl/state_r1<5 : 1> on block
+   MOSES_DDR2_TestProject is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift0
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift1
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift3
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/ddr_addr_r<10 : 1>
+   on block MOSES_DDR2_TestProject is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r1<26 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r2<23 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_ide
+   l_dec_cnt_mux0000<5 : 0> on block MOSES_DDR2_TestProject is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/calib_do
+   ne_tmp<3 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_f<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_r<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/wdf_data_r_mux000
+   1<60 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MOSES_DDR2_TestProject.edif ...
+ngc2edif: Total memory usage is 80556 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MOSES_DDR2_TestProject.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   MOSES_DDR2_TestProject.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_ctrl/state_r1<5 : 1> on block
+   MOSES_DDR2_TestProject is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift0
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift1
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift3
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/ddr_addr_r<10 : 1>
+   on block MOSES_DDR2_TestProject is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r1<26 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r2<23 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_ide
+   l_dec_cnt_mux0000<5 : 0> on block MOSES_DDR2_TestProject is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/calib_do
+   ne_tmp<3 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_f<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_r<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/wdf_data_r_mux000
+   1<60 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MOSES_DDR2_TestProject.edif ...
+ngc2edif: Total memory usage is 80876 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MOSES_DDR2_TestProject.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   MOSES_DDR2_TestProject.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus app_af_addr<10 : 0> on block
+   MOSES_DDR2_TestProject is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus app_wdf_data<34 : 0> on block
+   MOSES_DDR2_TestProject is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_ctrl/state_r1<5 : 1> on block
+   MOSES_DDR2_TestProject is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift0
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift1
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift3
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/ddr_addr_r<10 : 1>
+   on block MOSES_DDR2_TestProject is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r1<26 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r2<23 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal4_gat
+   e_srl_a_mux0000<4 : 1> on block MOSES_DDR2_TestProject is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal4_ide
+   l_adj_cnt_mux0000<4 : 0> on block MOSES_DDR2_TestProject is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/calib_do
+   ne_tmp<3 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/next_cou
+   nt_dq_mux0000<4 : 0> on block MOSES_DDR2_TestProject is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_f<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_r<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/wdf_data_r_mux000
+   1<60 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MOSES_DDR2_TestProject.edif ...
+ngc2edif: Total memory usage is 81580 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design ICON.ngc ...
+WARNING:NetListWriters:298 - No output is written to ICON.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   ICON is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ICON.edif ...
+ngc2edif: Total memory usage is 75436 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design DDR2_ILA.ngc ...
+WARNING:NetListWriters:298 - No output is written to DDR2_ILA.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file DDR2_ILA.edif ...
+ngc2edif: Total memory usage is 80108 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MOSES_DDR2_TestProject.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   MOSES_DDR2_TestProject.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus app_af_addr<10 : 0> on block
+   MOSES_DDR2_TestProject is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus app_wdf_data<34 : 0> on block
+   MOSES_DDR2_TestProject is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_ctrl/state_r1<5 : 1> on block
+   MOSES_DDR2_TestProject is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift0
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift1
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift3
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/ddr_addr_r<10 : 1>
+   on block MOSES_DDR2_TestProject is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r1<26 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r2<23 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal4_gat
+   e_srl_a_mux0000<4 : 1> on block MOSES_DDR2_TestProject is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal4_ide
+   l_adj_cnt_mux0000<4 : 0> on block MOSES_DDR2_TestProject is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/calib_do
+   ne_tmp<3 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/next_cou
+   nt_dq_mux0000<4 : 0> on block MOSES_DDR2_TestProject is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_f<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_r<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/wdf_data_r_mux000
+   1<60 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MOSES_DDR2_TestProject.edif ...
+ngc2edif: Total memory usage is 81772 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design ICON.ngc ...
+WARNING:NetListWriters:298 - No output is written to ICON.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   ICON is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ICON.edif ...
+ngc2edif: Total memory usage is 75564 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design DDR2_ILA.ngc ...
+WARNING:NetListWriters:298 - No output is written to DDR2_ILA.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file DDR2_ILA.edif ...
+ngc2edif: Total memory usage is 80300 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MOSES_DDR2_TestProject.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   MOSES_DDR2_TestProject.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus data<24 : 0> on block
+   MOSES_DDR2_TestProject is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_ctrl/state_r1<5 : 1> on block
+   MOSES_DDR2_TestProject is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift0
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift1
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/calib_start_shift3
+   _r<15 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/ddr_addr_r<10 : 1>
+   on block MOSES_DDR2_TestProject is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r1<26 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_init/init_state_r2<23 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_ide
+   l_tap_limit_hit_addsub0000<4 : 2> on block MOSES_DDR2_TestProject is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal4_gat
+   e_srl_a_mux0000<4 : 1> on block MOSES_DDR2_TestProject is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal4_ide
+   l_adj_cnt_mux0000<4 : 0> on block MOSES_DDR2_TestProject is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/calib_do
+   ne_tmp<3 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/next_cou
+   nt_dq_mux0000<4 : 0> on block MOSES_DDR2_TestProject is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_f<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/init_data_r<10 :
+   0> on block MOSES_DDR2_TestProject is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   u_DDR2_CORE/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_write/wdf_data_r_mux000
+   1<60 : 0> on block MOSES_DDR2_TestProject is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MOSES_DDR2_TestProject.edif ...
+ngc2edif: Total memory usage is 80556 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design ICON.ngc ...
+WARNING:NetListWriters:298 - No output is written to ICON.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   ICON is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ICON.edif ...
+ngc2edif: Total memory usage is 75436 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design DDR2_ILA.ngc ...
+WARNING:NetListWriters:298 - No output is written to DDR2_ILA.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file DDR2_ILA.edif ...
+ngc2edif: Total memory usage is 79532 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MOSES_DDR2_TestProject.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   MOSES_DDR2_TestProject.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus cal2_idel_tap_limit_hit_addsub0000<4 :
+   2> on block ddr2_phy_calib is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus cal4_gate_srl_a_mux0000<4 : 1> on block
+   ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus cal4_idel_adj_cnt_mux0000<4 : 0> on
+   block ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_done_tmp<3 : 0> on block
+   ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus next_count_dq_mux0000<4 : 0> on block
+   ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift0_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift1_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift3_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ddr_addr_r<10 : 1> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_state_r1<26 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_state_r2<23 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_data_f<10 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_data_r<10 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus wdf_data_r_mux0001<60 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus state_r1<5 : 1> on block ddr2_ctrl is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MOSES_DDR2_TestProject.edif ...
+ngc2edif: Total memory usage is 82284 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design DDR2_ILA.ngc ...
+WARNING:NetListWriters:298 - No output is written to DDR2_ILA.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file DDR2_ILA.edif ...
+ngc2edif: Total memory usage is 79532 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design ICON.ngc ...
+WARNING:NetListWriters:298 - No output is written to ICON.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   ICON is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ICON.edif ...
+ngc2edif: Total memory usage is 75180 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MOSES_DDR2_TestProject.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   MOSES_DDR2_TestProject.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus cal2_idel_tap_limit_hit_addsub0000<4 :
+   2> on block ddr2_phy_calib is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus cal4_gate_srl_a_mux0000<4 : 1> on block
+   ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus cal4_idel_adj_cnt_mux0000<4 : 0> on
+   block ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_done_tmp<3 : 0> on block
+   ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus next_count_dq_mux0000<4 : 0> on block
+   ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift0_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift1_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift3_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ddr_addr_r<10 : 1> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_state_r1<26 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_state_r2<23 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_data_f<10 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_data_r<10 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus wdf_data_r_mux0001<60 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus state_r1<5 : 1> on block ddr2_ctrl is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MOSES_DDR2_TestProject.edif ...
+ngc2edif: Total memory usage is 82604 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MOSES_DDR2_TestProject.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   MOSES_DDR2_TestProject.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus cal2_idel_tap_limit_hit_addsub0000<4 :
+   2> on block ddr2_phy_calib is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus cal4_gate_srl_a_mux0000<4 : 1> on block
+   ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus cal4_idel_adj_cnt_mux0000<4 : 0> on
+   block ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_done_tmp<3 : 0> on block
+   ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus next_count_dq_mux0000<4 : 0> on block
+   ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift0_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift1_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift3_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ddr_addr_r<10 : 1> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_state_r1<26 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_state_r2<23 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_data_f<10 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_data_r<10 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus wdf_data_r_mux0001<60 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus state_r1<5 : 1> on block ddr2_ctrl is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MOSES_DDR2_TestProject.edif ...
+ngc2edif: Total memory usage is 82348 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design DDR2_ILA.ngc ...
+WARNING:NetListWriters:298 - No output is written to DDR2_ILA.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file DDR2_ILA.edif ...
+ngc2edif: Total memory usage is 80364 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design ICON.ngc ...
+WARNING:NetListWriters:298 - No output is written to ICON.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   ICON is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ICON.edif ...
+ngc2edif: Total memory usage is 74988 kilobytes
+

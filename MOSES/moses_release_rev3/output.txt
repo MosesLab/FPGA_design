@@ -1,0 +1,12 @@
+Storage Target: SPI Flash Single FPGA
+32M
+FF
+MOSES_Release_Rev2
+D:/MOSES/MOSES_Design
+
+MCS
+No
+CS_File
+
+MCS
+No

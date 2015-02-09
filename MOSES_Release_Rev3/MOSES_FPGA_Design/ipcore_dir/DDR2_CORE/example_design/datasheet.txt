@@ -1,0 +1,150 @@
+
+CORE Generator Options:
+   Target Device                  : xc5vlx50t-ff665
+   Speed Grade                    : -1
+   HDL                            : vhdl
+   Synthesis Tool                 : ISE
+
+MIG Output Options:
+   Module Name                    : DDR2_CORE
+   No of Controllers              : 1
+   Selected Compatible Device(s)  : --
+   Hardware Test Bench           : enabled
+   PPC440                         : --
+   PowerPC440 Block Selection     : --
+
+FPGA Options:
+   PLL                            : enabled
+   Debug Signals                  : Disable
+   System Clock                   : Single-Ended
+   Limit to 2 Bytes per Bank      : disabled
+
+Extended FPGA Options:
+   DCI for DQ/DQS                 : enabled
+   DCI for Address/Control        : disabled
+   Class for Address and Control  : Class II
+
+Reserve Pins:
+   --
+    
+   /*******************************************************/
+   /*                  Controller 0                       */
+   /*******************************************************/
+   Controller Options :
+      Memory                         : DDR2_SDRAM
+      Design Clock Frequency         : 5000 ps(200.00 MHz)
+      Memory Type                    : Components
+      Memory Part                    : MT47H32M16-25E
+      Equivalent Part(s)             : --
+      Data Width                     : 32
+      Memory Depth                   : 1
+      ECC                            : ECC Disabled
+      Data Mask                      : enabled
+
+   Memory Options:
+      Burst Length (MR[2:0])         : 4(010)
+      Burst Type (MR[3])             : sequential(0)
+      CAS Latency (MR[6:4])          : 3(011)
+      Output Drive Strength (EMR[1]) : Fullstrength(0)
+      RTT (nominal) - ODT (EMR[6,2]) : RTT Disabled(00)
+      Additive Latency (EMR[5:3])    : 0(000)
+
+   FPGA Options:
+      IODELAY Performance Mode       : HIGH
+
+   Selected Banks and Pins usage : 
+       Data          :bank 17(38) -> Number of pins used : 33 
+                      bank 18(38) -> Number of pins used : 17 
+                      
+       Address/Control:bank 15(38) -> Number of pins used : 0 
+                      bank 16(38) -> Number of pins used : 1 
+                      bank 18(38) -> Number of pins used : 17 
+                      bank 4(19) -> Number of pins used : 1 
+                      
+       System Control:bank 15(38) -> Number of pins used : 1 
+                      bank 18(38) -> Number of pins used : 1 
+                      bank 4(19) -> Number of pins used : 1 
+                      
+       System Clock  :bank 4(19) -> Number of pins used : 2 
+                      
+       Total IOs used :    74
+
+Pin Selections:
+
+	SignalName   		PinName
+	ddr2_a[0]   	->	AA9
+	ddr2_a[10]   	->	AC7
+	ddr2_a[11]   	->	AB7
+	ddr2_a[12]   	->	AB6
+	ddr2_a[1]   	->	Y8
+	ddr2_a[2]   	->	AD8
+	ddr2_a[3]   	->	Y7
+	ddr2_a[4]   	->	AB9
+	ddr2_a[5]   	->	W9
+	ddr2_a[6]   	->	AE8
+	ddr2_a[7]   	->	AD6
+	ddr2_a[8]   	->	AA8
+	ddr2_a[9]   	->	V8
+	ddr2_ba[0]   	->	AE7
+	ddr2_ba[1]   	->	AA5
+	ddr2_cas#   	->	AC9
+	ddr2_ck#[0]   	->	AD11
+	ddr2_ck#[1]   	->	AB16
+	ddr2_ck[0]   	->	AE11
+	ddr2_ck[1]   	->	A9
+	ddr2_cke[0]   	->	AC8
+	ddr2_cs#[0]   	->	W8
+	ddr2_cs#[1]   	->	A12
+	ddr2_dm[0]   	->	AE16
+	ddr2_dm[1]   	->	AE6
+	ddr2_dm[2]   	->	AE17
+	ddr2_dm[3]   	->	AE18
+	ddr2_dq[0]   	->	AC21
+	ddr2_dq[10]   	->	AE12
+	ddr2_dq[11]   	->	AF3
+	ddr2_dq[12]   	->	AF4
+	ddr2_dq[13]   	->	AF12
+	ddr2_dq[14]   	->	AF5
+	ddr2_dq[15]   	->	AF9
+	ddr2_dq[16]   	->	AC26
+	ddr2_dq[17]   	->	AE26
+	ddr2_dq[18]   	->	AC24
+	ddr2_dq[19]   	->	AD24
+	ddr2_dq[1]   	->	AD15
+	ddr2_dq[20]   	->	AE25
+	ddr2_dq[21]   	->	AB22
+	ddr2_dq[22]   	->	AD26
+	ddr2_dq[23]   	->	AD25
+	ddr2_dq[24]   	->	AD23
+	ddr2_dq[25]   	->	AE15
+	ddr2_dq[26]   	->	AF25
+	ddr2_dq[27]   	->	AF13
+	ddr2_dq[28]   	->	AF14
+	ddr2_dq[29]   	->	AF24
+	ddr2_dq[2]   	->	AC23
+	ddr2_dq[30]   	->	AF15
+	ddr2_dq[31]   	->	AF23
+	ddr2_dq[3]   	->	AE13
+	ddr2_dq[4]   	->	AD14
+	ddr2_dq[5]   	->	AE22
+	ddr2_dq[6]   	->	AD16
+	ddr2_dq[7]   	->	AD21
+	ddr2_dq[8]   	->	AF10
+	ddr2_dq[9]   	->	AE5
+	ddr2_dqs#[0]   	->	AD20
+	ddr2_dqs#[1]   	->	AF8
+	ddr2_dqs#[2]   	->	AE20
+	ddr2_dqs#[3]   	->	AE21
+	ddr2_dqs[0]   	->	AD19
+	ddr2_dqs[1]   	->	AF7
+	ddr2_dqs[2]   	->	AF20
+	ddr2_dqs[3]   	->	AF22
+	ddr2_odt[0]   	->	AD9
+	ddr2_odt[1]   	->	A14
+	ddr2_ras#   	->	AA7
+	ddr2_we#   	->	AB5
+	error   	->	A15
+	idly_clk_200   	->	AC12
+	phy_init_done   	->	AC18
+	sys_clk   	->	AB11
+	sys_rst_n   	->	V9

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="Pds" num="77" delta="new" >Can not create file <arg fmt="%s" index="1">ref_design.ncd</arg>
+</msg>
+
+<msg type="fatal" file="Par" num="0" delta="new" srcfile="../s/baspwpar.c" srcline="3938" srcrcs="1.467" >Par has discovered an exceptional condition while trying to load the design <arg fmt="%s" index="1">ref_design_map.ncd</arg> - from which it cannot recover
+</msg>
+
+</messages>
+

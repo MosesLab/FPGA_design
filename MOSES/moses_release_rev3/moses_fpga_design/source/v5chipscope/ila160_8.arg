@@ -1,0 +1,15 @@
+#
+# Usage: generate.exe ila -f=<arg_file_name>
+#
+-compname=ila160_8
+-outputdirectory=.\
+-datadepth=1024
+-datawidth=160
+-numtrigports=1
+-trigportwidth0=8
+-nummatchunits=1
+-mtrigport0=0
+-mtype0=1
+-enablestoragequal
+-devicefamily=Virtex5
+-srl16type=2

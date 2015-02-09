@@ -1,0 +1,7 @@
+#File version
+@FILE_VERSION=1.0.0
+# Default token value
+@DEFAULT_TOKEN=ERROR
+# Explicit token values
+WR=000\b
+RD=001\b

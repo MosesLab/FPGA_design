@@ -1,0 +1,8 @@
+#
+# Usage: generate.exe vio -f=<arg_file_name>
+#
+-compname=vio_sync_out32
+-outputdirectory=H:\sandbox\groups\apd_mem\Virtex5\designs\2_0\ddr2\demo\debug_port\par
+-devicefamily=Virtex5
+-srl16type=2
+-syncoutwidth=32

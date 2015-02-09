@@ -1,0 +1,8 @@
+#
+# Usage: generate.exe icon -f=<arg_file_name>
+#
+-compname=icon4
+-numports=4
+-devicefamily=Virtex5
+-bscanchain=1
+-outputdirectory=H:\sandbox\groups\apd_mem\Virtex5\designs\2_0\ddr2\demo\debug_port\par

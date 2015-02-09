@@ -1,0 +1,7 @@
+<MemoryFile>
+    <MemoryType ClkType="SerDes" FPGA="virtex5" HDL="verilog,vhdl" text="DDR2_SDRAM" tmin="3000" tmax="8000" >
+        <group text="Components" >
+            <Info clockingType="SerDes" PartNumber="MT47H32M16XX-25E" tmin="3000" tmax="8000" />
+        </group>
+    </MemoryType>
+</MemoryFile>

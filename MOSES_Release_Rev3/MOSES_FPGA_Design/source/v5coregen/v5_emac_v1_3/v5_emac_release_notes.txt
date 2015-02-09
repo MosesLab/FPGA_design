@@ -1,0 +1,86 @@
+
+Product name : Virtex-5 Embedded Tri-Mode Ethernet MAC Wrapper
+Version : 1.3
+Release Date : August 8, 2007
+File : v5_emac_release_notes.txt 
+
+=================================================================
+
+INTRODUCTION
+============
+
+Thank you for choosing the Virtex-5 Embedded MAC from Xilinx!
+The Xilinx Virtex-5 Embedded MAC is a fully verified, pre-
+implemented core.
+
+Please refer to the Getting Started Guide for more information 
+on how to set up and use the Virtex-5 Embedded MAC wrapper and
+example design.
+
+This document contains the release notes for Virtex-5 Embedded 
+MAC wrapper Version 1.3 which includes enhancements, resolved 
+issues and outstanding known issues.
+
+
+RELEASE NOTES
+=============
+
+This section lists the enhancements and known issues associated with this
+release.
+
+1. Enhancements
+
+   * Support added for ISE 9.2i
+   * Consolidated the user constraints into a single UCF file to simplify 
+     the NGCBUILD processing
+   * Reworked the GMII and RGMII input delays to improve jitter 
+     performance. Fixed mode IODELAYs are now instantiated on both the 
+     data and clock inputs. Users should specify the values of the 
+     delays in the UCF file.
+
+2. Known Issues
+
+   For a list of the current known issues with the Virtex-5
+   Embedded MAC Wrapper v1.2, please refer to Answer Record 25222:
+
+   http://support.xilinx.com/xlnx/xil_ans_display.jsp?iLanguageID=1&iCountryID=1&getPagePath=25222
+
+
+*  CR227610: TEMAC DCRBASEADDR inconsistent between VHDL and Verilog.
+
+VHDL DCR bus simulations will fail in Modelsim PE. This is a problem with
+Modelsim PE only. Modelsim SE and IUS simulations work correctly.
+The bug results in the bits of the EMAC#_DCRBASEADDR generic in the VHDL 
+Unisim and Simprim models being flipped. Both functional and timing 
+simulations are affected.
+A workaround is to set EMAC#_DCRBASEADDR to a symmetric value, 
+e.g. 0x81 or 0xC3.
+
+
+TECHNICAL SUPPORT
+=================
+The fastest method for obtaining specific technical support
+for the Virtex-5 Embedded MAC is through the 
+http://www.xilinx.com/support website. Questions are routed 
+to a team of engineers with specific expertise in using 
+the Virtex-5 Embedded MAC Wrapper. Xilinx will provide 
+technical support for use of this product as described in
+the Virtex-5 Embedded MAC User Guide and the Virtex-5 
+Embedded MAC Getting Started User Guide. Xilinx cannot 
+guarantee timing, functionality, or support of this product
+for designs that do not follow these guidelines.
+
+
+REVISION HISTORY
+=================
+Date       By            Version   Change Description
+=================================================================
+10/23/2006  Xilinx, Inc.  1.1      First Release
+02/15/2007  Xilinx, Inc.  1.2      Release for ISE 9.1i
+08/08/2007  Xilinx, Inc.  1.3      Release for ISE 9.2i
+=================================================================
+
+
+COPYRIGHT (c) 2006-2007 XILINX, INC.
+ALL RIGHTS RESERVED
+

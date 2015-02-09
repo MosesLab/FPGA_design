@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="MOSES_FPGA_Design" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/DDR2_interface_JAH - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|DDR2_interface_JAH.vhdl</ClosedNode>
+         <ClosedNode>/DDR2_interface_JAH - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|DDR2_interface_JAH.vhdl/SYNC2 - SYNC_GENERIC - Behavioral</ClosedNode>
+         <ClosedNode>/DDR2_interface_JAH - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|DDR2_interface_JAH.vhdl/SYNC3 - SYNC_GENERIC - Behavioral</ClosedNode>
+         <ClosedNode>/DDR2_interface_JAH - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|DDR2_interface_JAH.vhdl/SYNC4 - SYNC_GENERIC - Behavioral</ClosedNode>
+         <ClosedNode>/DDR2_interface_JAH - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|DDR2_interface_JAH.vhdl/SYNC5 - SYNC - Behavioral</ClosedNode>
+         <ClosedNode>/DDR2_interface_JAH - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|DDR2_interface_JAH.vhdl/SYNC6 - SYNC - Behavioral</ClosedNode>
+         <ClosedNode>/DDR2_interface_JAH - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|DDR2_interface_JAH.vhdl/SYNC7 - SYNC_GENERIC - Behavioral</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral C:|Users|Justin|Documents|Xilinx_projects|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/CLK_CONTROL - clkControlMem - Behavioral</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral C:|Users|Justin|Documents|Xilinx_projects|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/PLX_MONITOR - plxBusMonitor - chipscope</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral C:|Users|Justin|Documents|Xilinx_projects|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/REG0 - regBank_32 - rtl</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral C:|Users|Justin|Documents|Xilinx_projects|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/ctiSim</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral C:|Users|Justin|Documents|Xilinx_projects|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/txt_util</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/CAMERA_INTERFACE0 - camera_interface - Structural</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/CAMERA_INTERFACE0 - camera_interface - Structural/CLK_SYNC0 - SYNC - Behavioral</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/CAMERA_INTERFACE0 - camera_interface - Structural/DATA_SYNC0 - SYNC16 - Behavioral</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/CAMERA_INTERFACE0 - camera_interface - Structural/SHIFT_REG3 - SHIFT_REG64 - Structural</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/CAMERA_SIM0 - camera_sim - Behavioral</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/CLK_CONTROL - clkControlMem - Behavioral</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/DDR2_INT0 - DDR2_interface_JAH - Behavioral</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/PLX_MONITOR - plxBusMonitor - chipscope</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/ctiSim</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/txt_util</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/u_DDR2_CORE - DDR2_CORE_JAH - arc_mem_interface_top/u_ddr2_top_0 - ddr2_top - syn</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/u_DDR2_CORE - DDR2_CORE_JAH - arc_mem_interface_top/u_ddr2_top_0 - ddr2_top - syn/u_mem_if_top - ddr2_mem_if_top - syn/u_phy_top - ddr2_phy_top - syn/u_phy_io - ddr2_phy_io - syn</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/u_DDR2_CORE - DDR2_CORE_JAH - arc_mem_interface_top/u_ddr2_top_0 - ddr2_top - syn/u_mem_if_top - ddr2_mem_if_top - syn/u_usr_top - ddr2_usr_top - syn</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/u_interface - ddr2_interface - rtl</ClosedNode>
+         <ClosedNode>/MOSES_FPGA_Design - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|MOSES_FPGA_Design.vhd/u_mig20 - mig20_app - arc_mem_interface_top</ClosedNode>
+         <ClosedNode>/SHIFT_REG32 - Structural D:|MOSES|MOSES_Design|MOSES_FPGA_Design|SHIFT_REG32.vhdl</ClosedNode>
+         <ClosedNode>/clkControlMem - Behavioral D:|MOSES|MOSES_Design|MOSES_FPGA_Design|clkControlMem.vhd</ClosedNode>
+         <ClosedNode>/ddr2_interface - rtl D:|MOSES|MOSES_Design|MOSES_FPGA_Design|ddr2_interface.vhd</ClosedNode>
+         <ClosedNode>/mig20_app - arc_mem_interface_top D:|MOSES|MOSES_Design|MOSES_FPGA_Design|mig20_app.vhd</ClosedNode>
+         <ClosedNode>/mig20_app - arc_mem_interface_top D:|MOSES|MOSES_Design|MOSES_FPGA_Design|mig20_app.vhd/u_ddr2_top_0 - mig20_ddr2_top_0 - syn</ClosedNode>
+         <ClosedNode>/plxBusMonitor - chipscope C:|Users|Justin|Documents|Xilinx_projects|MOSES|MOSES_Design|MOSES_FPGA_Design|plxBusMonitor.vhd</ClosedNode>
+         <ClosedNode>/plxBusMonitor - chipscope D:|MOSES|MOSES_Design|MOSES_FPGA_Design|plxBusMonitor.vhd</ClosedNode>
+         <ClosedNode>/regBank_32 - rtl C:|Users|Justin|Documents|Xilinx_projects|MOSES|MOSES_Design|MOSES_FPGA_Design|regBank_32.vhd</ClosedNode>
+         <ClosedNode>/regBank_32 - rtl D:|MOSES|MOSES_Design|MOSES_FPGA_Design|regBank_32.vhd</ClosedNode>
+         <ClosedNode>/regBank_32_ReadOnly - rtl D:|MOSES|MOSES_Design|MOSES_FPGA_Design|regBank_32_ReadOnly.vhd</ClosedNode>
+         <ClosedNode>/regBank_32_ReadWrite - rtl D:|MOSES|MOSES_Design|MOSES_FPGA_Design|regBank_32_ReadWrite.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>MOSES_FPGA_Design - Behavioral (D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000003fb000000020000000000000000000000000200000064ffffffff000000810000000300000002000003fb0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>MOSES_FPGA_Design - Behavioral (D:/MOSES/MOSES_Design/MOSES_FPGA_Design/MOSES_FPGA_Design.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000375000000010000000100000000000000000000000064ffffffff000000810000000000000001000003750000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002c60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>D:\MOSES\MOSES_Design\MOSES_FPGA_Design\ADDRESS_GENERATOR.vhdl</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Generate Programming File</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000214000000010000000100000000000000000000000064ffffffff000000810000000000000001000002140000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Generate Programming File</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000214000000010000000100000000000000000000000064ffffffff000000810000000000000001000002140000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <CopyAdditionalFiles/>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002be000000010000000100000000000000000000000064ffffffff000000810000000000000001000002be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000178000000010000000100000000000000000000000064ffffffff000000810000000000000001000001780000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XAW" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>View HDL Instantiation Template</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>View HDL Instantiation Template</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>D:\MOSES\MOSES_Design\MOSES_FPGA_Design\ipcore_dir\DDR2_CORE_JAH\user_design\rtl\ddr2_phy_dq_iob.vhd (D:/MOSES/MOSES_Design/MOSES_FPGA_Design/ipcore_dir/DDR2_CORE_JAH/user_design/rtl/ddr2_phy_dq_iob.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >36</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000343000000020000000000000000000000000000000064ffffffff000000810000000000000002000002c400000001000000000000007f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>D:\MOSES\MOSES_Design\MOSES_FPGA_Design\ipcore_dir\DDR2_CORE_JAH\user_design\rtl\ddr2_phy_dq_iob.vhd (D:/MOSES/MOSES_Design/MOSES_FPGA_Design/ipcore_dir/DDR2_CORE_JAH/user_design/rtl/ddr2_phy_dq_iob.vhd)</CurrentItem>
+   </ItemView>
+</Project>

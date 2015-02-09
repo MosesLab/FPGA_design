@@ -1,0 +1,230 @@
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MOSES_FPGA_Design.ngc ...
+WARNING:NetListWriters:298 - No output is written to MOSES_FPGA_Design.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus cal2_idel_dec_cnt_mux0000<5 : 0> on
+   block mig20_phy_calib_0 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus calib_done_tmp<3 : 0> on block
+   mig20_phy_calib_0 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift0_r<15 : 0> on block
+   mig20_phy_init_0 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift1_r<15 : 0> on block
+   mig20_phy_init_0 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift3_r<15 : 0> on block
+   mig20_phy_init_0 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ddr_addr_r<10 : 1> on block
+   mig20_phy_init_0 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_state_r1<26 : 0> on block
+   mig20_phy_init_0 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_state_r2<23 : 0> on block
+   mig20_phy_init_0 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_data_f<10 : 0> on block
+   mig20_phy_write_0 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_data_r<10 : 0> on block
+   mig20_phy_write_0 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus wdf_data_r_mux0001<60 : 0> on block
+   mig20_phy_write_0 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus precharge_ok_cnt_r_mux0000<3 : 0> on
+   block mig20_ctrl_0 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus state_r1<5 : 1> on block mig20_ctrl_0 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus interrupt_and0000<31 : 27> on block
+   reg32_ReadOnly is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus user_Q_signal<31 : 27> on block
+   reg32_ReadOnly is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus input_gpio_interrupt<31 : 27> on block
+   MOSES_FPGA_Design is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus input_gpio_interrupt_ack<31 : 27> on
+   block MOSES_FPGA_Design is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus input_gpio_interrupt_ack_mux0001<31 :
+   27> on block MOSES_FPGA_Design is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus input_gpio_interrupt_enabled_signal<31 :
+   0> on block MOSES_FPGA_Design is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus input_gpio_interrupt_signal<31 : 27> on
+   block MOSES_FPGA_Design is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus input_gpio_register<31 : 27> on block
+   MOSES_FPGA_Design is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file MOSES_FPGA_Design.edif ...
+ngc2edif: Total memory usage is 90520 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design DDR2_ILA.ngc ...
+WARNING:NetListWriters:298 - No output is written to DDR2_ILA.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block DDR2_ILA is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file DDR2_ILA.edif ...
+ngc2edif: Total memory usage is 81496 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Camera_Interface_ILA.ngc ...
+WARNING:NetListWriters:298 - No output is written to Camera_Interface_ILA.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block
+   Camera_Interface_ILA is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block
+   Camera_Interface_ILA is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file Camera_Interface_ILA.edif ...
+ngc2edif: Total memory usage is 79384 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design DDR2_INTERFACE_ILA.ngc ...
+WARNING:NetListWriters:298 - No output is written to DDR2_INTERFACE_ILA.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block DDR2_INTERFACE_ILA
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block
+   DDR2_INTERFACE_ILA is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file DDR2_INTERFACE_ILA.edif ...
+ngc2edif: Total memory usage is 80472 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Camera_Interface_ICON.ngc ...
+WARNING:NetListWriters:298 - No output is written to Camera_Interface_ICON.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   Camera_Interface_ICON is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file Camera_Interface_ICON.edif ...
+ngc2edif: Total memory usage is 77784 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MOSES_FPGA_Design.ngc ...
+WARNING:NetListWriters:298 - No output is written to MOSES_FPGA_Design.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus cal2_idel_dec_cnt_mux0000<5 : 0> on
+   block ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_done_tmp<3 : 0> on block
+   ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift0_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift1_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus calib_start_shift3_r<15 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ddr_addr_r<10 : 1> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_state_r1<26 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_state_r2<23 : 0> on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_data_f<10 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus init_data_r<10 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus wdf_data_r_mux0001<60 : 0> on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus state_r1<5 : 1> on block ddr2_ctrl is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus input_gpio_interrupt_enabled_signal<25 :
+   0> on block MOSES_FPGA_Design is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MOSES_FPGA_Design.edif ...
+ngc2edif: Total memory usage is 85676 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design DDR2_DataManager_ILA.ngc ...
+WARNING:NetListWriters:298 - No output is written to DDR2_DataManager_ILA.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block
+   DDR2_DataManager_ILA is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block
+   DDR2_DataManager_ILA is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file DDR2_DataManager_ILA.edif ...
+ngc2edif: Total memory usage is 79916 kilobytes
+
+Release 14.4 - ngc2edif P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Camera_Interface_ICON.ngc ...
+WARNING:NetListWriters:298 - No output is written to Camera_Interface_ICON.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   Camera_Interface_ICON is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file Camera_Interface_ICON.edif ...
+ngc2edif: Total memory usage is 74220 kilobytes
+

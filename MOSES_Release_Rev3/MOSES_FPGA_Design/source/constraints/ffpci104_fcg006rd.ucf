@@ -1,0 +1,830 @@
+#*********************************************************************************
+# Copyright (c) 2009 CTI, Connect Tech Inc. All Rights Reserved.
+#*********************************************************************************
+# Project: 	FreeForm/PCI-104
+# Module:	ffpci104_fcg006rd.ucf
+#*********************************************************************************
+# Date			Author	Modifications
+#*--------------------------------------------------------------------------------
+# 2008-07-27	MF		Created
+#*********************************************************************************
+
+#*********************************************************************************
+# Main Clocks
+#*********************************************************************************
+#NET "clk100" TNM_NET =  "TNM_clk100";
+#TIMESPEC "TS_clk100" = PERIOD "TNM_clk100" 10 ns HIGH 50 %;
+
+NET "clk200" TNM_NET = "TNM_clk200";
+#TIMESPEC "TS_clk200" = PERIOD "TNM_clk200" 5 ns HIGH 50 %; 
+
+#NET "clk33" TNM_NET = "TNM_clk33";
+#TIMESPEC "TS_clk33" = PERIOD "TNM_clk33" 30 ns HIGH 50 %; 
+
+NET "clk50" TNM_NET = "TNM_clk50";
+TIMESPEC "TS_clk50" = PERIOD "TNM_clk50" 20 ns HIGH 50 %; 
+
+NET "lb_lclkfb" TNM_NET = "TNM_lb_lclkfb";
+TIMESPEC "TS_lb_lclki" = PERIOD "TNM_lb_lclkfb" 20 ns HIGH 50 %;
+
+#*********************************************************************************
+# Location Constraints
+#*********************************************************************************
+# BANK 1
+NET "miia_rxdv" LOC = G15 | IOSTANDARD = "LVCMOS33";
+NET "miia_rxer" LOC = G16 | IOSTANDARD = "LVCMOS33";
+NET "miia_rxd[0]" LOC = H13 | IOSTANDARD = "LVCMOS33";
+NET "miia_rxd[1]" LOC = G14 | IOSTANDARD = "LVCMOS33";
+NET "miia_rxd[2]" LOC = G17 | IOSTANDARD = "LVCMOS33";
+NET "miia_rxd[3]" LOC = F17 | IOSTANDARD = "LVCMOS33";
+NET "miia_crs" LOC = F15 | IOSTANDARD = "LVCMOS33";
+NET "miia_col" LOC = F14 | IOSTANDARD = "LVCMOS33";
+NET "miia_intn" LOC = F18 | IOSTANDARD = "LVCMOS33";
+NET "miib_rxdv" LOC = G19 | IOSTANDARD = "LVCMOS33";
+NET "miib_rxer" LOC = F13 | IOSTANDARD = "LVCMOS33";
+NET "miib_rxd[0]" LOC = G12 | IOSTANDARD = "LVCMOS33";
+NET "miib_rxd[1]" LOC = H18 | IOSTANDARD = "LVCMOS33";
+NET "miib_rxd[2]" LOC = H19 | IOSTANDARD = "LVCMOS33";
+NET "miib_rxd[3]" LOC = G11 | IOSTANDARD = "LVCMOS33";
+NET "miib_crs" LOC = H11 | IOSTANDARD = "LVCMOS33";
+NET "miib_col" LOC = G20 | IOSTANDARD = "LVCMOS33";
+NET "miib_intn" LOC = H21 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "G10" | IOSTANDARD = ;
+NET "mii_resetn" LOC = H9 | IOSTANDARD = "LVCMOS33";
+# BANK 2
+NET "rs0_tx" LOC = W11 | IOSTANDARD = "LVCMOS33";
+NET "rs1_tx" LOC = Y10 | IOSTANDARD = "LVCMOS33";
+NET "spib_clk" LOC = Y20 | IOSTANDARD = "LVCMOS33" | DRIVE = 8;
+NET "spib_csn" LOC = AA19 | IOSTANDARD = "LVCMOS33" | DRIVE = 8;
+NET "rs0_ten" LOC = AA10 | IOSTANDARD = "LVCMOS33";
+NET "rs0_renn" LOC = Y11 | IOSTANDARD = "LVCMOS33";
+NET "spib_mosi" LOC = AA18 | IOSTANDARD = "LVCMOS33" | DRIVE = 8;
+NET "spib_miso" LOC = Y18 | IOSTANDARD = "LVCMOS33";
+NET "spia_csn" LOC = Y12 | IOSTANDARD = "LVCMOS33"  | DRIVE = 8;
+NET "spia_mosi" LOC = AA12 | IOSTANDARD = "LVCMOS33"  | DRIVE = 8;
+NET "rs1_renn" LOC = AA17 | IOSTANDARD = "LVCMOS33";
+NET "rs1_rx" LOC = Y17 | IOSTANDARD = "LVCMOS33";
+NET "eth_ee_clk" LOC = AA13 | IOSTANDARD = "LVCMOS33"  | DRIVE = 8;
+NET "rs0_rx" LOC = AA14 | IOSTANDARD = "LVCMOS33";
+NET "eth_ee_dido" LOC = Y16 | IOSTANDARD = "LVCMOS33"  | DRIVE = 8;
+NET "rs1_ten" LOC = W16 | IOSTANDARD = "LVCMOS33";
+NET "eth_ee_cs" LOC = Y13 | IOSTANDARD = "LVCMOS33"  | DRIVE = 8;
+#NET ""                    LOC = "W14" | IOSTANDARD = ;
+#NET ""                    LOC = "Y15" | IOSTANDARD = ;
+#NET ""                    LOC = "AA15" | IOSTANDARD = ;
+# BANK 3
+#NET ""                    LOC = "D15" | IOSTANDARD = ;
+#NET ""                    LOC = "E15" | IOSTANDARD = ;
+#NET ""                    LOC = "D16" | IOSTANDARD = ;
+#NET ""                    LOC = "E16" | IOSTANDARD = ;
+#NET ""                    LOC = "D14" | IOSTANDARD = ;
+#NET ""                    LOC = "D13" | IOSTANDARD = ;
+#NET ""                    LOC = "E17" | IOSTANDARD = ;
+#NET ""                    LOC = "D18" | IOSTANDARD = ;
+#NET ""                    LOC = "E13" | IOSTANDARD = ;
+#NET ""                    LOC = "E12" | IOSTANDARD = ;
+#NET ""                    LOC = "E18" | IOSTANDARD = ;
+#NET ""                    LOC = "F19" | IOSTANDARD = ;
+#NET ""                    LOC = "F12" | IOSTANDARD = ;
+#NET ""                    LOC = "E11" | IOSTANDARD = ;
+#NET ""                    LOC = "E20" | IOSTANDARD = ;
+#NET ""                    LOC = "E21" | IOSTANDARD = ;
+#NET ""                    LOC = "E10" | IOSTANDARD = ;
+#NET ""                    LOC = "F10" | IOSTANDARD = ;
+NET "mainclkp" LOC = F20 | IOSTANDARD = "LVDS_25" | DIFF_TERM = TRUE;
+NET "mainclkn" LOC = G21 | IOSTANDARD = "LVDS_25" | DIFF_TERM = TRUE;
+# BANK 4
+NET "lb_lclkfb" LOC = Y21 | IOSTANDARD = "LVDCI_33";
+NET "miia_txd[0]" LOC = AA20 | IOSTANDARD = "LVDCI_33";
+NET "miia_txd[1]" LOC = AB10 | IOSTANDARD = "LVDCI_33";
+NET "miia_txd[2]" LOC = AB11 | IOSTANDARD = "LVDCI_33";
+NET "miia_txd[3]" LOC = AB21 | IOSTANDARD = "LVDCI_33";
+NET "miib_txen" LOC = AB20 | IOSTANDARD = "LVDCI_33";
+NET "miia_txclk" LOC = AC11 | IOSTANDARD = "LVDCI_33";
+NET "miib_txd[1]" LOC = AB12 | IOSTANDARD = "LVDCI_33";
+NET "miib_rxclk" LOC = AB19 | IOSTANDARD = "LVDCI_33";
+NET "miib_txd[3]" LOC = AC19 | IOSTANDARD = "LVDCI_33";
+NET "miia_rxclk" LOC = AC12 | IOSTANDARD = "LVDCI_33";
+NET "miib_txd[0]" LOC = AC13 | IOSTANDARD = "LVDCI_33";
+NET "miib_txclk" LOC = AC18 | IOSTANDARD = "LVDCI_33";
+NET "miib_txd[2]" LOC = AB17 | IOSTANDARD = "LVDCI_33";
+#NET ""                    LOC = "AB14" | IOSTANDARD = ;
+#NET ""                    LOC = "AC14" | IOSTANDARD = ;
+NET "mii_mdc" LOC = AC17 | IOSTANDARD = "LVDCI_33";
+NET "miia_txen" LOC = AB16 | IOSTANDARD = "LVDCI_33";
+NET "mii_clk" LOC = AB15 | IOSTANDARD = "LVDCI_33";
+NET "mii_mdio" LOC = AC16 | IOSTANDARD = "LVDCI_33";
+# BANK 11
+NET "gpio_p[0]" LOC = E26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[0]" LOC = E25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[6]" LOC = F25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[6]" LOC = G26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[7]" LOC = H26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[7]" LOC = G25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[3]" LOC = F24 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[3]" LOC = G24 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[1]" LOC = E23 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[1]" LOC = E22 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[4]" LOC = F23 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[4]" LOC = F22 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[2]" LOC = G22 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[2]" LOC = H22 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[5]" LOC = H23 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[5]" LOC = J23 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "J21" | IOSTANDARD = ;
+#NET ""                    LOC = "K21" | IOSTANDARD = ;
+NET "gpio_p[10]" LOC = K22 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[10]" LOC = K23 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[8]" LOC = L23 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[8]" LOC = L22 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "M21" | IOSTANDARD = ;
+#NET ""                    LOC = "N21" | IOSTANDARD = ;
+#NET ""                    LOC = "H24" | IOSTANDARD = ;
+#NET ""                    LOC = "J24" | IOSTANDARD = ;
+NET "gpio_p[9]" LOC = J25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[9]" LOC = J26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[12]" LOC = K26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[12]" LOC = L25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[13]" LOC = L24 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[13]" LOC = K25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[17]" LOC = N26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[17]" LOC = M26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[15]" LOC = M25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[15]" LOC = M24 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "N24" | IOSTANDARD = ;
+#NET ""                    LOC = "N23" | IOSTANDARD = ;
+#NET ""                    LOC = "N22" | IOSTANDARD = ;
+#NET ""                    LOC = "M22" | IOSTANDARD = ;
+# BANK 12
+NET "user_led[0]" LOC = Y6 | IOSTANDARD = "LVCMOS33";
+NET "user_led[1]" LOC = Y5 | IOSTANDARD = "LVCMOS33";
+NET "hss_user_io[2]" LOC = G6 | IOSTANDARD = "LVCMOS33";
+NET "hss_user_io[3]" LOC = H6 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "Y4" | IOSTANDARD = ;
+#NET ""                    LOC = "W4" | IOSTANDARD = ;
+NET "hss_user_io[1]" LOC = G5 | IOSTANDARD = "LVCMOS33";
+NET "hss_user_io[0]" LOC = F5 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "W5" | IOSTANDARD = ;
+#NET ""                    LOC = "W6" | IOSTANDARD = ;
+#NET ""                    LOC = "G4" | IOSTANDARD = ;
+#NET ""                    LOC = "H4" | IOSTANDARD = ;
+#NET ""                    LOC = "V6" | IOSTANDARD = ;
+NET "lb_lresetn" LOC = V7 | IOSTANDARD = "LVCMOS33";
+NET "user_led[2]" LOC = J5 | IOSTANDARD = "LVCMOS33";
+NET "user_led[3]" LOC = J6 | IOSTANDARD = "LVCMOS33";
+NET "lb_dp[3]" LOC = U7 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[27]" LOC = T8 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "K5" | IOSTANDARD = ;
+#NET ""                    LOC = "L5" | IOSTANDARD = ;
+NET "lb_lserrn" LOC = K6 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[23]" LOC = K7 | IOSTANDARD = "LVCMOS33";
+NET "lb_btermn" LOC = U6 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "U5" | IOSTANDARD = ;
+NET "lb_ld[11]" LOC = K8 | IOSTANDARD = "LVCMOS33";
+NET "lb_breqo" LOC = L7 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "T5" | IOSTANDARD = ;
+#NET ""                    LOC = "R5" | IOSTANDARD = ;
+NET "lb_la[11]" LOC = M7 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[16]" LOC = L8 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "R6" | IOSTANDARD = ;
+NET "plx_hostenn" LOC = T7 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "P6" | IOSTANDARD = ;
+#NET ""                    LOC = "N6" | IOSTANDARD = ;
+NET "lb_la[26]" LOC = M6 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[15]" LOC = N7 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[22]" LOC = N8 | IOSTANDARD = "LVCMOS33";
+NET "lb_dackn[0]" LOC = P8 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[18]" LOC = R8 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[17]" LOC = R7 | IOSTANDARD = "LVCMOS33";
+# BANK 13
+NET "gpio_p[18]" LOC = P26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[18]" LOC = R26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[19]" LOC = P25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[19]" LOC = R25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[11]" LOC = P24 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[11]" LOC = P23 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[21]" LOC = R23 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[21]" LOC = R22 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[24]" LOC = U26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[24]" LOC = V26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[25]" LOC = U25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[25]" LOC = T25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[22]" LOC = T24 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[22]" LOC = T23 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[26]" LOC = U24 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[26]" LOC = V24 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[27]" LOC = W26 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[27]" LOC = W25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[30]" LOC = W24 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[30]" LOC = V23 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[31]" LOC = AA22 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[31]" LOC = Y22 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[29]" LOC = Y23 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[29]" LOC = W23 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "Y26" | IOSTANDARD = ;
+#NET ""                    LOC = "Y25" | IOSTANDARD = ;
+NET "gpio_p[28]" LOC = AA25 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[28]" LOC = AB26 | IOSTANDARD = "LVCMOS33";
+#NET ""                    LOC = "AB25" | IOSTANDARD = ;
+#NET ""                    LOC = "AA24" | IOSTANDARD = ;
+#NET ""                    LOC = "AB24" | IOSTANDARD = ;
+#NET ""                    LOC = "AA23" | IOSTANDARD = ;
+NET "gpio_p[14]" LOC = P21 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[14]" LOC = R21 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[20]" LOC = T22 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[20]" LOC = U22 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[16]" LOC = U21 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[16]" LOC = V22 | IOSTANDARD = "LVCMOS33";
+NET "gpio_p[23]" LOC = V21 | IOSTANDARD = "LVCMOS33";
+NET "gpio_n[23]" LOC = W21 | IOSTANDARD = "LVCMOS33";
+# BANK 15
+NET "lb_ld[20]" LOC = C13 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[17]" LOC = C14 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[13]" LOC = B14 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[14]" LOC = A13 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[10]" LOC = A14 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[7]" LOC = A15 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[9]" LOC = B15 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[12]" LOC = C16 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[5]" LOC = B16 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[8]" LOC = C17 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[3]" LOC = B17 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[6]" LOC = A17 | IOSTANDARD = "LVCMOS33";
+NET "lb_dp[1]" LOC = A18 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[0]" LOC = A19 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[2]" LOC = B19 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[4]" LOC = C18 | IOSTANDARD = "LVCMOS33";
+NET "lb_lclko_loop" LOC = A20 | IOSTANDARD = "LVCMOS33";
+NET "lb_readyn" LOC = B20 | IOSTANDARD = "LVCMOS33";
+NET "lb_eotn" LOC = C19 | IOSTANDARD = "LVCMOS33";
+NET "lb_breqi" LOC = D19 | IOSTANDARD = "LVCMOS33";
+NET "lb_pmereon" LOC = D21 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[28]" LOC = D20 | IOSTANDARD = "LVCMOS33";
+NET "lb_lclko_plx" LOC = B21 | IOSTANDARD = "LVCMOS33";
+NET "lb_dp[0]" LOC = C21 | IOSTANDARD = "LVCMOS33";
+NET "lb_ccsn" LOC = D23 | IOSTANDARD = "LVCMOS33";
+NET "lb_dp[2]" LOC = C22 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[1]" LOC = B22 | IOSTANDARD = "LVCMOS33";
+NET "lb_adsn" LOC = A22 | IOSTANDARD = "LVCMOS33";
+NET "lb_waitn" LOC = A23 | IOSTANDARD = "LVCMOS33";
+NET "lb_lholda" LOC = A24 | IOSTANDARD = "LVCMOS33";
+NET "lb_lintin" LOC = B24 | IOSTANDARD = "LVCMOS33";
+NET "lb_usero" LOC = C23 | IOSTANDARD = "LVCMOS33";
+NET "lb_bigendn" LOC = D24 | IOSTANDARD = "LVCMOS33";
+NET "lb_dreqn[1]" LOC = C24 | IOSTANDARD = "LVCMOS33";
+NET "lb_linton" LOC = B25 | IOSTANDARD = "LVCMOS33";
+NET "lb_blastn" LOC = A25 | IOSTANDARD = "LVCMOS33";
+NET "lb_lhold" LOC = B26 | IOSTANDARD = "LVCMOS33";
+NET "lb_useri" LOC = C26 | IOSTANDARD = "LVCMOS33";
+NET "lb_dackn[1]" LOC = D26 | IOSTANDARD = "LVCMOS33";
+NET "lb_dreqn[0]" LOC = D25 | IOSTANDARD = "LVCMOS33";
+# BANK 16
+NET "lb_la[25]" LOC = H7 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[24]" LOC = G7 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[21]" LOC = F7 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[20]" LOC = F8 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[19]" LOC = F9 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[31]" LOC = G9 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[30]" LOC = H8 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[29]" LOC = J8 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[21]" LOC = A9 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[22]" LOC = A8 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[7]" LOC = E8 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[10]" LOC = E7 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[25]" LOC = B9 | IOSTANDARD = "LVCMOS33";
+NET "lb_lw_rn" LOC = C8 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[13]" LOC = E6 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[8]" LOC = D6 | IOSTANDARD = "LVCMOS33";
+NET "lb_lben[0]" LOC = C9 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[6]" LOC = D8 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[4]" LOC = C7 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[9]" LOC = C6 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[26]" LOC = A7 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[29]" LOC = B7 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[2]" LOC = D9 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[30]" LOC = D10 | IOSTANDARD = "LVCMOS33";
+NET "lb_lben[2]" LOC = B6 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[31]" LOC = A5 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[23]" LOC = B10 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[18]" LOC = A10 | IOSTANDARD = "LVCMOS33";
+NET "lb_lben[1]" LOC = A4 | IOSTANDARD = "LVCMOS33";
+NET "lb_lben[3]" LOC = A3 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[19]" LOC = B11 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[15]" LOC = A12 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[5]" LOC = B4 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[3]" LOC = B5 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[16]" LOC = B12 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[24]" LOC = C12 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[12]" LOC = D5 | IOSTANDARD = "LVCMOS33";
+NET "lb_la[14]" LOC = E5 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[28]" LOC = C11 | IOSTANDARD = "LVCMOS33";
+NET "lb_ld[27]" LOC = D11 | IOSTANDARD = "LVCMOS33";
+# BANK 17
+NET "ddr2_dq[16]" LOC = AC26 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[22]" LOC = AD26 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[23]" LOC = AD25 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[19]" LOC = AD24 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[20]" LOC = AE25 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[17]" LOC = AE26 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[26]" LOC = AF25 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[29]" LOC = AF24 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[31]" LOC = AF23 | IOSTANDARD = "SSTL18_II_DCI";
+#NET ""                    LOC = "AE23" | IOSTANDARD = ; VREF
+NET "ddr2_dq[5]" LOC = AE22 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[24]" LOC = AD23 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[18]" LOC = AC24 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[2]" LOC = AC23 | IOSTANDARD = "SSTL18_II_DCI";
+#NET ""                   LOC= AC22 | IOSTANDARD = ;
+NET "ddr2_dq[21]" LOC = AB22 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dqs[3]" LOC = AF22 | IOSTANDARD = "DIFF_SSTL18_II_DCI";
+NET "ddr2_dqs_n[3]" LOC = AE21 | IOSTANDARD = "DIFF_SSTL18_II_DCI";
+NET "ddr2_dqs[2]" LOC = AF20 | IOSTANDARD = "DIFF_SSTL18_II_DCI";
+NET "ddr2_dqs_n[2]" LOC = AE20 | IOSTANDARD = "DIFF_SSTL18_II_DCI";
+NET "ddr2_dqs[0]" LOC = AD19 | IOSTANDARD = "DIFF_SSTL18_II_DCI";
+NET "ddr2_dqs_n[0]" LOC = AD20 | IOSTANDARD = "DIFF_SSTL18_II_DCI";
+NET "ddr2_dq[0]" LOC = AC21 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[7]" LOC = AD21 | IOSTANDARD = "SSTL18_II_DCI";
+#NET ""                    LOC = "AF19" | IOSTANDARD = ; VRN
+#NET ""                    LOC = "AF18" | IOSTANDARD = ; VRP
+NET "ddr2_dm[3]" LOC = AE18 | IOSTANDARD = "SSTL18_I_DCI";
+#NET ""                    LOC = "AD18" | IOSTANDARD = ; <<< FREE
+NET "ddr2_dm[2]" LOC = AE17 | IOSTANDARD = "SSTL18_I_DCI";
+#NET ""                    LOC = "AF17" | IOSTANDARD = ; VREF
+NET "ddr2_dm[0]" LOC = AE16 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_dq[6]" LOC = AD16 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[1]" LOC = AD15 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[25]" LOC = AE15 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[30]" LOC = AF15 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[28]" LOC = AF14 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[27]" LOC = AF13 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[3]" LOC = AE13 | IOSTANDARD = "SSTL18_II_DCI";
+#NET ""                    LOC = "AD13" | IOSTANDARD = ;
+NET "ddr2_dq[4]" LOC = AD14 | IOSTANDARD = "SSTL18_II_DCI";
+# BANK 18
+NET "ddr2_dq[13]" LOC = AF12 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[10]" LOC = AE12 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_a[9]" LOC = V8 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_ba[2]" LOC = V9 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_ck[0]" LOC = AE11 | IOSTANDARD = "DIFF_SSTL18_II_DCI";
+NET "ddr2_ck_n[0]" LOC = AD11 | IOSTANDARD = "DIFF_SSTL18_II_DCI";
+NET "ddr2_a[5]" LOC = W9 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_cs_n[0]" LOC = W8 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_a[13]" LOC = "AD10" | IOSTANDARD = "SSTL18_I_DCI";
+#NET ""                    LOC = "AE10" | IOSTANDARD = ; VREF
+NET "ddr2_a[3]" LOC = Y7 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_a[1]" LOC = Y8 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_dq[15]" LOC = AF9 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[8]" LOC = AF10 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_ras_n" LOC = AA7 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_a[8]" LOC = AA8 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_dqs[1]" LOC = AF7 | IOSTANDARD = "DIFF_SSTL18_II_DCI";
+NET "ddr2_dqs_n[1]" LOC = AF8 | IOSTANDARD = "DIFF_SSTL18_II_DCI";
+NET "ddr2_ba[1]" LOC = AA5 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_we_n" LOC = AB5 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_a[12]" LOC = AB6 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_a[11]" LOC = AB7 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_a[6]" LOC = AE8 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_ba[0]" LOC = AE7 | IOSTANDARD = "SSTL18_I_DCI";
+#NET ""                    LOC = "AC6" | IOSTANDARD = ; VRN
+#NET ""                    LOC = "AD5" | IOSTANDARD = ; VRP
+NET "ddr2_dm[1]" LOC = AE6 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_dq[14]" LOC = AF5 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[9]" LOC = AE5 | IOSTANDARD = "SSTL18_II_DCI";
+#NET ""                    LOC = "AD4" | IOSTANDARD = ; VREF
+NET "ddr2_dq[12]" LOC = AF4 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_dq[11]" LOC = AF3 | IOSTANDARD = "SSTL18_II_DCI";
+NET "ddr2_a[7]" LOC = AD6 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_a[10]" LOC = AC7 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_cke[0]" LOC = AC8 | IOSTANDARD = "SSTL18_I_DCI"; 
+NET "ddr2_a[2]" LOC = AD8 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_odt[0]" LOC = AD9 | IOSTANDARD = "SSTL18_I_DCI"; 
+NET "ddr2_cas_n" LOC = AC9 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_a[4]" LOC = AB9 | IOSTANDARD = "SSTL18_I_DCI";
+NET "ddr2_a[0]" LOC = AA9 | IOSTANDARD = "SSTL18_I_DCI";
+
+#*********************************************************************************
+# PLX Local Bus
+#*********************************************************************************
+# ensure that registers are not placed in the IOB.  this will make output mux better
+
+INST "lb_btermn" TNM = LB_IOPAD;
+INST "lb_useri" TNM = LB_IOPAD;
+INST "lb_pmereon" TNM = LB_IOPAD;
+INST "lb_eotn" TNM = LB_IOPAD;
+INST "lb_ccsn" TNM = LB_OPAD;
+INST "lb_breqi" TNM = LB_OPAD;
+INST "lb_ld<*>" TNM = LB_IOPAD;
+INST "lb_dp<*>" TNM = LB_IOPAD;
+INST "lb_dreqn<*>" TNM = LB_OPAD;
+INST "lb_lw_rn" TNM = LB_IOPAD;
+INST "lb_lhold" TNM = LB_IPAD;
+INST "lb_lresetn" TNM = LB_IPAD;
+INST "lb_adsn" TNM = LB_IOPAD;
+INST "lb_blastn" TNM = LB_IOPAD;
+INST "lb_lben<*>" TNM = LB_IOPAD;
+INST "lb_la<*>" TNM = LB_IOPAD;
+INST "lb_bigendn" TNM = LB_OPAD;
+INST "lb_lintin" TNM = LB_OPAD;
+INST "lb_readyn" TNM = LB_IOPAD;
+#INST "lb_lclko" TNM = LB_PAD;
+INST "lb_lholda" TNM = LB_OPAD;
+
+#INST "lb_breqo" TNM = LB_IPAD;
+#INST "lb_usero" TNM = LB_IPAD;
+#INST "lb_linton" TNM = LB_IPAD;
+#INST "lb_waitn" TNM = LB_IPAD;
+#INST "lb_lserrn" TNM = LB_IPAD;
+#INST "lb_dackn<1>" TNM = LB_IPAD;
+#INST "lb_dackn<0>" TNM = LB_IPAD;
+
+TIMEGRP "LB_IPAD" OFFSET = IN 8.8 ns BEFORE "lb_lclkfb";
+TIMEGRP "LB_IOPAD" OFFSET = IN 8.8 ns BEFORE "lb_lclkfb";
+TIMEGRP "LB_OPAD" OFFSET = OUT 10.8 ns AFTER "lb_lclkfb";
+TIMEGRP "LB_IOPAD" OFFSET = OUT 11.9 ns AFTER "lb_lclkfb"; #10.25
+
+#*********************************************************************************
+# GPIO
+#*********************************************************************************
+#INST "gpio_p[*]" IOB=FALSE;  << must be done in VHDL
+#INST "gpio_n[*]" IOB=FALSE;  << must be done in VHDL
+
+#NET "*u_Chipsync0/u_rx/RXCLK" 	 TNM_NET = "TNM_CS0_RXCLK";
+#NET "*u_Chipsync0/u_rx/RXCLKDIV" TNM_NET = "TNM_CS0_RXCLKDIV";
+#NET "*u_Chipsync1/u_rx/RXCLK" 	 TNM_NET = "TNM_CS1_RXCLK";
+#NET "*u_Chipsync1/u_rx/RXCLKDIV" TNM_NET = "TNM_CS1_RXCLKDIV";
+#
+#TIMESPEC "TS_CS0_RXCLK"		= PERIOD "TNM_CS0_RXCLK" 	5 ns HIGH 50 %; 
+#TIMESPEC "TS_CS0_RXCLKDIV"	= PERIOD "TNM_CS0_RXCLKDIV"	20 ns HIGH 50 %; 
+#TIMESPEC "TS_CS1_RXCLK" 	= PERIOD "TNM_CS1_RXCLK"	5 ns HIGH 50 %; 
+#TIMESPEC "TS_CS1_RXCLKDIV" 	= PERIOD "TNM_CS1_RXCLKDIV"	20 ns HIGH 50 %; 
+#
+#INST "*u_Chipsync0/u_rx/RX_IDELAYCTRL" LOC = "IDELAYCTRL_X0Y2"; # bank 11
+#INST "*u_Chipsync1/u_rx/RX_IDELAYCTRL" LOC = "IDELAYCTRL_X0Y1"; # bank 13
+
+#*********************************************************************************
+# Serial
+#*********************************************************************************
+INST "rs*rx" TNM = RS_IPAD;
+INST "rs*tx" TNM = RS_OPAD;
+INST "rs*en" TNM = RS_OPAD;
+
+TIMEGRP "RS_IPAD" OFFSET = IN 8.5 ns BEFORE "lb_lclkfb";
+TIMEGRP "RS_OPAD" OFFSET = OUT 10 ns AFTER "lb_lclkfb";
+
+#*********************************************************************************
+# SPI / EEPROM
+#*********************************************************************************
+INST "spi*miso" TNM = SPI_IPAD;
+INST "spi*clk" TNM = SPI_OPAD;
+INST "spi*csn" TNM = SPI_OPAD;
+INST "spi*mosi" TNM = SPI_OPAD;
+
+INST "eth_ee_dido" TNM = SPI_IOPAD;
+INST "eth_ee_clk" TNM = SPI_OPAD;
+INST "eth_ee_cs" TNM = SPI_IOPAD;
+
+TIMEGRP "SPI_IPAD" OFFSET = IN 8.5 ns BEFORE "lb_lclkfb";
+TIMEGRP "SPI_IOPAD" OFFSET = IN 8.5 ns BEFORE "lb_lclkfb";
+TIMEGRP "SPI_OPAD" OFFSET = OUT 10 ns AFTER "lb_lclkfb";
+
+#*********************************************************************************
+# DDR2
+#*********************************************************************************
+
+# DDR2 Timing, as copied from MIG
+
+#NET "u_mig20/u_infrastructure/sys_clk_i" TNM_NET =  "SYS_CLK";
+TIMESPEC "TS_SYS_CLK" = PERIOD "TNM_clk200" 5 ns HIGH 50 %;
+
+#NET "u_mig20/u_infrastructure/clk200_i" TNM_NET = "SYS_CLK_200";
+#TIMESPEC "TS_SYS_CLK_200" = PERIOD "SYS_CLK_200" 5 ns HIGH 50 %;
+
+
+#See http://www.xilinx.com/support/answers/29900.htm
+
+# >>> CHANGED AS PER  AR# 29900
+#NET "clk0"    TNM = FFS "TNM_CLK0";
+#NET "clk90"   TNM = FFS "TNM_CLK90";
+
+# MUX Select for either rising/falling CLK0 for 2nd stage read capture
+# >>> CHANGED AS PER  AR# 29900
+#INST "*/u_phy_calib_0/gen_rd_data_sel*.u_ff_rd_data_sel" TNM = "TNM_RD_DATA_SEL";
+#TIMESPEC "TS_MC_RD_DATA_SEL" = FROM "TNM_RD_DATA_SEL" TO "TNM_CLK0"
+#  "TS_SYS_CLK" * 4;
+INST "*/u_phy_calib_0/gen_rd_data_sel*.u_ff_rd_data_sel" TNM = "TNM_RD_DATA_SEL";
+TIMESPEC "TS_MC_RD_DATA_SEL" = FROM "TNM_RD_DATA_SEL" TO FFS "TS_SYS_CLK" * 4;
+
+# MUX select for read data - optional delay on data to account for byte skews
+# >>> CHANGED AS PER  AR# 29900
+#INST "*/u_usr_rd_0/gen_rden_sel_mux*.u_ff_rden_sel_mux" TNM = "TNM_RDEN_SEL_MUX";
+#TIMESPEC "TS_MC_RDEN_SEL_MUX" = FROM "TNM_RDEN_SEL_MUX" TO "TNM_CLK0"
+#  "TS_SYS_CLK" * 4;
+INST "*/u_usr_rd_0/gen_rden_sel_mux*.u_ff_rden_sel_mux" TNM = "TNM_RDEN_SEL_MUX";
+TIMESPEC "TS_MC_RDEN_SEL_MUX" = FROM "TNM_RDEN_SEL_MUX" TO FFS "TS_SYS_CLK" * 4;
+  
+# Calibration/Initialization complete status flag (for PHY logic only)
+# >>> CHANGED AS PER  AR# 29900
+#INST "*/u_phy_init_0/u_ff_phy_init_data_sel" TNM = "TNM_PHY_INIT_DATA_SEL";
+#TIMESPEC "TS_MC_PHY_INIT_DATA_SEL_0" = FROM "TNM_PHY_INIT_DATA_SEL" TO
+# "TNM_CLK0" "TS_SYS_CLK" * 4;
+#TIMESPEC "TS_MC_PHY_INIT_DATA_SEL_90" = FROM "TNM_PHY_INIT_DATA_SEL" TO
+#  "TNM_CLK90" "TS_SYS_CLK" * 4;
+INST "*/u_phy_init_0/u_ff_phy_init_data_sel" TNM = "TNM_PHY_INIT_DATA_SEL";
+TIMESPEC "TS_MC_PHY_INIT_DATA_SEL_0" = FROM "TNM_PHY_INIT_DATA_SEL" TO FFS "TS_SYS_CLK" * 4;
+TIMESPEC "TS_MC_PHY_INIT_DATA_SEL_90" = FROM "TNM_PHY_INIT_DATA_SEL" TO RAMS "TS_SYS_CLK" * 4;
+  
+# Select (address) bits for SRL32 shift registers used in stage3/stage4
+# calibration
+#INST "*/u_phy_calib_0/gen_gate_dly*.u_ff_gate_dly" TNM = "TNM_GATE_DLY";
+#TIMESPEC "TS_MC_GATE_DLY" = FROM "TNM_GATE_DLY" TO "TNM_CLK0" "TS_SYS_CLK" * 4;
+#INST "*/u_phy_calib_0/gen_rden_dly*.u_ff_rden_dly" TNM = "TNM_RDEN_DLY";
+#TIMESPEC "TS_MC_RDEN_DLY" = FROM "TNM_RDEN_DLY" TO "TNM_CLK0" "TS_SYS_CLK" * 4;
+#INST "*/u_phy_calib_0/gen_cal_rden_dly*.u_ff_cal_rden_dly"
+#  TNM = "TNM_CAL_RDEN_DLY";
+#TIMESPEC "TS_MC_CAL_RDEN_DLY" = FROM "TNM_CAL_RDEN_DLY" TO "TNM_CLK0"
+#  "TS_SYS_CLK" * 4;
+INST "*/u_phy_calib_0/gen_gate_dly*.u_ff_gate_dly" TNM = "TNM_GATE_DLY";
+TIMESPEC "TS_MC_GATE_DLY" = FROM "TNM_GATE_DLY" TO FFS "TS_SYS_CLK" * 4;
+INST "*/u_phy_calib_0/gen_rden_dly*.u_ff_rden_dly" TNM = "TNM_RDEN_DLY";
+TIMESPEC "TS_MC_RDEN_DLY" = FROM "TNM_RDEN_DLY" TO FFS "TS_SYS_CLK" * 4;
+INST "*/u_phy_calib_0/gen_cal_rden_dly*.u_ff_cal_rden_dly" TNM = "TNM_CAL_RDEN_DLY";
+TIMESPEC "TS_MC_CAL_RDEN_DLY" = FROM "TNM_CAL_RDEN_DLY" TO FFS "TS_SYS_CLK" * 4;
+
+###############################################################################
+# DQS Read Postamble Glitch Squelch circuit related constraints
+###############################################################################
+
+###############################################################################
+# LOC placement of DQS-squelch related IDDR and IDELAY elements
+# Each circuit can be located at any of the following locations:
+#  1. Ununsed "N"-side of DQS diff pair I/O
+#  2. DM data mask (output only, input side is free for use)
+#  3. Any output-only site
+###############################################################################
+
+INST "*/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce"	LOC = "ILOGIC_X0Y58";
+INST "*/gen_dqs[0].u_iob_dqs/u_iodelay_dq_ce"	LOC = "IODELAY_X0Y58";
+INST "*/gen_dqs[1].u_iob_dqs/u_iddr_dq_ce"	LOC = "ILOGIC_X2Y62";
+INST "*/gen_dqs[1].u_iob_dqs/u_iodelay_dq_ce"	LOC = "IODELAY_X2Y62";
+INST "*/gen_dqs[2].u_iob_dqs/u_iddr_dq_ce"	LOC = "ILOGIC_X0Y60";
+INST "*/gen_dqs[2].u_iob_dqs/u_iodelay_dq_ce"	LOC = "IODELAY_X0Y60";
+INST "*/gen_dqs[3].u_iob_dqs/u_iddr_dq_ce"	LOC = "ILOGIC_X0Y62";
+INST "*/gen_dqs[3].u_iob_dqs/u_iodelay_dq_ce"	LOC = "IODELAY_X0Y62";
+
+###############################################################################
+# LOC and timing constraints for flop driving DQS CE enable signal
+# from fabric logic. Even though the absolute delay on this path is
+# calibrated out (when synchronizing this output to DQS), the delay
+# should still be kept as low as possible to reduce post-calibration
+# voltage/temp variations - these are roughly proportional to the
+# absolute delay of the path
+###############################################################################
+
+INST "*/u_phy_calib_0/gen_gate[0].u_en_dqs_ff"	LOC = SLICE_X0Y29;
+INST "*/u_phy_calib_0/gen_gate[1].u_en_dqs_ff"	LOC = SLICE_X51Y31;
+INST "*/u_phy_calib_0/gen_gate[2].u_en_dqs_ff"	LOC = SLICE_X0Y30;
+INST "*/u_phy_calib_0/gen_gate[3].u_en_dqs_ff"	LOC = SLICE_X0Y31;
+
+# Control for DQS gate - from fabric flop. Prevent "runaway" delay -
+# two parts to this path: (1) from fabric flop to IDELAY, (2) from
+# IDELAY to asynchronous reset of IDDR that drives the DQ CE's
+# A single number is used for all speed grades - value based on 333MHz.
+# This can be relaxed for lower frequencies.
+NET "*/u_phy_io_0/en_dqs*" MAXDELAY = 600 ps;
+NET "*/u_phy_io_0/gen_dqs*.u_iob_dqs/en_dqs_sync" MAXDELAY = 850 ps;
+
+###############################################################################
+# "Half-cycle" path constraint from IDDR to CE pin for all DQ IDDR's
+# for DQS Read Postamble Glitch Squelch circuit
+###############################################################################
+
+# Max delay from output of IDDR to CE input of DQ IDDRs = tRPST + some slack
+#  where slack account for rise-time of DQS on board. For now assume slack = 
+#  0.400ns (based on initial SPICE simulations, assumes use of ODT), so 
+#  time = 0.4*Tcyc + 0.40ns = 1.6ns @333MHz
+INST "*/gen_dqs[*].u_iob_dqs/u_iddr_dq_ce" TNM = "TNM_DQ_CE_IDDR";
+INST "*/gen_dq[*].u_iob_dq/gen_stg2_*.u_iddr_dq" TNM = "TNM_DQS_FLOPS";
+TIMESPEC "TS_DQ_CE" = FROM "TNM_DQ_CE_IDDR" TO "TNM_DQS_FLOPS" 2.4 ns;
+
+#*********************************************************************************
+
+INST "*/gen_dq[0].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y28;
+INST "*/gen_dq[1].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y23;
+INST "*/gen_dq[2].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y33;
+INST "*/gen_dq[3].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y21;
+INST "*/gen_dq[4].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y20;
+INST "*/gen_dq[5].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y34;
+INST "*/gen_dq[6].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y24;
+INST "*/gen_dq[7].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y28;
+INST "*/gen_dq[8].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X48Y33;
+INST "*/gen_dq[9].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X48Y25;
+INST "*/gen_dq[10].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X48Y39;
+INST "*/gen_dq[11].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X48Y24;
+INST "*/gen_dq[12].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X48Y24;
+INST "*/gen_dq[13].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X48Y39;
+INST "*/gen_dq[14].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X48Y26;
+INST "*/gen_dq[15].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X48Y33;
+INST "*/gen_dq[16].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y39;
+INST "*/gen_dq[17].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y37;
+INST "*/gen_dq[18].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y33;
+INST "*/gen_dq[19].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y38;
+INST "*/gen_dq[20].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y37;
+INST "*/gen_dq[21].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y32;
+INST "*/gen_dq[22].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y39;
+INST "*/gen_dq[23].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y38;
+INST "*/gen_dq[24].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y34;
+INST "*/gen_dq[25].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y23;
+INST "*/gen_dq[26].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y36;
+INST "*/gen_dq[27].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y21;
+INST "*/gen_dq[28].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y22;
+INST "*/gen_dq[29].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y36;
+INST "*/gen_dq[30].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y22;
+INST "*/gen_dq[31].u_iob_dq/gen_stg2_*.u_ff_stg2a_rise"	RLOC_ORIGIN = X0Y35;
+
+
+#*********************************************************************************
+# Ethernet 
+# - copied from v5_emac_v1_3_example_design.ucf
+# - instances prefixed with g_emac*
+#*********************************************************************************
+
+
+##################################
+# BLOCK Level constraints
+##################################
+
+# EMAC0 Clocking
+# EMAC0 TX Client Clock input from BUFG
+NET "*tx_client_clk_0" TNM_NET = "clk_client_tx0";
+TIMEGRP  "v5_emac_v1_3_client_clk_tx0"     = "clk_client_tx0";
+TIMESPEC "TS_v5_emac_v1_3_client_clk_tx0"  = PERIOD "v5_emac_v1_3_client_clk_tx0" 7700 ps HIGH 50 %;
+# EMAC0 RX Client Clock input from BUFG
+NET "*rx_client_clk_0" TNM_NET = "clk_client_rx0";
+TIMEGRP  "v5_emac_v1_3_client_clk_rx0"     = "clk_client_rx0";
+TIMESPEC "TS_v5_emac_v1_3_client_clk_rx0"  = PERIOD "v5_emac_v1_3_client_clk_rx0" 7700 ps HIGH 50 %;
+# EMAC0 TX PHY Clock input from BUFG
+NET "*tx_phy_clk_0" TNM_NET    = "clk_phy_tx0";
+TIMEGRP  "v5_emac_v1_3_phy_clk_tx0"        = "clk_phy_tx0";
+TIMESPEC "TS_v5_emac_v1_3_phy_clk_tx0"     = PERIOD "v5_emac_v1_3_phy_clk_tx0" 7700 ps HIGH 50 %;
+NET "*rx_clk_0_i" TNM_NET    = "phy_clk_rx0";
+TIMEGRP  "v5_emac_v1_3_clk_phy_rx0"        = "phy_clk_rx0";
+TIMESPEC "TS_v5_emac_v1_3_clk_phy_rx0"     = PERIOD "v5_emac_v1_3_clk_phy_rx0" 7700 ps HIGH 50 %;
+#> example UCF had non=buffered rx_clk
+
+# EMAC1 Clocking
+# EMAC1 TX Client Clock input from BUFG
+NET "*tx_client_clk_1" TNM_NET = "clk_client_tx1";
+TIMEGRP  "v5_emac_v1_3_client_clk_tx1"     = "clk_client_tx1";
+TIMESPEC "TS_v5_emac_v1_3_client_clk_tx1"  = PERIOD "v5_emac_v1_3_client_clk_tx1" 7700 ps HIGH 50 %;
+# EMAC1 RX Client Clock input from BUFG
+NET "*rx_client_clk_1" TNM_NET = "clk_client_rx1";
+TIMEGRP  "v5_emac_v1_3_client_clk_rx1"     = "clk_client_rx1";
+TIMESPEC "TS_v5_emac_v1_3_client_clk_rx1"  = PERIOD "v5_emac_v1_3_client_clk_rx1" 7700 ps HIGH 50 %;
+# EMAC1 TX PHY Clock input from BUFG
+NET "*tx_phy_clk_1" TNM_NET    = "clk_phy_tx1";
+TIMEGRP  "v5_emac_v1_3_phy_clk_tx1"        = "clk_phy_tx1";
+TIMESPEC "TS_v5_emac_v1_3_phy_clk_tx1"     = PERIOD "v5_emac_v1_3_phy_clk_tx1" 7700 ps HIGH 50 %;
+NET "*rx_clk_1_i" TNM_NET    = "phy_clk_rx1";
+TIMEGRP  "v5_emac_v1_3_clk_phy_rx1"        = "phy_clk_rx1";
+TIMESPEC "TS_v5_emac_v1_3_clk_phy_rx1"     = PERIOD "v5_emac_v1_3_clk_phy_rx1" 7700 ps HIGH 50 %;
+
+
+# GMII Receiver Constraints:  place flip-flops in IOB
+INST "*mii0?RXD_TO_MAC*"    IOB = true;
+INST "*mii0?RX_DV_TO_MAC"   IOB = true;
+INST "*mii0?RX_ER_TO_MAC"   IOB = true;
+
+INST "*mii0?MII_TXD_?"      IOB = true;
+INST "*mii0?MII_TX_EN"      IOB = true;
+#INST "*mii0?MII_TX_ER"      IOB = true;  no TX_ER on phy
+
+INST "*mii1?RXD_TO_MAC*"    IOB = true;
+INST "*mii1?RX_DV_TO_MAC"   IOB = true;
+INST "*mii1?RX_ER_TO_MAC"   IOB = true;
+
+INST "*mii1?MII_TXD_?"      IOB = true;
+INST "*mii1?MII_TX_EN"      IOB = true;
+#INST "*mii1?MII_TX_ER"      IOB = true;  no TX_ER on phy
+
+
+##################################
+# LocalLink Level constraints
+##################################
+
+# EMAC1 LocalLink client FIFO constraints.
+
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?rd_tran_frame_tog"    TNM = "tx_fifo_rd_to_wr_1";
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?rd_retran_frame_tog"  TNM = "tx_fifo_rd_to_wr_1";
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?rd_col_window_pipe_1" TNM = "tx_fifo_rd_to_wr_1";
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?rd_addr_txfer*"       TNM = "tx_fifo_rd_to_wr_1";
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?rd_txfer_tog"         TNM = "tx_fifo_rd_to_wr_1";
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?wr_frame_in_fifo"     TNM = "tx_fifo_wr_to_rd_1";
+
+
+TIMESPEC "TS_tx_fifo_rd_to_wr_1" = FROM "tx_fifo_rd_to_wr_1" TO "v5_emac_v1_3_client_clk_tx1" 8000 ps DATAPATHONLY;
+TIMESPEC "TS_tx_fifo_wr_to_rd_1" = FROM "tx_fifo_wr_to_rd_1" TO "v5_emac_v1_3_client_clk_tx1" 8000 ps DATAPATHONLY;
+
+# Reduce clock period to allow 3 ns for metastability settling time
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?wr_tran_frame_tog"    TNM = "tx_metastable_1";
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?wr_rd_addr*"          TNM = "tx_metastable_1";
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?wr_txfer_tog"         TNM = "tx_metastable_1";
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?frame_in_fifo"        TNM = "tx_metastable_1";
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?wr_retran_frame_tog*" TNM = "tx_metastable_1";
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?wr_col_window_pipe_0" TNM = "tx_metastable_1";
+
+TIMESPEC "ts_tx_meta_protect_1" = FROM "tx_metastable_1" 5 ns DATAPATHONLY;
+
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?rd_addr_txfer*"       TNM = "tx_addr_rd_1";
+INST "*/*client_side_FIFO_emac1?tx_fifo_i?wr_rd_addr*"          TNM = "tx_addr_wr_1";
+TIMESPEC "TS_tx_fifo_addr_1" = FROM "tx_addr_rd_1" TO "tx_addr_wr_1" 10ns;
+
+## RX Client FIFO
+# Group the clock crossing signals into timing groups
+INST "*/*client_side_FIFO_emac1?rx_fifo_i?wr_store_frame_tog"   TNM = "rx_fifo_wr_to_rd_1";
+INST "*/*client_side_FIFO_emac1?rx_fifo_i?rd_addr_gray*"        TNM = "rx_fifo_rd_to_wr_1";
+
+
+TIMESPEC "TS_rx_fifo_wr_to_rd_1" = FROM "rx_fifo_wr_to_rd_1" TO "v5_emac_v1_3_client_clk_tx1" 8000 ps DATAPATHONLY;
+TIMESPEC "TS_rx_fifo_rd_to_wr_1" = FROM "rx_fifo_rd_to_wr_1" TO "v5_emac_v1_3_client_clk_rx1" 8000 ps DATAPATHONLY;
+
+# Reduce clock period to allow for metastability settling time
+INST "*/*client_side_FIFO_emac1?rx_fifo_i?wr_rd_addr_gray_sync*" TNM = "rx_metastable_1";
+INST "*/*client_side_FIFO_emac1?rx_fifo_i?rd_store_frame_tog"    TNM = "rx_metastable_1";
+
+TIMESPEC "ts_rx_meta_protect_1" = FROM "rx_metastable_1" 5 ns;
+
+
+# EMAC0 LocalLink client FIFO constraints.
+
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?rd_tran_frame_tog"    TNM = "tx_fifo_rd_to_wr_0";
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?rd_retran_frame_tog"  TNM = "tx_fifo_rd_to_wr_0";
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?rd_col_window_pipe_1" TNM = "tx_fifo_rd_to_wr_0";
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?rd_addr_txfer*"       TNM = "tx_fifo_rd_to_wr_0";
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?rd_txfer_tog"         TNM = "tx_fifo_rd_to_wr_0";
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?wr_frame_in_fifo"     TNM = "tx_fifo_wr_to_rd_0";
+
+
+TIMESPEC "TS_tx_fifo_rd_to_wr_0" = FROM "tx_fifo_rd_to_wr_0" TO "v5_emac_v1_3_client_clk_tx0" 8000 ps DATAPATHONLY;
+TIMESPEC "TS_tx_fifo_wr_to_rd_0" = FROM "tx_fifo_wr_to_rd_0" TO "v5_emac_v1_3_client_clk_tx0" 8000 ps DATAPATHONLY;
+
+# Reduce clock period to allow 3 ns for metastability settling time
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?wr_tran_frame_tog"    TNM = "tx_metastable_0";
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?wr_rd_addr*"          TNM = "tx_metastable_0";
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?wr_txfer_tog"         TNM = "tx_metastable_0";
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?frame_in_fifo"        TNM = "tx_metastable_0";
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?wr_retran_frame_tog*" TNM = "tx_metastable_0";
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?wr_col_window_pipe_0" TNM = "tx_metastable_0";
+
+TIMESPEC "ts_tx_meta_protect_0" = FROM "tx_metastable_0" 5 ns DATAPATHONLY;
+
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?rd_addr_txfer*"       TNM = "tx_addr_rd_0";
+INST "*/*client_side_FIFO_emac0?tx_fifo_i?wr_rd_addr*"          TNM = "tx_addr_wr_0";
+TIMESPEC "TS_tx_fifo_addr_0" = FROM "tx_addr_rd_0" TO "tx_addr_wr_0" 10ns;
+
+## RX Client FIFO
+# Group the clock crossing signals into timing groups
+INST "*/*client_side_FIFO_emac0?rx_fifo_i?wr_store_frame_tog"   TNM = "rx_fifo_wr_to_rd_0";
+INST "*/*client_side_FIFO_emac0?rx_fifo_i?rd_addr_gray*"        TNM = "rx_fifo_rd_to_wr_0";
+
+
+TIMESPEC "TS_rx_fifo_wr_to_rd_0" = FROM "rx_fifo_wr_to_rd_0" TO "v5_emac_v1_3_client_clk_rx0" 8000 ps DATAPATHONLY;
+TIMESPEC "TS_rx_fifo_rd_to_wr_0" = FROM "rx_fifo_rd_to_wr_0" TO "v5_emac_v1_3_client_clk_rx0" 8000 ps DATAPATHONLY;
+
+# Reduce clock period to allow for metastability settling time
+INST "*/*client_side_FIFO_emac0?rx_fifo_i?wr_rd_addr_gray_sync*" TNM = "rx_metastable_0";
+INST "*/*client_side_FIFO_emac0?rx_fifo_i?rd_store_frame_tog"    TNM = "rx_metastable_0";
+
+TIMESPEC "ts_rx_meta_protect_0" = FROM "rx_metastable_0" 5 ns;
+
+
+#*********************************************************************************
+# GTP
+# - copied from example_mgt_top.ucf
+# - note that the constraints in gtp_attributes.ucf are not req'd.  the VHDL
+# generics handle these
+#*********************************************************************************
+
+#NET u_mgt/tile0_refclk_i PERIOD = 10.0 ns;
+#NET u_mgt/tile0_refclkout_bufg  PERIOD = 10.0 ns;
+
+# User Clock Constraints
+NET *u_mgt/tile0_txusrclk0_i    PERIOD  = 4.0 ns; 
+									  #=5.0 ns; # 200 Mhz
+                                      #= 4.0 ns; # 250 Mhz
+
+######################## locs for top level ports ######################
+#GTP PLLDET pins 
+#NET TILE0_PLLLKDET_OUT LOC=AE12;  #LED
+#NET TILE1_PLLLKDET_OUT LOC=AF12;  #LED
+
+######################### mgt clock module constraints ########################
+NET mgt114_refclkn  LOC=T3; #TILE0_REFCLK_PAD_N_IN
+NET mgt114_refclkp  LOC=T4; #TILE0_REFCLK_PAD_P_IN
+
+################################# mgt wrapper constraints #####################
+# GTP_DUAL_X0Y2 = MGT114
+INST *u_mgt/*pciegt?_wrapper_i/tile0_pciegtp_wrapper_i/gtp_dual_i LOC=GTP_DUAL_X0Y2;
+# GTP_DUAL_X0Y3 = MGT112
+INST *u_mgt/*pciegt?_wrapper_i/tile1_pciegtp_wrapper_i/gtp_dual_i LOC=GTP_DUAL_X0Y3;
+
+# slight differences from LX30T!!!

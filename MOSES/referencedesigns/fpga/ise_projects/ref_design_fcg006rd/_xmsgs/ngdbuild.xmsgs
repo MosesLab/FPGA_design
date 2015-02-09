@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">TNM_clk200</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_SYS_CLK</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">u_mig20/u_infrastructure/u_dcm_base</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_u_mig20_u_infrastructure_dcm_clk0 = PERIOD &quot;u_mig20_u_infrastructure_dcm_clk0&quot; TS_SYS_CLK HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">TNM_clk200</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_SYS_CLK</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">u_mig20/u_infrastructure/u_dcm_base</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLK90</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_u_mig20_u_infrastructure_dcm_clk90 = PERIOD &quot;u_mig20_u_infrastructure_dcm_clk90&quot; TS_SYS_CLK PHASE 1.25 ns HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">TNM_clk200</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_SYS_CLK</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">u_mig20/u_infrastructure/u_dcm_base</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKDV</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_u_mig20_u_infrastructure_dcm_clkdiv0 = PERIOD &quot;u_mig20_u_infrastructure_dcm_clkdiv0&quot; TS_SYS_CLK * 2 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">TNM_lb_lclkfb</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_lb_lclki</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">u_clkControl/g_clkRevC.u_DCM1/DCM_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_u_clkControl_g_clkRevC_u_DCM1_CLK0_BUF = PERIOD &quot;u_clkControl_g_clkRevC_u_DCM1_CLK0_BUF&quot; TS_lb_lclki HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET *u_mgt/tile0_txusrclk0_i    PERIOD  = 4.0 ns;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(811)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;TIMEGRP &quot;LB_IPAD&quot; OFFSET = IN 8.8 ns BEFORE &quot;lb_lclkfb&quot;;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(440)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;TIMEGRP &quot;LB_IOPAD&quot; OFFSET = IN 8.8 ns BEFORE &quot;lb_lclkfb&quot;;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(441)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;TIMEGRP &quot;RS_IPAD&quot; OFFSET = IN 8.5 ns BEFORE &quot;lb_lclkfb&quot;;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(471)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;TIMEGRP &quot;SPI_IPAD&quot; OFFSET = IN 8.5 ns BEFORE &quot;lb_lclkfb&quot;;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(486)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;TIMEGRP &quot;SPI_IOPAD&quot; OFFSET = IN 8.5 ns BEFORE &quot;lb_lclkfb&quot;;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(487)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/MII_TX_EN IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii1/MII_TX_EN</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii1?MII_TX_EN&quot;      IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(706)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RX_DV_TO_MAC IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii1/RX_DV_TO_MAC</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii1?RX_DV_TO_MAC&quot;   IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(702)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RXD_TO_MAC_3 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii1/RXD_TO_MAC_3</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii1?RXD_TO_MAC*&quot;    IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(701)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RXD_TO_MAC_2 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii1/RXD_TO_MAC_2</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii1?RXD_TO_MAC*&quot;    IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(701)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RXD_TO_MAC_1 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii1/RXD_TO_MAC_1</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii1?RXD_TO_MAC*&quot;    IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(701)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RXD_TO_MAC_0 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii1/RXD_TO_MAC_0</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii1?RXD_TO_MAC*&quot;    IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(701)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/MII_TXD_3 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii1/MII_TXD_3</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii1?MII_TXD_?&quot;      IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(705)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/MII_TXD_2 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii1/MII_TXD_2</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii1?MII_TXD_?&quot;      IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(705)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/MII_TXD_1 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii1/MII_TXD_1</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii1?MII_TXD_?&quot;      IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(705)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/MII_TXD_0 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii1/MII_TXD_0</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii1?MII_TXD_?&quot;      IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(705)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RX_ER_TO_MAC IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii1/RX_ER_TO_MAC</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii1?RX_ER_TO_MAC&quot;   IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(703)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/MII_TX_EN IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii0/MII_TX_EN</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii0?MII_TX_EN&quot;      IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(698)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RX_DV_TO_MAC IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii0/RX_DV_TO_MAC</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii0?RX_DV_TO_MAC&quot;   IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(694)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RXD_TO_MAC_3 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii0/RXD_TO_MAC_3</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii0?RXD_TO_MAC*&quot;    IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(693)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RXD_TO_MAC_2 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii0/RXD_TO_MAC_2</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii0?RXD_TO_MAC*&quot;    IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(693)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RXD_TO_MAC_1 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii0/RXD_TO_MAC_1</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii0?RXD_TO_MAC*&quot;    IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(693)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RXD_TO_MAC_0 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii0/RXD_TO_MAC_0</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii0?RXD_TO_MAC*&quot;    IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(693)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/MII_TXD_3 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii0/MII_TXD_3</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii0?MII_TXD_?&quot;      IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(697)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/MII_TXD_2 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii0/MII_TXD_2</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii0?MII_TXD_?&quot;      IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(697)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/MII_TXD_1 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii0/MII_TXD_1</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii0?MII_TXD_?&quot;      IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(697)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/MII_TXD_0 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii0/MII_TXD_0</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii0?MII_TXD_?&quot;      IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(697)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RX_ER_TO_MAC IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">u_emac/v5_emac_block/mii0/RX_ER_TO_MAC</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*mii0?RX_ER_TO_MAC&quot;   IOB = true;&gt; [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_fcg006rd.ucf(695)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/u_phy_calib_0/gen_rden[1].u_calib_rden_r</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/u_phy_calib_0/gen_rden[2].u_calib_rden_r</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/u_phy_calib_0/gen_rden[3].u_calib_rden_r</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">u_spi/u_spi_ctrl/SPI_TRISTATE_CONTROL_II</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">u_spi/u_spi_ctrl/SPI_TRISTATE_CONTROL_III</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">u_spi/u_spi_ctrl/SPI_TRISTATE_CONTROL_IV</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">u_spi/u_spi_ctrl/SPI_TRISTATE_CONTROL_V</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N925</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N926</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N927</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N928</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">spia_miso</arg>&apos; has no driver
+</msg>
+
+</messages>
+

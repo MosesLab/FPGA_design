@@ -1,0 +1,19 @@
+Release 14.4 par P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ECE-HSDDL3::  Fri Oct 17 13:54:27 2014
+
+par -filter
+C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/ise_projects/ref_design_fcg0
+06rd/iseconfig/filter.filter -w -intstyle ise -ol high -xe n -mt off
+ref_design_map.ncd ref_design.ncd ref_design.pcf 
+
+
+Constraints file: ref_design.pcf.
+ERROR:Pds:77 - Can not create file ref_design.ncd
+ERROR: Pds exception in PahDesignLoader:
+EXCEPTION:Pds:Pds_PahDesignLoader.c:163:1.4 - The file 'ref_design.ncd' has invalid file access modes for the attempted
+   operation.
+FATAL_ERROR:Par:baspwpar.c:3938:1.467 - Par has discovered an exceptional condition while trying to load the design
+   ref_design_map.ncd - from which it cannot recover   Process will terminate. For technical support on this issue,
+   please open a WebCase with this project attached at http://www.xilinx.com/support.

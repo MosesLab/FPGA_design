@@ -1,0 +1,33 @@
+Release 14.4 - par P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sun Feb 01 15:59:33 2015
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 21 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   ddr2_data_manager_icon_signal<10>
+   ddr2_data_manager_icon_signal<11>
+   ddr2_data_manager_icon_signal<15>
+   ddr2_data_manager_icon_signal<16>
+   ddr2_data_manager_icon_signal<17>
+   ddr2_data_manager_icon_signal<18>
+   ddr2_data_manager_icon_signal<19>
+   ddr2_data_manager_icon_signal<23>
+   ddr2_data_manager_icon_signal<24>
+   ddr2_data_manager_icon_signal<25>
+   ddr2_data_manager_icon_signal<26>
+   ddr2_data_manager_icon_signal<27>
+   ddr2_data_manager_icon_signal<28>
+   ddr2_data_manager_icon_signal<29>
+   ddr2_data_manager_icon_signal<30>
+   ddr2_data_manager_icon_signal<31>
+   ddr2_data_manager_icon_signal<32>
+   ddr2_data_manager_icon_signal<33>
+   ddr2_data_manager_icon_signal<34>
+   ddr2_data_manager_icon_signal<35>
+   ddr2_data_manager_icon_signal<7>
+
+

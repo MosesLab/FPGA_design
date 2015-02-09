@@ -1,0 +1,1812 @@
+Release 14.4 Map P.49d (nt64)
+Xilinx Map Application Log File for Design 'ref_design'
+
+Design Information
+------------------
+Command Line   : map -filter
+C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/ise_projects/ref_design_fcg0
+06rd/iseconfig/filter.filter -intstyle ise -p xc5vlx50t-ff665-1 -w -logic_opt
+off -ol high -xe c -t 1 -register_duplication off -global_opt off -mt off -cm
+speed -ir off -pr off -lc off -power off -o ref_design_map.ncd ref_design.ngd
+ref_design.pcf 
+Target Device  : xc5vlx50t
+Target Package : ff665
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Fri Oct 17 13:51:55 2014
+
+Mapping design into LUTs...
+WARNING:MapLib:37 - The GSR pin on STARTUP_VIRTEX5 symbol "g_v5.u_startupV5"
+   (output signal=spia_miso) has driving signal 'ddr2_a_13_OBUF'.  Redundant
+   connections of signal 'ddr2_a_13_OBUF' to other symbols have been removed. 
+   See the following warnings for more details.
+WARNING:MapLib:701 - Signal lb_btermn connected to top level port lb_btermn has
+   been removed.
+WARNING:MapLib:701 - Signal lb_useri connected to top level port lb_useri has
+   been removed.
+WARNING:MapLib:701 - Signal lb_pmereon connected to top level port lb_pmereon
+   has been removed.
+WARNING:MapLib:701 - Signal lb_breqi connected to top level port lb_breqi has
+   been removed.
+WARNING:MapLib:701 - Signal lb_dp<3> connected to top level port lb_dp<3> has
+   been removed.
+WARNING:MapLib:701 - Signal lb_dp<2> connected to top level port lb_dp<2> has
+   been removed.
+WARNING:MapLib:701 - Signal lb_dp<1> connected to top level port lb_dp<1> has
+   been removed.
+WARNING:MapLib:701 - Signal lb_dp<0> connected to top level port lb_dp<0> has
+   been removed.
+WARNING:MapLib:701 - Signal lb_dreqn<1> connected to top level port lb_dreqn<1>
+   has been removed.
+WARNING:MapLib:701 - Signal lb_dreqn<0> connected to top level port lb_dreqn<0>
+   has been removed.
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[0].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   u_mgt/g_txrx[0].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[0].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   u_mgt/g_txrx[0].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[0].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   u_mgt/g_txrx[0].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[0].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   u_mgt/g_txrx[0].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[1].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   u_mgt/g_txrx[1].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[1].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   u_mgt/g_txrx[1].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[1].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   u_mgt/g_txrx[1].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[1].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   u_mgt/g_txrx[1].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[2].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   u_mgt/g_txrx[2].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[2].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   u_mgt/g_txrx[2].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[2].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   u_mgt/g_txrx[2].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[2].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   u_mgt/g_txrx[2].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[3].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   u_mgt/g_txrx[3].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[3].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   u_mgt/g_txrx[3].u_rx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[3].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   u_mgt/g_txrx[3].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_mgt/g_txrx[3].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   u_mgt/g_txrx[3].u_tx/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.
+   r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   u_interface/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noin
+   it.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacRx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   g_emactbN.u_emacRx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacRx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   g_emactbN.u_emacRx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacRx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   g_emactbN.u_emacRx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacRx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   g_emactbN.u_emacRx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacRx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   g_emactbN.u_emacRx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacRx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   g_emactbN.u_emacRx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacRx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   g_emactbN.u_emacRx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacRx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   g_emactbN.u_emacRx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacTx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   g_emactbN.u_emacTx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacTx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   g_emactbN.u_emacTx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacTx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   g_emactbN.u_emacTx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacTx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   g_emactbN.u_emacTx0/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacTx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   g_emactbN.u_emacTx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacTx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   g_emactbN.u_emacTx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacTx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   g_emactbN.u_emacTx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   g_emactbN.u_emacTx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   g_emactbN.u_emacTx1/u_dp/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r
+   /v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_dpram/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TR
+   UE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   u_dpram/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TR
+   UE_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_dpram/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TR
+   UE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   u_dpram/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TR
+   UE_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_dpram/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TR
+   UE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   u_dpram/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TR
+   UE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_dpram/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TR
+   UE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   u_dpram/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TR
+   UE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_interface/u_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v5.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   u_interface/u_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v5.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_interface/u_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v5.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   u_interface/u_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generat
+   or/valid.cstr/ramloop[0].ram.r/v5.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_ti
+   esig
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+WARNING:Timing:3223 - Timing constraint TS_rx_fifo_wr_to_rd_1 = MAXDELAY FROM
+   TIMEGRP "rx_fifo_wr_to_rd_1" TO TIMEGRP "v5_emac_v1_3_client_clk_tx1" 8 ns
+   DATAPATHONLY ignored during timing analysis.
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 23 secs 
+Total CPU  time at the beginning of Placer: 23 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:cd6fe4b3) REAL time: 25 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:cd6fe4b3) REAL time: 25 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:98dfd456) REAL time: 25 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:98dfd456) REAL time: 25 secs 
+
+Phase 5.33  Local Placement Optimization
+Phase 5.33  Local Placement Optimization (Checksum:98dfd456) REAL time: 52 secs 
+
+Phase 6.32  Local Placement Optimization
+Phase 6.32  Local Placement Optimization (Checksum:98dfd456) REAL time: 52 secs 
+
+Phase 7.2  Initial Clock and IO Placement
+
+
+
+There are 12 clock regions on the target FPGA device:
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y5:                        | CLOCKREGION_X1Y5:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   4 edge BUFIOs available, 0 in use      |
+|   0 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y4:                        | CLOCKREGION_X1Y4:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   4 edge BUFIOs available, 0 in use      |
+|   2 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y3:                        | CLOCKREGION_X1Y3:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   4 edge BUFIOs available, 0 in use      |
+|   2 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y2:                        | CLOCKREGION_X1Y2:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   4 edge BUFIOs available, 0 in use      |
+|   2 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y1:                        | CLOCKREGION_X1Y1:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 3 in use      |   4 edge BUFIOs available, 1 in use      |
+|   2 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y0:                        | CLOCKREGION_X1Y0:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   4 edge BUFIOs available, 0 in use      |
+|   0 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+
+
+Clock-Region: <CLOCKREGION_X0Y1>
+  key resource utilizations (used/available): edge-bufios - 3/4; center-bufios - 0/2; bufrs - 0/2; regional-clock-spines - 0/4
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|       |    clock    | BRAM |     |    |        |        |       |       |       |      |      |     |      |
+|       |    region   | FIFO | DCM | GT | ILOGIC | OLOGIC |   FF  |  LUTM |  LUTL | MULT | EMAC | PPC | PCIe | <- (Types of Resources in Clock Region)
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Upper Region|   8  |  0  |  0 |   60   |   60   |  2240 |  1280 |  3200 |   8  |   0  |  0  |   0  | <- Available resources in the upper region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       |CurrentRegion|   8  |  2  |  0 |   60   |   60   |  2240 |  1280 |  3200 |   8  |   0  |  0  |   0  | <- Available resources in the current region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Lower Region|   8  |  4  |  0 |   40   |   40   |  2240 |  1280 |  3200 |   8  |   0  |  0  |   0  | <- Available resources in the lower region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| clock |    region   |                                                                                      -----------------------------------------------
+|  type |  expansion  |                                                                                      | <IO/Regional clock Net Name>
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<0>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<2>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<3>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y1>
+  key resource utilizations (used/available): edge-bufios - 1/4; bufrs - 0/2; regional-clock-spines - 0/4
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|       |    clock    | BRAM |     |    |        |        |       |       |       |      |      |     |      |
+|       |    region   | FIFO | DCM | GT | ILOGIC | OLOGIC |   FF  |  LUTM |  LUTL | MULT | EMAC | PPC | PCIe | <- (Types of Resources in Clock Region)
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Upper Region|   8  |  0  |  1 |   40   |   40   |  2560 |  1280 |  3840 |   0  |   0  |  0  |   0  | <- Available resources in the upper region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       |CurrentRegion|   8  |  0  |  1 |   40   |   40   |  2560 |  1280 |  3840 |   0  |   0  |  0  |   1  | <- Available resources in the current region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Lower Region|  16  |  0  |  1 |   40   |   40   |  2560 |  1280 |  3840 |   0  |   0  |  0  |   0  | <- Available resources in the lower region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| clock |    region   |                                                                                      -----------------------------------------------
+|  type |  expansion  |                                                                                      | <IO/Regional clock Net Name>
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<1>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+
+
+
+
+######################################################################################
+# REGIONAL CLOCKING RESOURCE DISTRIBUTION UCF REPORT:
+#
+# Number of Regional Clocking Regions in the device: 12  (4 clock spines in each)
+# Number of Regional Clock Networks used in this design: 4 (each network can be
+# composed of up to 3 clock spines and cover up to 3 regional clock regions)
+# 
+######################################################################################
+
+# IO-Clock "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<0>" driven by "BUFIO_X0Y4"
+INST "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[0].u_iob_dqs/u_bufio_dqs" LOC = "BUFIO_X0Y4" ;
+NET "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<0>" TNM_NET =
+"TN_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<0>" ;
+TIMEGRP "TN_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<0>" AREA_GROUP =
+"CLKAG_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<0>" ;
+AREA_GROUP "CLKAG_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<0>" RANGE = CLOCKREGION_X0Y1;
+
+
+# IO-Clock "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<1>" driven by "BUFIO_X2Y7"
+INST "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[1].u_iob_dqs/u_bufio_dqs" LOC = "BUFIO_X2Y7" ;
+NET "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<1>" TNM_NET =
+"TN_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<1>" ;
+TIMEGRP "TN_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<1>" AREA_GROUP =
+"CLKAG_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<1>" ;
+AREA_GROUP "CLKAG_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<1>" RANGE = CLOCKREGION_X1Y1;
+
+
+# IO-Clock "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<2>" driven by "BUFIO_X0Y6"
+INST "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[2].u_iob_dqs/u_bufio_dqs" LOC = "BUFIO_X0Y6" ;
+NET "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<2>" TNM_NET =
+"TN_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<2>" ;
+TIMEGRP "TN_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<2>" AREA_GROUP =
+"CLKAG_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<2>" ;
+AREA_GROUP "CLKAG_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<2>" RANGE = CLOCKREGION_X0Y1;
+
+
+# IO-Clock "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<3>" driven by "BUFIO_X0Y7"
+INST "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[3].u_iob_dqs/u_bufio_dqs" LOC = "BUFIO_X0Y7" ;
+NET "u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<3>" TNM_NET =
+"TN_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<3>" ;
+TIMEGRP "TN_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<3>" AREA_GROUP =
+"CLKAG_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<3>" ;
+AREA_GROUP "CLKAG_u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/delayed_dqs<3>" RANGE = CLOCKREGION_X0Y1;
+
+
+Phase 7.2  Initial Clock and IO Placement (Checksum:6a2b54b4) REAL time: 53 secs 
+
+Phase 8.36  Local Placement Optimization
+Phase 8.36  Local Placement Optimization (Checksum:6a2b54b4) REAL time: 53 secs 
+
+......................................
+Phase 9.30  Global Clock Region Assignment
+
+
+######################################################################################
+# GLOBAL CLOCK NET DISTRIBUTION UCF REPORT:
+#
+# Number of Global Clock Regions : 12
+# Number of Global Clock Networks: 16
+#
+# Clock Region Assignment: SUCCESSFUL
+
+# Location of Clock Components
+INST "u_mig20/u_infrastructure/u_bufg_clk200" LOC = "BUFGCTRL_X0Y23" ;
+INST "u_mgt/g_gtp_clk.txoutclk_bufg0_i" LOC = "BUFGCTRL_X0Y0" ;
+INST "u_clkControl/g_clkRevC.u_DCM1/CLK0_BUFG_INST" LOC = "BUFGCTRL_X0Y2" ;
+INST "u_mig20/u_infrastructure/u_bufg_clk0" LOC = "BUFGCTRL_X0Y9" ;
+INST "u_clkControl/u_DCM0/CLK2X_BUFG_INST" LOC = "BUFGCTRL_X0Y31" ;
+INST "u_clkControl/u_DCM0/CLK0_BUFG_INST" LOC = "BUFGCTRL_X0Y30" ;
+INST "u_mig20/u_infrastructure/u_bufg_clk90" LOC = "BUFGCTRL_X0Y8" ;
+INST "bufg_client_rx_0" LOC = "BUFGCTRL_X0Y26" ;
+INST "bufg_client_rx_1" LOC = "BUFGCTRL_X0Y27" ;
+INST "bufg_client_tx_0" LOC = "BUFGCTRL_X0Y28" ;
+INST "bufg_client_tx_1" LOC = "BUFGCTRL_X0Y29" ;
+INST "u_mig20/u_infrastructure/u_bufg_clkdiv0" LOC = "BUFGCTRL_X0Y7" ;
+INST "bufg_phy_rx_0" LOC = "BUFGCTRL_X0Y6" ;
+INST "bufg_phy_rx_1" LOC = "BUFGCTRL_X0Y5" ;
+INST "bufg_phy_tx_0" LOC = "BUFGCTRL_X0Y4" ;
+INST "bufg_phy_tx_1" LOC = "BUFGCTRL_X0Y3" ;
+INST "u_clkControl/g_clkRevC.u_DCM1/DCM_ADV_INST" LOC = "DCM_ADV_X0Y0" ;
+INST "u_mig20/u_infrastructure/u_dcm_base" LOC = "DCM_ADV_X0Y1" ;
+INST "u_clkControl/u_DCM0/DCM_ADV_INST" LOC = "DCM_ADV_X0Y11" ;
+INST "lb_lclkfb" LOC = "Y21" ;
+INST "mainclkp" LOC = "F20" ;
+INST "miia_rxclk" LOC = "AC12" ;
+INST "miib_rxclk" LOC = "AB19" ;
+INST "miia_txclk" LOC = "AC11" ;
+INST "miib_txclk" LOC = "AC18" ;
+INST "mgt114_refclkn" LOC = "IPAD_X1Y16" ;
+INST "mgt114_refclkp" LOC = "IPAD_X1Y17" ;
+INST "mgt112_rx0n" LOC = "IPAD_X1Y24" ;
+INST "mgt112_rx1n" LOC = "IPAD_X1Y26" ;
+INST "mgt112_rx0p" LOC = "IPAD_X1Y25" ;
+INST "mgt112_rx1p" LOC = "IPAD_X1Y27" ;
+INST "mgt114_rx0n" LOC = "IPAD_X1Y12" ;
+INST "mgt114_rx1n" LOC = "IPAD_X1Y14" ;
+INST "mgt114_rx0p" LOC = "IPAD_X1Y13" ;
+INST "mgt114_rx1p" LOC = "IPAD_X1Y15" ;
+INST "mgt112_tx0n" LOC = "OPAD_X0Y12" ;
+INST "mgt112_tx1n" LOC = "OPAD_X0Y14" ;
+INST "mgt112_tx0p" LOC = "OPAD_X0Y13" ;
+INST "mgt112_tx1p" LOC = "OPAD_X0Y15" ;
+INST "mgt114_tx0n" LOC = "OPAD_X0Y8" ;
+INST "mgt114_tx1n" LOC = "OPAD_X0Y10" ;
+INST "mgt114_tx0p" LOC = "OPAD_X0Y9" ;
+INST "mgt114_tx1p" LOC = "OPAD_X0Y11" ;
+INST "u_mgt/g_gtp.pciegtp_wrapper_i/tile1_pciegtp_wrapper_i/gtp_dual_i" LOC = "GTP_DUAL_X0Y3" ;
+INST "u_mgt/g_gtp.pciegtp_wrapper_i/tile0_pciegtp_wrapper_i/gtp_dual_i" LOC = "GTP_DUAL_X0Y2" ;
+INST "u_mgt/tile0_refclk_ibufds_i" LOC = "BUFDS_X0Y2" ;
+
+# u_mig20/clk200 driven by BUFGCTRL_X0Y23
+NET "u_mig20/clk200" TNM_NET = "TN_u_mig20/clk200" ;
+TIMEGRP "TN_u_mig20/clk200" AREA_GROUP = "CLKAG_u_mig20/clk200" ;
+AREA_GROUP "CLKAG_u_mig20/clk200" RANGE =   CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2 ;
+
+# u_mgt/tile0_txusrclk0_i driven by BUFGCTRL_X0Y0
+NET "u_mgt/tile0_txusrclk0_i" TNM_NET = "TN_u_mgt/tile0_txusrclk0_i" ;
+TIMEGRP "TN_u_mgt/tile0_txusrclk0_i" AREA_GROUP = "CLKAG_u_mgt/tile0_txusrclk0_i" ;
+AREA_GROUP "CLKAG_u_mgt/tile0_txusrclk0_i" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# clk50 driven by BUFGCTRL_X0Y2
+NET "clk50" TNM_NET = "TN_clk50" ;
+TIMEGRP "TN_clk50" AREA_GROUP = "CLKAG_clk50" ;
+AREA_GROUP "CLKAG_clk50" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# clk0_tb driven by BUFGCTRL_X0Y9
+NET "clk0_tb" TNM_NET = "TN_clk0_tb" ;
+TIMEGRP "TN_clk0_tb" AREA_GROUP = "CLKAG_clk0_tb" ;
+AREA_GROUP "CLKAG_clk0_tb" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X0Y4, CLOCKREGION_X0Y5 ;
+
+# clk200 driven by BUFGCTRL_X0Y31
+NET "clk200" TNM_NET = "TN_clk200" ;
+TIMEGRP "TN_clk200" AREA_GROUP = "CLKAG_clk200" ;
+AREA_GROUP "CLKAG_clk200" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0 ;
+
+# u_clkControl/clk100_buf driven by BUFGCTRL_X0Y30
+NET "u_clkControl/clk100_buf" TNM_NET = "TN_u_clkControl/clk100_buf" ;
+TIMEGRP "TN_u_clkControl/clk100_buf" AREA_GROUP = "CLKAG_u_clkControl/clk100_buf" ;
+AREA_GROUP "CLKAG_u_clkControl/clk100_buf" RANGE =   CLOCKREGION_X0Y3, CLOCKREGION_X0Y4, CLOCKREGION_X0Y5 ;
+
+# u_mig20/clk90 driven by BUFGCTRL_X0Y8
+NET "u_mig20/clk90" TNM_NET = "TN_u_mig20/clk90" ;
+TIMEGRP "TN_u_mig20/clk90" AREA_GROUP = "CLKAG_u_mig20/clk90" ;
+AREA_GROUP "CLKAG_u_mig20/clk90" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2 ;
+
+# rx_client_clk_0 driven by BUFGCTRL_X0Y26
+NET "rx_client_clk_0" TNM_NET = "TN_rx_client_clk_0" ;
+TIMEGRP "TN_rx_client_clk_0" AREA_GROUP = "CLKAG_rx_client_clk_0" ;
+AREA_GROUP "CLKAG_rx_client_clk_0" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# rx_client_clk_1 driven by BUFGCTRL_X0Y27
+NET "rx_client_clk_1" TNM_NET = "TN_rx_client_clk_1" ;
+TIMEGRP "TN_rx_client_clk_1" AREA_GROUP = "CLKAG_rx_client_clk_1" ;
+AREA_GROUP "CLKAG_rx_client_clk_1" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# tx_client_clk_0 driven by BUFGCTRL_X0Y28
+NET "tx_client_clk_0" TNM_NET = "TN_tx_client_clk_0" ;
+TIMEGRP "TN_tx_client_clk_0" AREA_GROUP = "CLKAG_tx_client_clk_0" ;
+AREA_GROUP "CLKAG_tx_client_clk_0" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# tx_client_clk_1 driven by BUFGCTRL_X0Y29
+NET "tx_client_clk_1" TNM_NET = "TN_tx_client_clk_1" ;
+TIMEGRP "TN_tx_client_clk_1" AREA_GROUP = "CLKAG_tx_client_clk_1" ;
+AREA_GROUP "CLKAG_tx_client_clk_1" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# u_mig20/clkdiv0 driven by BUFGCTRL_X0Y7
+NET "u_mig20/clkdiv0" TNM_NET = "TN_u_mig20/clkdiv0" ;
+TIMEGRP "TN_u_mig20/clkdiv0" AREA_GROUP = "CLKAG_u_mig20/clkdiv0" ;
+AREA_GROUP "CLKAG_u_mig20/clkdiv0" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2 ;
+
+# rx_clk_0_i driven by BUFGCTRL_X0Y6
+NET "rx_clk_0_i" TNM_NET = "TN_rx_clk_0_i" ;
+TIMEGRP "TN_rx_clk_0_i" AREA_GROUP = "CLKAG_rx_clk_0_i" ;
+AREA_GROUP "CLKAG_rx_clk_0_i" RANGE =   CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# rx_clk_1_i driven by BUFGCTRL_X0Y5
+NET "rx_clk_1_i" TNM_NET = "TN_rx_clk_1_i" ;
+TIMEGRP "TN_rx_clk_1_i" AREA_GROUP = "CLKAG_rx_clk_1_i" ;
+AREA_GROUP "CLKAG_rx_clk_1_i" RANGE =   CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# tx_phy_clk_0 driven by BUFGCTRL_X0Y4
+NET "tx_phy_clk_0" TNM_NET = "TN_tx_phy_clk_0" ;
+TIMEGRP "TN_tx_phy_clk_0" AREA_GROUP = "CLKAG_tx_phy_clk_0" ;
+AREA_GROUP "CLKAG_tx_phy_clk_0" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X1Y3, CLOCKREGION_X1Y4, CLOCKREGION_X1Y5 ;
+
+# tx_phy_clk_1 driven by BUFGCTRL_X0Y3
+NET "tx_phy_clk_1" TNM_NET = "TN_tx_phy_clk_1" ;
+TIMEGRP "TN_tx_phy_clk_1" AREA_GROUP = "CLKAG_tx_phy_clk_1" ;
+AREA_GROUP "CLKAG_tx_phy_clk_1" RANGE =   CLOCKREGION_X0Y1, CLOCKREGION_X1Y3, CLOCKREGION_X1Y4, CLOCKREGION_X1Y5 ;
+
+# NOTE: 
+# This report is provided to help reproduce successful clock-region 
+# assignments. The report provides range constraints for all global 
+# clock networks, in a format that is directly usable in ucf files. 
+#
+#END of Global Clock Net Distribution UCF Constraints
+######################################################################################
+
+
+######################################################################################
+GLOBAL CLOCK NET LOADS DISTRIBUTION REPORT:
+
+Number of Global Clock Regions : 12
+Number of Global Clock Networks: 16
+
+Clock Region Assignment: SUCCESSFUL
+
+Clock-Region: <CLOCKREGION_X0Y0> 
+ key resource utilizations (used/available): global-clocks - 4/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      4 |      2 |      0 |     40 |     40 |      8 |      0 |      0 |      0 |      1 |      0 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clk0_tb
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clk200
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clk50
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    193 |u_mig20/clkdiv0
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    193 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y0> 
+ key resource utilizations (used/available): global-clocks - 5/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      1 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    161 |clk0_tb
+      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     44 |clk50
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |     70 |rx_client_clk_1
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |tx_client_clk_1
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    117 |u_mig20/clkdiv0
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |    392 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y1> 
+ key resource utilizations (used/available): global-clocks - 6/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      2 |      1 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |      0 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |     10 |    253 |clk0_tb
+      0 |      0 |      0 |      0 |      0 |      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |tx_phy_clk_0
+      0 |      0 |      0 |      0 |      0 |      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |tx_phy_clk_1
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |u_mig20/clk200
+      0 |      0 |      0 |      0 |      0 |     27 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |     95 |u_mig20/clk90
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    254 |u_mig20/clkdiv0
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |     43 |      0 |      0 |      0 |      0 |      1 |      0 |     14 |    602 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y1> 
+ key resource utilizations (used/available): global-clocks - 7/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      1 |     40 |     40 |      0 |      0 |      0 |      1 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      1 |      0 |      0 |      0 |      0 |     25 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    349 |clk0_tb
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     77 |clk50
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |     13 |rx_client_clk_1
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     60 |tx_client_clk_1
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |u_mig20/clk200
+      0 |      0 |      0 |      0 |      0 |      9 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     17 |u_mig20/clk90
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |     70 |u_mig20/clkdiv0
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      3 |      0 |      0 |      0 |      0 |     34 |      0 |      0 |      0 |      0 |      1 |      0 |     16 |    586 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y2> 
+ key resource utilizations (used/available): global-clocks - 5/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |     16 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    165 |clk0_tb
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     20 |    183 |clk50
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |      8 |u_mgt/tile0_txusrclk0_i
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     25 |u_mig20/clk200
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |u_mig20/clk90
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     38 |    393 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y2> 
+ key resource utilizations (used/available): global-clocks - 5/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      1 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     49 |clk0_tb
+      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     18 |    199 |clk50
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     11 |rx_client_clk_1
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     62 |tx_client_clk_1
+      2 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    101 |u_mgt/tile0_txusrclk0_i
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      6 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     22 |    422 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y3> 
+ key resource utilizations (used/available): global-clocks - 5/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |     16 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clk0_tb
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     52 |    419 |clk50
+      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |rx_clk_0_i
+      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |rx_clk_1_i
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     14 |     17 |u_mgt/tile0_txusrclk0_i
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |     12 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     66 |    436 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y3> 
+ key resource utilizations (used/available): global-clocks - 10/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      6 |      0 |      0 |      1 |     40 |     40 |      0 |      1 |      0 |      0 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |      4 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |     58 |    460 |clk50
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |rx_client_clk_0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |rx_client_clk_1
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |rx_clk_0_i
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |rx_clk_1_i
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      3 |tx_client_clk_0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |tx_client_clk_1
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |tx_phy_clk_0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |tx_phy_clk_1
+      4 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     38 |    136 |u_mgt/tile0_txusrclk0_i
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      1 |      4 |      0 |      0 |      9 |      0 |      0 |      0 |      0 |     96 |    599 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y4> 
+ key resource utilizations (used/available): global-clocks - 2/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      2 |      1 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |      0 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     32 |    235 |clk50
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |      1 |u_mgt/tile0_txusrclk0_i
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     34 |    236 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y4> 
+ key resource utilizations (used/available): global-clocks - 4/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      6 |      0 |      0 |      1 |     40 |     40 |      0 |      1 |      0 |      0 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    108 |clk50
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |     19 |rx_client_clk_0
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    108 |tx_client_clk_0
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |     18 |u_mgt/tile0_txusrclk0_i
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |    253 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y5> 
+ key resource utilizations (used/available): global-clocks - 2/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      4 |      2 |      0 |     40 |     40 |      8 |      0 |      0 |      0 |      1 |      0 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     44 |    108 |clk50
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |u_clkControl/clk100_buf
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      3 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     44 |    108 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y5> 
+ key resource utilizations (used/available): global-clocks - 3/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      1 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    197 |clk50
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |     75 |rx_client_clk_0
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     15 |tx_client_clk_0
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |    287 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+NOTE:
+The above detailed report is the initial placement of the logic after the clock region assignment. The final placement
+may be significantly different because of the various optimization steps which will follow. Specifically, logic blocks
+maybe moved to adjacent clock-regions as long as the "number of clocks per region" constraint is not violated.
+
+
+# END of Global Clock Net Loads Distribution Report:
+######################################################################################
+
+
+Phase 9.30  Global Clock Region Assignment (Checksum:6a2b54b4) REAL time: 56 secs 
+
+Phase 10.3  Local Placement Optimization
+Phase 10.3  Local Placement Optimization (Checksum:6a2b54b4) REAL time: 56 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:6a2b54b4) REAL time: 56 secs 
+
+Phase 12.8  Global Placement
+...................................................................
+............
+......................................................................................................
+..............................
+.....................................
+...................................................
+Phase 12.8  Global Placement (Checksum:ee02715d) REAL time: 1 mins 13 secs 
+
+Phase 13.29  Local Placement Optimization
+Phase 13.29  Local Placement Optimization (Checksum:ee02715d) REAL time: 1 mins 13 secs 
+
+Phase 14.5  Local Placement Optimization
+Phase 14.5  Local Placement Optimization (Checksum:ee02715d) REAL time: 1 mins 13 secs 
+
+Phase 15.18  Placement Optimization
+Phase 15.18  Placement Optimization (Checksum:974ef81) REAL time: 2 mins 22 secs 
+
+Phase 16.5  Local Placement Optimization
+Phase 16.5  Local Placement Optimization (Checksum:974ef81) REAL time: 2 mins 22 secs 
+
+Phase 17.34  Placement Validation
+Phase 17.34  Placement Validation (Checksum:974ef81) REAL time: 2 mins 23 secs 
+
+Total REAL time to Placer completion: 2 mins 24 secs 
+Total CPU  time to Placer completion: 2 mins 23 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:1841 - One or more GTPs are being used in this design. Evaluate the SelectIO-To-GTP Crosstalk
+   section of the Virtex-5 RocketIO GTP Transceiver User Guide to ensure that the design SelectIO usage meets the
+   guidelines to minimize the impact on GTP performance. 
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[1].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[1].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[1].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[1].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[1].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[1].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[1].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[1].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[28].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[28].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[28].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[28].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[28].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[28].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[28].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[28].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[8].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[8].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[8].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[8].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[8].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[8].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[8].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[8].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[18].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[18].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[18].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[18].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[26].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[26].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[26].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[26].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[18].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[18].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[18].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[18].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[26].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[26].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[26].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[26].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[6].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[6].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[6].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[6].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[6].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[6].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[6].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[6].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[24].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[24].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[24].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[24].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[24].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[24].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[24].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[24].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[16].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[16].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[16].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[16].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[16].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[16].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[16].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[16].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[21].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[21].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[21].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[21].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[13].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[13].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[13].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[13].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[21].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[21].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[21].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[21].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[13].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[13].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[13].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[13].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[4].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[4].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[4].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[4].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[4].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[4].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[4].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[4].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[11].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[11].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[11].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[11].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[11].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[11].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[11].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[11].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[2].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[2].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[2].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[2].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[2].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[2].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[2].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[2].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[29].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[29].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[29].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[29].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[29].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[29].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[29].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[29].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[0].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[0].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[0].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[0].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[0].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[0].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[0].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[0].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[9].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[9].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[9].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[9].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[9].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[9].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[9].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[9].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[19].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[19].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[19].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[19].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[19].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[19].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[19].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[19].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[27].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[27].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[27].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[27].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[27].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[27].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[27].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[27].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[7].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[7].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[7].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[7].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[7].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[7].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[7].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[7].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[17].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[17].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[17].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[17].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[25].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[25].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[25].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[25].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[17].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[17].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[17].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[17].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[25].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[25].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[25].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[25].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[22].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[22].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[22].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[22].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[22].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[22].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[22].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[22].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[30].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[30].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[30].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[30].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[14].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[14].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[14].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[14].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[30].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[30].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[30].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[30].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[14].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[14].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[14].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[14].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[5].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[5].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[5].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[5].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[5].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[5].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[5].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[5].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[15].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[15].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[15].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[15].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[15].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[15].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[15].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[15].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[23].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[23].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[23].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[23].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[31].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[31].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[31].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[31].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[23].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[23].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[23].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[23].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[31].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[31].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[31].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[31].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[12].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[12].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[12].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[12].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[12].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[12].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[12].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[12].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[20].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[20].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[20].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[20].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[20].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[20].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[20].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[20].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[3].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[3].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[3].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[3].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[3].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[3].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[3].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[3].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[10].u_iob_dq/dummy_carry4_co_a<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[10].u_iob_dq/dummy_carry4_co_a<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[10].u_iob_dq/dummy_carry4_co_a<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[10].u_iob_dq/dummy_carry4_co_a<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[10].u_iob_dq/dummy_carry4_co_b<0>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[10].u_iob_dq/dummy_carry4_co_b<1>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[10].u_iob_dq/dummy_carry4_co_b<2>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dq[10].u_iob_dq/dummy_carry4_co_b<3>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:1269 - Issue with pin connections and/or configuration on
+   block:<u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[1].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>. 
+   The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Issue with pin connections and/or configuration on
+   block:<u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[1].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>. 
+   The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+WARNING:PhysDesignRules:1269 - Issue with pin connections and/or configuration on
+   block:<u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[2].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>. 
+   The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Issue with pin connections and/or configuration on
+   block:<u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[2].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>. 
+   The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+WARNING:PhysDesignRules:1269 - Issue with pin connections and/or configuration on
+   block:<u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>. 
+   The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Issue with pin connections and/or configuration on
+   block:<u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>. 
+   The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+WARNING:PhysDesignRules:1269 - Issue with pin connections and/or configuration on
+   block:<u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[3].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>. 
+   The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1273 - Issue with pin connections and/or configuration on
+   block:<u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/gen_dqs[3].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>. 
+   The SR pin is used for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  323
+Slice Logic Utilization:
+  Number of Slice Registers:                 4,530 out of  28,800   15%
+    Number used as Flip Flops:               4,530
+  Number of Slice LUTs:                      4,046 out of  28,800   14%
+    Number used as logic:                    3,834 out of  28,800   13%
+      Number using O6 output only:           3,267
+      Number using O5 output only:             138
+      Number using O5 and O6:                  429
+    Number used as Memory:                     193 out of   7,680    2%
+      Number used as Dual Port RAM:              8
+        Number using O5 and O6:                  8
+      Number used as Single Port RAM:           18
+        Number using O6 output only:            18
+      Number used as Shift Register:           167
+        Number using O6 output only:           167
+    Number used as exclusive route-thru:        19
+  Number of route-thrus:                       175
+    Number using O6 output only:               157
+    Number using O5 output only:                18
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 2,250 out of   7,200   31%
+  Number of LUT Flip Flop pairs used:        6,094
+    Number with an unused Flip Flop:         1,564 out of   6,094   25%
+    Number with an unused LUT:               2,048 out of   6,094   33%
+    Number of fully used LUT-FF pairs:       2,482 out of   6,094   40%
+    Number of unique control sets:             585
+    Number of slice register sites lost
+      to control set restrictions:           1,041 out of  28,800    3%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       284 out of     360   78%
+    Number of LOCed IOBs:                      284 out of     284  100%
+    IOB Flip Flops:                            169
+    Number of bonded IPADs:                     10
+      Number of LOCed IPADs:                     2 out of      10   20%
+    Number of bonded OPADs:                      8
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                      24 out of      60   40%
+    Number using BlockRAM only:                 22
+    Number using FIFO only:                      2
+    Total primitives used:
+      Number of 36k BlockRAM used:              16
+      Number of 18k BlockRAM used:               9
+      Number of 36k FIFO used:                   2
+    Total Memory used (KB):                    810 out of   2,160   37%
+  Number of BUFG/BUFGCTRLs:                     16 out of      32   50%
+    Number used as BUFGs:                       16
+  Number of IDELAYCTRLs:                         2 out of      16   12%
+  Number of BUFDSs:                              1 out of       6   16%
+  Number of BUFIOs:                              4 out of      56    7%
+  Number of DCM_ADVs:                            3 out of      12   25%
+  Number of GTP_DUALs:                           2 out of       4   50%
+    Number of LOCed GTP_DUALs:                   2 out of       2  100%
+  Number of ICAPs:                               1 out of       2   50%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of TEMACs:                              1 out of       2   50%
+
+  Number of RPM macros:           32
+Average Fanout of Non-Clock Nets:                3.21
+
+Peak Memory Usage:  646 MB
+Total REAL time to MAP completion:  2 mins 30 secs 
+Total CPU time to MAP completion:   2 mins 29 secs 
+
+Mapping completed.
+See MAP report file "ref_design_map.mrp" for details.

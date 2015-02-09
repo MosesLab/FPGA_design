@@ -1,0 +1,8 @@
+#
+# Usage: generate.exe icon -f=<arg_file_name>
+#
+-compname=icon01
+-numports=1
+-devicefamily=Virtex5
+-bscanchain=1
+-outputdirectory=.\

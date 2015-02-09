@@ -1,0 +1,282 @@
+Release 14.4 ngdbuild P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -filter
+iseconfig/filter.filter -intstyle ise -dd _ngo -sd ../../source/v5coregen -sd
+../../source/v5chipscope -nt timestamp -uc
+C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104_
+fcg006rd.ucf -p xc5vlx50t-ff665-1 ref_design.ngc ref_design.ngd
+
+Reading NGO file
+"C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/ise_projects/ref_design_fcg
+006rd/ref_design.ngc" ...
+Loading design module "../../source/v5coregen/dpRam32_8.ngc"...
+Loading design module "../../source/v5coregen/dp_a32x8_b8x32.ngc"...
+Loading design module "../../source/v5coregen/dp_32_64.ngc"...
+Loading design module "../../source/v5coregen/fifo_42x16.ngc"...
+Loading design module "../../source/v5coregen/dpa64x8_b16x32.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci104
+_fcg006rd.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'TNM_clk200', used in period specification
+   'TS_SYS_CLK', was traced into DCM_ADV instance
+   u_mig20/u_infrastructure/u_dcm_base. The following new TNM groups and period
+   specifications were generated at the DCM_ADV output(s): 
+   CLK0: <TIMESPEC TS_u_mig20_u_infrastructure_dcm_clk0 = PERIOD
+   "u_mig20_u_infrastructure_dcm_clk0" TS_SYS_CLK HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'TNM_clk200', used in period specification
+   'TS_SYS_CLK', was traced into DCM_ADV instance
+   u_mig20/u_infrastructure/u_dcm_base. The following new TNM groups and period
+   specifications were generated at the DCM_ADV output(s): 
+   CLK90: <TIMESPEC TS_u_mig20_u_infrastructure_dcm_clk90 = PERIOD
+   "u_mig20_u_infrastructure_dcm_clk90" TS_SYS_CLK PHASE 1.25 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'TNM_clk200', used in period specification
+   'TS_SYS_CLK', was traced into DCM_ADV instance
+   u_mig20/u_infrastructure/u_dcm_base. The following new TNM groups and period
+   specifications were generated at the DCM_ADV output(s): 
+   CLKDV: <TIMESPEC TS_u_mig20_u_infrastructure_dcm_clkdiv0 = PERIOD
+   "u_mig20_u_infrastructure_dcm_clkdiv0" TS_SYS_CLK * 2 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'TNM_lb_lclkfb', used in period specification
+   'TS_lb_lclki', was traced into DCM_ADV instance
+   u_clkControl/g_clkRevC.u_DCM1/DCM_ADV_INST. The following new TNM groups and
+   period specifications were generated at the DCM_ADV output(s): 
+   CLK0: <TIMESPEC TS_u_clkControl_g_clkRevC_u_DCM1_CLK0_BUF = PERIOD
+   "u_clkControl_g_clkRevC_u_DCM1_CLK0_BUF" TS_lb_lclki HIGH 50%>
+
+INFO:ConstraintSystem - The Period constraint <NET *u_mgt/tile0_txusrclk0_i   
+   PERIOD  = 4.0 ns;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(811)], is specified using the Net Period method which is not
+   recommended. Please use the Timespec PERIOD method.
+
+WARNING:ConstraintSystem - The Offset constraint <TIMEGRP "LB_IPAD" OFFSET = IN
+   8.8 ns BEFORE "lb_lclkfb";>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(440)], is specified without a duration.  This will result in
+   a lack of hold time checks in timing reports.  If hold time checks are
+   desired a duration value should be specified following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <TIMEGRP "LB_IOPAD" OFFSET = IN
+   8.8 ns BEFORE "lb_lclkfb";>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(441)], is specified without a duration.  This will result in
+   a lack of hold time checks in timing reports.  If hold time checks are
+   desired a duration value should be specified following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <TIMEGRP "RS_IPAD" OFFSET = IN
+   8.5 ns BEFORE "lb_lclkfb";>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(471)], is specified without a duration.  This will result in
+   a lack of hold time checks in timing reports.  If hold time checks are
+   desired a duration value should be specified following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <TIMEGRP "SPI_IPAD" OFFSET = IN
+   8.5 ns BEFORE "lb_lclkfb";>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(486)], is specified without a duration.  This will result in
+   a lack of hold time checks in timing reports.  If hold time checks are
+   desired a duration value should be specified following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <TIMEGRP "SPI_IOPAD" OFFSET =
+   IN 8.5 ns BEFORE "lb_lclkfb";>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(487)], is specified without a duration.  This will result in
+   a lack of hold time checks in timing reports.  If hold time checks are
+   desired a duration value should be specified following the 'VALID' keyword.
+
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/MII_TX_EN IOB =
+   true> is overridden on the design object u_emac/v5_emac_block/mii1/MII_TX_EN
+   by the constraint <INST "*mii1?MII_TX_EN"      IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(706)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RX_DV_TO_MAC IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii1/RX_DV_TO_MAC by the constraint <INST
+   "*mii1?RX_DV_TO_MAC"   IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(702)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RXD_TO_MAC_3 IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii1/RXD_TO_MAC_3 by the constraint <INST
+   "*mii1?RXD_TO_MAC*"    IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(701)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RXD_TO_MAC_2 IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii1/RXD_TO_MAC_2 by the constraint <INST
+   "*mii1?RXD_TO_MAC*"    IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(701)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RXD_TO_MAC_1 IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii1/RXD_TO_MAC_1 by the constraint <INST
+   "*mii1?RXD_TO_MAC*"    IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(701)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RXD_TO_MAC_0 IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii1/RXD_TO_MAC_0 by the constraint <INST
+   "*mii1?RXD_TO_MAC*"    IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(701)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/MII_TXD_3 IOB =
+   true> is overridden on the design object u_emac/v5_emac_block/mii1/MII_TXD_3
+   by the constraint <INST "*mii1?MII_TXD_?"      IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(705)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/MII_TXD_2 IOB =
+   true> is overridden on the design object u_emac/v5_emac_block/mii1/MII_TXD_2
+   by the constraint <INST "*mii1?MII_TXD_?"      IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(705)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/MII_TXD_1 IOB =
+   true> is overridden on the design object u_emac/v5_emac_block/mii1/MII_TXD_1
+   by the constraint <INST "*mii1?MII_TXD_?"      IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(705)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/MII_TXD_0 IOB =
+   true> is overridden on the design object u_emac/v5_emac_block/mii1/MII_TXD_0
+   by the constraint <INST "*mii1?MII_TXD_?"      IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(705)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii1\/RX_ER_TO_MAC IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii1/RX_ER_TO_MAC by the constraint <INST
+   "*mii1?RX_ER_TO_MAC"   IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(703)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/MII_TX_EN IOB =
+   true> is overridden on the design object u_emac/v5_emac_block/mii0/MII_TX_EN
+   by the constraint <INST "*mii0?MII_TX_EN"      IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(698)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RX_DV_TO_MAC IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii0/RX_DV_TO_MAC by the constraint <INST
+   "*mii0?RX_DV_TO_MAC"   IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(694)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RXD_TO_MAC_3 IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii0/RXD_TO_MAC_3 by the constraint <INST
+   "*mii0?RXD_TO_MAC*"    IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(693)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RXD_TO_MAC_2 IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii0/RXD_TO_MAC_2 by the constraint <INST
+   "*mii0?RXD_TO_MAC*"    IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(693)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RXD_TO_MAC_1 IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii0/RXD_TO_MAC_1 by the constraint <INST
+   "*mii0?RXD_TO_MAC*"    IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(693)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RXD_TO_MAC_0 IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii0/RXD_TO_MAC_0 by the constraint <INST
+   "*mii0?RXD_TO_MAC*"    IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(693)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/MII_TXD_3 IOB =
+   true> is overridden on the design object u_emac/v5_emac_block/mii0/MII_TXD_3
+   by the constraint <INST "*mii0?MII_TXD_?"      IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(697)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/MII_TXD_2 IOB =
+   true> is overridden on the design object u_emac/v5_emac_block/mii0/MII_TXD_2
+   by the constraint <INST "*mii0?MII_TXD_?"      IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(697)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/MII_TXD_1 IOB =
+   true> is overridden on the design object u_emac/v5_emac_block/mii0/MII_TXD_1
+   by the constraint <INST "*mii0?MII_TXD_?"      IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(697)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/MII_TXD_0 IOB =
+   true> is overridden on the design object u_emac/v5_emac_block/mii0/MII_TXD_0
+   by the constraint <INST "*mii0?MII_TXD_?"      IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(697)].
+WARNING:NgdBuild:1012 - The constraint <INST
+   /ref_design/EXPANDED/ref_design/u_emac\/v5_emac_block\/mii0\/RX_ER_TO_MAC IOB
+   = true> is overridden on the design object
+   u_emac/v5_emac_block/mii0/RX_ER_TO_MAC by the constraint <INST
+   "*mii0?RX_ER_TO_MAC"   IOB = true;>
+   [C:/Users/Justin/Dropbox/MOSES/ReferenceDesigns/fpga/source/constraints/ffpci
+   104_fcg006rd.ucf(695)].
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:440 - FF primitive
+   'u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/u_phy_calib_0/gen
+   _rden[1].u_calib_rden_r' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/u_phy_calib_0/gen
+   _rden[2].u_calib_rden_r' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'u_mig20/u_ddr2_top_0/u_mem_if_top_0/u_phy_top_0/u_phy_io_0/u_phy_calib_0/gen
+   _rden[3].u_calib_rden_r' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive 'u_spi/u_spi_ctrl/SPI_TRISTATE_CONTROL_II'
+   has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive 'u_spi/u_spi_ctrl/SPI_TRISTATE_CONTROL_III'
+   has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive 'u_spi/u_spi_ctrl/SPI_TRISTATE_CONTROL_IV'
+   has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive 'u_spi/u_spi_ctrl/SPI_TRISTATE_CONTROL_V'
+   has unconnected output pin
+WARNING:NgdBuild:452 - logical net 'N925' has no driver
+WARNING:NgdBuild:452 - logical net 'N926' has no driver
+WARNING:NgdBuild:452 - logical net 'N927' has no driver
+WARNING:NgdBuild:452 - logical net 'N928' has no driver
+WARNING:NgdBuild:452 - logical net 'spia_miso' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  39
+
+Total memory usage is 216428 kilobytes
+
+Writing NGD file "ref_design.ngd" ...
+Total REAL time to NGDBUILD completion:  14 sec
+Total CPU time to NGDBUILD completion:   14 sec
+
+Writing NGDBUILD log file "ref_design.bld"...
