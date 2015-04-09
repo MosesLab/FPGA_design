@@ -1,0 +1,19 @@
+Comments On Flashing the FPGA
+
+In Design NotesJAH.docx, the hardware setup for flashing the FPGA is explained.  
+
+After the hardware has been setup, instructions for programming the device can be found in the CTI-FreeForm-PCI104.pdf document, starting on page 22. 
+
+Paying attention to the note on page 22, notice that the design work can be done in ISE 14.x, but the FPGA should be programmed using ISE 13.4 Lab tools.
+The lab tools are different from the full ISE 13.4 package in that flashing the software using the lab tools does not require a compile of the source code.
+Make sure the 13.4 lab tools are installed instead of the full ISE 13.4.
+
+When starting iMPACT(step 2), load the file \MOSES\moses_release_rev3\moses_fpga_design\moses_fpga design_impact.
+this project references the following files:
+
+MOSES\moses_release_rev3\moses_fpga_design\moses_fpga_design.bit
+MOSES\moses_release_rev3\MCS_File\Moses\MOSES_Release_Rev3.mcs
+MOSES\referencedesigns\fpga\bsdl\PCI9056BA.bsd
+MOSES\referencedesigns\fpga\bsdl\DP8349IVS.bsd
+
+Jumper J1 should be configured in its third setting, since we want to program directly to flash.
